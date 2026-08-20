@@ -21,19 +21,22 @@ async function bootGame(page: Page): Promise<void> {
     timeout: 90_000,
   });
   // Wait for the controls layout report.
-  await page.waitForFunction(() => (window as any).__markInBrum?.controls?.length > 0, null, {
-    timeout: 20_000,
-  });
+  await page.waitForFunction(() => {
+    const bridge = (window as any).__markInBrum;
+    return typeof bridge?.controls === 'string' && bridge.controls.length > 0;
+  }, null, { timeout: 20_000 });
 }
 
 function parseControls(page: Page): Promise<Record<string, { x: number; y: number; w: number; h: number }>> {
   return page.evaluate(() => {
-    const raw = (window as any).__markInBrum.controls as string;
+    const raw = JSON.parse((window as any).__markInBrum.controls);
+    const scaleX = raw.cssScale[0];
+    const scaleY = raw.cssScale[1];
     const out: Record<string, { x: number; y: number; w: number; h: number }> = {};
-    for (const part of raw.split(',')) {
+    for (const part of raw.rects.split(',')) {
       const [name, dims] = part.split(':');
       const [x, y, w, h] = dims.split(',').map(Number);
-      out[name] = { x, y, w, h };
+      out[name] = { x: x * scaleX, y: y * scaleY, w: w * scaleX, h: h * scaleY };
     }
     return out;
   });

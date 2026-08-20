@@ -1,0 +1,6649 @@
+{
+  "chunk_size_m": 80.0,
+  "local_origin_note": "x/z are chunk-local, origin at chunk min corner (world = chunk*80 + local)",
+  "count": 738,
+  "landmarks": [
+    {
+      "name": "Ikon Gallery",
+      "building": "heritage",
+      "x": 56.865,
+      "z": 69.034,
+      "height": 8.0,
+      "chunk": "-10_-1",
+      "built": true
+    },
+    {
+      "name": "Oozells Street North",
+      "highway": "pedestrian",
+      "x": 16.252,
+      "z": 69.887,
+      "height": 0.04,
+      "chunk": "-10_-1",
+      "built": true
+    },
+    {
+      "name": "Broad Street City Centre Energy Network CHP",
+      "building": "yes",
+      "x": 47.338,
+      "z": 18.97,
+      "height": 8.0,
+      "chunk": "-10_-2",
+      "built": true
+    },
+    {
+      "name": "The Brewmaster's House",
+      "building": "yes",
+      "x": 69.003,
+      "z": 51.783,
+      "height": 8.0,
+      "chunk": "-10_-2",
+      "built": true
+    },
+    {
+      "name": "Canal & River Trust Customer Service Centre",
+      "building": "yes",
+      "x": 25.129,
+      "z": 31.733,
+      "height": 8.0,
+      "chunk": "-10_-4",
+      "built": true
+    },
+    {
+      "name": "The Flapper",
+      "building": "yes",
+      "x": 76.635,
+      "z": 51.993,
+      "height": 8.0,
+      "chunk": "-10_-4",
+      "built": true
+    },
+    {
+      "name": "former Canal Toll Office",
+      "building": "office",
+      "x": 73.975,
+      "z": 10.108,
+      "height": 8.0,
+      "chunk": "-10_-4",
+      "built": true
+    },
+    {
+      "name": "Terraquest Ltd",
+      "building": "office",
+      "x": 12.575,
+      "z": 1.94,
+      "height": 8.0,
+      "chunk": "-10_-5",
+      "built": true
+    },
+    {
+      "name": "University of Wales Trinity Saint David (UWTSD) | Institute of Inner City Learning (IICL) | Birmingham Campus Quay Place",
+      "building": "university",
+      "x": 22.7,
+      "z": 67.679,
+      "height": 8.0,
+      "chunk": "-10_-5",
+      "built": true
+    },
+    {
+      "name": "Edward House",
+      "building": "yes",
+      "x": 61.978,
+      "z": 68.708,
+      "height": 22.4,
+      "chunk": "-10_-6",
+      "built": true
+    },
+    {
+      "name": "Bright Minds Day Care",
+      "building": "yes",
+      "x": 8.313,
+      "z": 72.194,
+      "height": 8.0,
+      "chunk": "-10_-7",
+      "built": true
+    },
+    {
+      "name": "Future Health & Social Care",
+      "building": "yes",
+      "x": 1.272,
+      "z": 66.738,
+      "height": 8.0,
+      "chunk": "-10_-7",
+      "built": true
+    },
+    {
+      "name": "Future Health & Social Care",
+      "building": "yes",
+      "x": 15.448,
+      "z": 77.56,
+      "height": 8.0,
+      "chunk": "-10_-7",
+      "built": true
+    },
+    {
+      "name": "Photographic Works",
+      "building": "apartments",
+      "x": 4.657,
+      "z": 50.093,
+      "height": 12.8,
+      "chunk": "-10_-7",
+      "built": true
+    },
+    {
+      "name": "The Copperworks",
+      "building": "apartments",
+      "x": 31.374,
+      "z": 20.651,
+      "height": 8.0,
+      "chunk": "-10_-7",
+      "built": true
+    },
+    {
+      "name": "A. Jackson",
+      "building": "yes",
+      "x": 40.088,
+      "z": 26.927,
+      "height": 8.0,
+      "chunk": "-10_-9",
+      "built": true
+    },
+    {
+      "name": "Fifty 7",
+      "building": "yes",
+      "x": 75.168,
+      "z": 23.897,
+      "height": 8.0,
+      "chunk": "-10_-9",
+      "built": true
+    },
+    {
+      "name": "J.W. Evans & Son",
+      "building": "yes",
+      "x": 48.481,
+      "z": 23.685,
+      "height": 8.0,
+      "chunk": "-10_-9",
+      "built": true
+    },
+    {
+      "name": "Saunders & Shepherd Ltd",
+      "building": "yes",
+      "x": 14.345,
+      "z": 43.257,
+      "height": 8.0,
+      "chunk": "-10_-9",
+      "built": true
+    },
+    {
+      "name": "Nine Brindley Place",
+      "building": "office",
+      "x": 44.177,
+      "z": 53.216,
+      "height": 16.0,
+      "chunk": "-10_00",
+      "built": true
+    },
+    {
+      "name": "Pop World",
+      "building": "church",
+      "x": 64.43,
+      "z": 44.938,
+      "height": 8.0,
+      "chunk": "-10_00",
+      "built": true
+    },
+    {
+      "name": "Six Brindley Place",
+      "building": "office",
+      "x": 1.539,
+      "z": 5.426,
+      "height": 25.6,
+      "chunk": "-10_00",
+      "built": true
+    },
+    {
+      "name": "O'Neills",
+      "building": "yes",
+      "x": 62.047,
+      "z": 37.545,
+      "height": 8.0,
+      "chunk": "-10_01",
+      "built": true
+    },
+    {
+      "name": "Travelodge",
+      "building": "hotel",
+      "x": 49.475,
+      "z": 66.959,
+      "height": 28.8,
+      "chunk": "-10_01",
+      "built": true
+    },
+    {
+      "name": "Lee Longlands",
+      "building": "retail",
+      "x": 34.368,
+      "z": 4.377,
+      "height": 9.6,
+      "chunk": "-10_02",
+      "built": true
+    },
+    {
+      "name": "Lee Longlands Customer Car Park",
+      "building": null,
+      "x": 76.675,
+      "z": 20.113,
+      "height": 0.0,
+      "chunk": "-10_02",
+      "built": false
+    },
+    {
+      "name": "Arden Gate",
+      "building": "residential",
+      "x": 69.468,
+      "z": 54.07,
+      "height": 16.0,
+      "chunk": "-10_04",
+      "built": true
+    },
+    {
+      "name": "Residents Parking",
+      "building": null,
+      "x": 29.319,
+      "z": 54.45,
+      "height": 0.0,
+      "chunk": "-10_04",
+      "built": false
+    },
+    {
+      "name": "Pavilion",
+      "building": "residential",
+      "x": 53.353,
+      "z": 4.127,
+      "height": 16.0,
+      "chunk": "-10_05",
+      "built": true
+    },
+    {
+      "name": "Shell",
+      "building": "yes",
+      "x": 71.251,
+      "z": 70.195,
+      "height": 8.0,
+      "chunk": "-10_05",
+      "built": true
+    },
+    {
+      "name": "Altura",
+      "building": "residential",
+      "x": 18.299,
+      "z": 50.09,
+      "height": 32.0,
+      "chunk": "-10_06",
+      "built": true
+    },
+    {
+      "name": "Broderick House",
+      "building": "residential",
+      "x": 79.089,
+      "z": 30.698,
+      "height": 8.0,
+      "chunk": "-10_06",
+      "built": true
+    },
+    {
+      "name": "Apollo House",
+      "building": "yes",
+      "x": 57.213,
+      "z": 74.382,
+      "height": 8.0,
+      "chunk": "-10_07",
+      "built": true
+    },
+    {
+      "name": "Enfield House",
+      "building": "yes",
+      "x": 2.898,
+      "z": 53.829,
+      "height": 8.0,
+      "chunk": "-10_07",
+      "built": true
+    },
+    {
+      "name": "Jubilee House",
+      "building": "yes",
+      "x": 58.302,
+      "z": 14.768,
+      "height": 8.0,
+      "chunk": "-10_08",
+      "built": true
+    },
+    {
+      "name": "National Sea Life Centre",
+      "building": "yes",
+      "x": 71.646,
+      "z": 45.419,
+      "height": 9.6,
+      "chunk": "-11_-2",
+      "built": true
+    },
+    {
+      "name": "The Malt House",
+      "building": "retail",
+      "x": 75.291,
+      "z": 67.629,
+      "height": 8.0,
+      "chunk": "-11_-3",
+      "built": true
+    },
+    {
+      "name": "City Nites",
+      "building": "serviced apartments",
+      "x": 16.513,
+      "z": 3.035,
+      "height": 8.0,
+      "chunk": "-11_-4",
+      "built": true
+    },
+    {
+      "name": "London & Zurich",
+      "building": "yes",
+      "x": 38.424,
+      "z": 7.461,
+      "height": 8.0,
+      "chunk": "-11_-4",
+      "built": true
+    },
+    {
+      "name": "Kings Court Plaza",
+      "building": "apartments",
+      "x": 67.321,
+      "z": 40.845,
+      "height": 8.0,
+      "chunk": "-11_-5",
+      "built": true
+    },
+    {
+      "name": "Peyton",
+      "building": "yes",
+      "x": 40.72,
+      "z": 50.038,
+      "height": 8.0,
+      "chunk": "-11_-5",
+      "built": true
+    },
+    {
+      "name": "Atlantic Shopping",
+      "building": "yes",
+      "x": 17.199,
+      "z": 58.647,
+      "height": 8.0,
+      "chunk": "-11_-6",
+      "built": true
+    },
+    {
+      "name": "L&M Cleaning Group",
+      "building": "yes",
+      "x": 53.617,
+      "z": 7.111,
+      "height": 8.0,
+      "chunk": "-11_-6",
+      "built": true
+    },
+    {
+      "name": "Urbantrix",
+      "building": "yes",
+      "x": 54.819,
+      "z": 67.597,
+      "height": 8.0,
+      "chunk": "-11_-6",
+      "built": true
+    },
+    {
+      "name": "D.L. Bessant Pattern Co",
+      "building": "yes",
+      "x": 68.879,
+      "z": 73.281,
+      "height": 8.0,
+      "chunk": "-11_-7",
+      "built": true
+    },
+    {
+      "name": "Greek School of Apostolos Andreas",
+      "building": "yes",
+      "x": 52.665,
+      "z": 56.305,
+      "height": 8.0,
+      "chunk": "-11_-7",
+      "built": true
+    },
+    {
+      "name": "Orthodox Cathedral of the Dormition of the Theotokos and St. Andreas",
+      "building": "church",
+      "x": 34.102,
+      "z": 71.621,
+      "height": 8.0,
+      "chunk": "-11_-7",
+      "built": true
+    },
+    {
+      "name": "Westgate",
+      "building": "apartments",
+      "x": 22.556,
+      "z": 47.35,
+      "height": 8.0,
+      "chunk": "-11_-7",
+      "built": true
+    },
+    {
+      "name": "CIRTEQ",
+      "building": "yes",
+      "x": 72.806,
+      "z": 68.139,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Ecohomes",
+      "building": "yes",
+      "x": 49.596,
+      "z": 4.543,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Escape Brum",
+      "building": "commercial",
+      "x": 27.702,
+      "z": 43.567,
+      "height": 3.2,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "IGS",
+      "building": "yes",
+      "x": 14.489,
+      "z": 35.332,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Mail Express",
+      "building": "yes",
+      "x": 32.468,
+      "z": 16.76,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Pivot and Crop",
+      "building": "yes",
+      "x": 47.526,
+      "z": 0.863,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Sapcote Group plc",
+      "building": "yes",
+      "x": 1.986,
+      "z": 58.627,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "The Pit Gym",
+      "building": "commercial",
+      "x": 38.001,
+      "z": 56.185,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Wrightway",
+      "building": "yes",
+      "x": 55.836,
+      "z": 15.619,
+      "height": 8.0,
+      "chunk": "-11_-8",
+      "built": true
+    },
+    {
+      "name": "Alabaster & Wilson",
+      "building": "yes",
+      "x": 67.156,
+      "z": 73.195,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "KZT",
+      "building": "yes",
+      "x": 68.662,
+      "z": 23.014,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "LBF",
+      "building": "yes",
+      "x": 26.399,
+      "z": 39.186,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "Pig & Tail",
+      "building": "yes",
+      "x": 15.111,
+      "z": 60.087,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "The Fireworks",
+      "building": "yes",
+      "x": 77.241,
+      "z": 54.273,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "The Orb",
+      "building": "yes",
+      "x": 23.443,
+      "z": 21.432,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "The Orb",
+      "building": "yes",
+      "x": 34.59,
+      "z": 37.881,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "Ultra Hair Clinic",
+      "building": "yes",
+      "x": 45.455,
+      "z": 77.184,
+      "height": 8.0,
+      "chunk": "-11_-9",
+      "built": true
+    },
+    {
+      "name": "Eleven Brindley Place",
+      "building": "yes",
+      "x": 32.651,
+      "z": 1.916,
+      "height": 59.0,
+      "chunk": "-11_01",
+      "built": true
+    },
+    {
+      "name": "Novotel",
+      "building": "hotel",
+      "x": 60.966,
+      "z": 33.822,
+      "height": 22.4,
+      "chunk": "-11_01",
+      "built": true
+    },
+    {
+      "name": "The Bank One",
+      "building": "apartments",
+      "x": 34.948,
+      "z": 52.239,
+      "height": 67.2,
+      "chunk": "-11_01",
+      "built": true
+    },
+    {
+      "name": "The Bank Tower Two",
+      "building": "apartments",
+      "x": 50.874,
+      "z": 73.191,
+      "height": 105.6,
+      "chunk": "-11_01",
+      "built": true
+    },
+    {
+      "name": "Euro Car Parks Fiveways",
+      "building": "parking",
+      "x": 16.484,
+      "z": 66.407,
+      "height": 8.0,
+      "chunk": "-11_03",
+      "built": true
+    },
+    {
+      "name": "Hampton by Hilton Birmingham Broad Street",
+      "building": "yes",
+      "x": 54.68,
+      "z": 0.303,
+      "height": 64.0,
+      "chunk": "-11_03",
+      "built": true
+    },
+    {
+      "name": "The Bull's Head",
+      "building": "heritage",
+      "x": 10.083,
+      "z": 8.724,
+      "height": 8.0,
+      "chunk": "-11_04",
+      "built": true
+    },
+    {
+      "name": "Hampton Court",
+      "building": "apartments",
+      "x": 50.474,
+      "z": 29.931,
+      "height": 8.0,
+      "chunk": "-11_07",
+      "built": true
+    },
+    {
+      "name": "Richmond Court",
+      "building": "apartments",
+      "x": 41.8,
+      "z": 52.524,
+      "height": 8.0,
+      "chunk": "-11_07",
+      "built": true
+    },
+    {
+      "name": "Scrivens House",
+      "building": "yes",
+      "x": 76.013,
+      "z": 20.184,
+      "height": 8.0,
+      "chunk": "-11_07",
+      "built": true
+    },
+    {
+      "name": "DVSA",
+      "building": "yes",
+      "x": 25.727,
+      "z": 79.973,
+      "height": 8.0,
+      "chunk": "-11_08",
+      "built": true
+    },
+    {
+      "name": "Edgbaston College",
+      "building": "school",
+      "x": 1.391,
+      "z": 71.119,
+      "height": 6.4,
+      "chunk": "-11_08",
+      "built": true
+    },
+    {
+      "name": "Bannatyne's Health Club",
+      "building": "yes",
+      "x": 67.03,
+      "z": 51.775,
+      "height": 8.0,
+      "chunk": "-12_-1",
+      "built": true
+    },
+    {
+      "name": "Q-Park Brindleyplace",
+      "building": "car_park",
+      "x": 79.286,
+      "z": 62.957,
+      "height": 22.4,
+      "chunk": "-12_-1",
+      "built": true
+    },
+    {
+      "name": "Utilita Arena Birmingham",
+      "building": "arena",
+      "x": 68.5,
+      "z": 43.347,
+      "height": 35.0,
+      "chunk": "-12_-3",
+      "built": true
+    },
+    {
+      "name": "Community Hall Parking",
+      "building": "yes",
+      "x": 68.896,
+      "z": 53.252,
+      "height": 8.0,
+      "chunk": "-12_-4",
+      "built": true
+    },
+    {
+      "name": "Britannic Warehouse",
+      "building": "yes",
+      "x": 69.379,
+      "z": 1.589,
+      "height": 8.0,
+      "chunk": "-12_-5",
+      "built": true
+    },
+    {
+      "name": "Directorate for People",
+      "building": "yes",
+      "x": 61.035,
+      "z": 50.896,
+      "height": 8.0,
+      "chunk": "-12_-7",
+      "built": true
+    },
+    {
+      "name": "Altitude",
+      "building": "yes",
+      "x": 24.87,
+      "z": 23.105,
+      "height": 8.0,
+      "chunk": "-12_-8",
+      "built": true
+    },
+    {
+      "name": "Elton House",
+      "building": "yes",
+      "x": 32.904,
+      "z": 47.662,
+      "height": 8.0,
+      "chunk": "-12_-8",
+      "built": true
+    },
+    {
+      "name": "Accumed",
+      "building": "yes",
+      "x": 58.076,
+      "z": 26.799,
+      "height": 8.0,
+      "chunk": "-12_-9",
+      "built": true
+    },
+    {
+      "name": "CCTV Group",
+      "building": "yes",
+      "x": 47.794,
+      "z": 23.594,
+      "height": 8.0,
+      "chunk": "-12_-9",
+      "built": true
+    },
+    {
+      "name": "Saint Georges Court",
+      "building": "office",
+      "x": 50.085,
+      "z": 72.158,
+      "height": 8.0,
+      "chunk": "-12_-9",
+      "built": true
+    },
+    {
+      "name": "Hilton Garden Inn Birmingham Brindleyplace",
+      "building": "hotel",
+      "x": 72.823,
+      "z": 60.096,
+      "height": 25.6,
+      "chunk": "-12_00",
+      "built": true
+    },
+    {
+      "name": "The Crescent Theatre",
+      "building": "yes",
+      "x": 48.589,
+      "z": 25.309,
+      "height": 8.0,
+      "chunk": "-12_00",
+      "built": true
+    },
+    {
+      "name": "Old Union Mill",
+      "building": "yes",
+      "x": 6.591,
+      "z": 15.584,
+      "height": 8.0,
+      "chunk": "-12_01",
+      "built": true
+    },
+    {
+      "name": "Premier Inn",
+      "building": "yes",
+      "x": 44.992,
+      "z": 25.127,
+      "height": 13.0,
+      "chunk": "-12_02",
+      "built": true
+    },
+    {
+      "name": "Jobcentre Plus",
+      "building": "yes",
+      "x": 44.077,
+      "z": 17.632,
+      "height": 19.0,
+      "chunk": "-12_03",
+      "built": true
+    },
+    {
+      "name": "UBER",
+      "building": "office",
+      "x": 19.799,
+      "z": 34.306,
+      "height": 19.0,
+      "chunk": "-12_03",
+      "built": true
+    },
+    {
+      "name": "Euro Car Parks Fiveways",
+      "building": "parking",
+      "x": 51.599,
+      "z": 47.117,
+      "height": 8.0,
+      "chunk": "-12_04",
+      "built": true
+    },
+    {
+      "name": "Five Ways House",
+      "building": "yes",
+      "x": 53.799,
+      "z": 65.142,
+      "height": 25.6,
+      "chunk": "-12_06",
+      "built": true
+    },
+    {
+      "name": "Regent Court",
+      "building": "yes",
+      "x": 24.652,
+      "z": 51.908,
+      "height": 8.0,
+      "chunk": "-12_08",
+      "built": true
+    },
+    {
+      "name": "Nelson Primary School",
+      "building": null,
+      "x": 34.573,
+      "z": 63.731,
+      "height": 0.0,
+      "chunk": "-13_-5",
+      "built": false
+    },
+    {
+      "name": "Old Union Mill",
+      "building": "yes",
+      "x": 78.73,
+      "z": 71.134,
+      "height": 8.0,
+      "chunk": "-13_00",
+      "built": true
+    },
+    {
+      "name": "Camden Food Co",
+      "building": null,
+      "x": 71.776,
+      "z": 39.283,
+      "height": 0.0,
+      "chunk": "-1_-1",
+      "built": false
+    },
+    {
+      "name": "Costa",
+      "building": null,
+      "x": 70.699,
+      "z": 45.087,
+      "height": 0.0,
+      "chunk": "-1_-1",
+      "built": false
+    },
+    {
+      "name": "Grand Central Parking",
+      "building": "yes",
+      "x": 64.653,
+      "z": 63.24,
+      "height": 19.2,
+      "chunk": "-1_-1",
+      "built": true
+    },
+    {
+      "name": "Short Stay Parking",
+      "building": null,
+      "x": 59.315,
+      "z": 38.79,
+      "height": 0.0,
+      "chunk": "-1_-1",
+      "built": false
+    },
+    {
+      "name": "Upper Crust",
+      "building": null,
+      "x": 65.146,
+      "z": 72.54,
+      "height": 0.0,
+      "chunk": "-1_-1",
+      "built": false
+    },
+    {
+      "name": "Admiral",
+      "building": "yes",
+      "x": 21.263,
+      "z": 12.897,
+      "height": 45.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "All Greek",
+      "building": "yes",
+      "x": 19.088,
+      "z": 61.773,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Bella Italia",
+      "building": "yes",
+      "x": 30.167,
+      "z": 14.031,
+      "height": 45.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Candy and Liquor",
+      "building": "yes",
+      "x": 18.731,
+      "z": 74.367,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Chill City Nail Bar",
+      "building": "retail",
+      "x": 13.341,
+      "z": 62.49,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Costa",
+      "building": "yes",
+      "x": 39.282,
+      "z": 64.348,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Dresden D\u00f6ner",
+      "building": "yes",
+      "x": 23.8,
+      "z": 72.59,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Gong cha",
+      "building": "retail",
+      "x": 60.377,
+      "z": 15.976,
+      "height": 19.2,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Guildhall Buildings",
+      "building": "office",
+      "x": 32.413,
+      "z": 68.423,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Navaraza",
+      "building": "retail",
+      "x": 64.276,
+      "z": 16.502,
+      "height": 45.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Pinfolds",
+      "building": "yes",
+      "x": 14.298,
+      "z": 71.625,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Polo Pasta",
+      "building": "yes",
+      "x": 27.971,
+      "z": 70.526,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Superdrug",
+      "building": "retail",
+      "x": 38.968,
+      "z": 15.155,
+      "height": 45.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "The Zipyard",
+      "building": "yes",
+      "x": 10.043,
+      "z": 68.35,
+      "height": 22.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Tim Hortons",
+      "building": "yes",
+      "x": 70.865,
+      "z": 17.32,
+      "height": 45.0,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Wagamama",
+      "building": "yes",
+      "x": 0.323,
+      "z": 10.224,
+      "height": 12.8,
+      "chunk": "-1_-2",
+      "built": true
+    },
+    {
+      "name": "Flight Club",
+      "building": "yes",
+      "x": 78.275,
+      "z": 23.505,
+      "height": 34.0,
+      "chunk": "-1_-3",
+      "built": true
+    },
+    {
+      "name": "Lost & Found",
+      "building": "yes",
+      "x": 11.76,
+      "z": 11.705,
+      "height": 41.0,
+      "chunk": "-1_-3",
+      "built": true
+    },
+    {
+      "name": "The Briar Rose",
+      "building": "hotel",
+      "x": 48.661,
+      "z": 21.189,
+      "height": 8.0,
+      "chunk": "-1_-3",
+      "built": true
+    },
+    {
+      "name": "The Trocadero",
+      "building": "retail",
+      "x": 73.558,
+      "z": 48.887,
+      "height": 34.0,
+      "chunk": "-1_-3",
+      "built": true
+    },
+    {
+      "name": "90 Colmore Row",
+      "building": "office",
+      "x": 38.765,
+      "z": 2.993,
+      "height": 22.4,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Colmore Place",
+      "building": "commercial",
+      "x": 16.945,
+      "z": 17.037,
+      "height": 25.6,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Cosy Club",
+      "building": "yes",
+      "x": 44.638,
+      "z": 77.832,
+      "height": 34.0,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Dirty Martini",
+      "building": "retail",
+      "x": 11.068,
+      "z": 62.773,
+      "height": 12.8,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Legal & General Assurance Building",
+      "building": "office",
+      "x": 59.934,
+      "z": 72.427,
+      "height": 34.0,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Premier Inn",
+      "building": "yes",
+      "x": 74.368,
+      "z": 58.838,
+      "height": 34.0,
+      "chunk": "-1_-4",
+      "built": true
+    },
+    {
+      "name": "Waterlo Street Taxi Stand",
+      "building": null,
+      "x": 41.894,
+      "z": 62.745,
+      "height": 0.0,
+      "chunk": "-1_-4",
+      "built": false
+    },
+    {
+      "name": "55 Colmore Row",
+      "building": "office",
+      "x": 45.079,
+      "z": 23.936,
+      "height": 28.8,
+      "chunk": "-1_-5",
+      "built": true
+    },
+    {
+      "name": "The Chatwin Building",
+      "building": "office",
+      "x": 13.428,
+      "z": 50.898,
+      "height": 25.6,
+      "chunk": "-1_-5",
+      "built": true
+    },
+    {
+      "name": "1 Edmund Gardens",
+      "building": "office",
+      "x": 20.628,
+      "z": 72.95,
+      "height": 19.2,
+      "chunk": "-1_-6",
+      "built": true
+    },
+    {
+      "name": "2 Edmund Gardens",
+      "building": "office",
+      "x": 10.807,
+      "z": 59.293,
+      "height": 12.8,
+      "chunk": "-1_-6",
+      "built": true
+    },
+    {
+      "name": "3 Edmund Gardens",
+      "building": "office",
+      "x": 0.415,
+      "z": 67.554,
+      "height": 12.8,
+      "chunk": "-1_-6",
+      "built": true
+    },
+    {
+      "name": "Hotel du Vin",
+      "building": "hotel",
+      "x": 53.731,
+      "z": 36.697,
+      "height": 16.0,
+      "chunk": "-1_-6",
+      "built": true
+    },
+    {
+      "name": "Interchange Place",
+      "building": "office",
+      "x": 75.272,
+      "z": 1.764,
+      "height": 25.6,
+      "chunk": "-1_-6",
+      "built": true
+    },
+    {
+      "name": "The Roebuck",
+      "building": null,
+      "x": 36.591,
+      "z": 65.762,
+      "height": 0.0,
+      "chunk": "-1_-6",
+      "built": false
+    },
+    {
+      "name": "158-172 Edmund St. Surface Car Park",
+      "building": null,
+      "x": 32.699,
+      "z": 64.703,
+      "height": 0.0,
+      "chunk": "-1_-7",
+      "built": false
+    },
+    {
+      "name": "Cornerblock",
+      "building": "office",
+      "x": 42.716,
+      "z": 31.167,
+      "height": 35.2,
+      "chunk": "-1_-7",
+      "built": true
+    },
+    {
+      "name": "ESB EV Charging Station- Livery Street",
+      "building": null,
+      "x": 65.117,
+      "z": 23.875,
+      "height": 0.0,
+      "chunk": "-1_-7",
+      "built": false
+    },
+    {
+      "name": "The Old Contemptibles",
+      "building": "retail",
+      "x": 69.356,
+      "z": 53.318,
+      "height": 12.8,
+      "chunk": "-1_-7",
+      "built": true
+    },
+    {
+      "name": "UNISON West Midlands",
+      "building": "office",
+      "x": 64.458,
+      "z": 46.172,
+      "height": 19.2,
+      "chunk": "-1_-7",
+      "built": true
+    },
+    {
+      "name": "Livery St Car Park",
+      "building": "yes",
+      "x": 73.905,
+      "z": 60.133,
+      "height": 8.0,
+      "chunk": "-1_-8",
+      "built": true
+    },
+    {
+      "name": "Krispy Kreme",
+      "building": null,
+      "x": 79.217,
+      "z": 35.273,
+      "height": 0.0,
+      "chunk": "-1_00",
+      "built": false
+    },
+    {
+      "name": "Mi Casa Burritos",
+      "building": null,
+      "x": 63.53,
+      "z": 0.683,
+      "height": 0.0,
+      "chunk": "-1_00",
+      "built": false
+    },
+    {
+      "name": "Pasty Shop",
+      "building": null,
+      "x": 61.363,
+      "z": 11.985,
+      "height": 0.0,
+      "chunk": "-1_00",
+      "built": false
+    },
+    {
+      "name": "Starbucks",
+      "building": null,
+      "x": 79.335,
+      "z": 18.492,
+      "height": 0.0,
+      "chunk": "-1_00",
+      "built": false
+    },
+    {
+      "name": "Midland Telephone Exchange",
+      "building": "yes",
+      "x": 28.618,
+      "z": 14.562,
+      "height": 8.0,
+      "chunk": "-1_01",
+      "built": true
+    },
+    {
+      "name": "New Alexandra Theatre",
+      "building": "yes",
+      "x": 5.385,
+      "z": 49.549,
+      "height": 6.4,
+      "chunk": "-1_01",
+      "built": true
+    },
+    {
+      "name": "RNIB/Working Links",
+      "building": "yes",
+      "x": 1.423,
+      "z": 22.587,
+      "height": 12.8,
+      "chunk": "-1_01",
+      "built": true
+    },
+    {
+      "name": "The Victoria",
+      "building": "yes",
+      "x": 8.218,
+      "z": 62.298,
+      "height": 9.6,
+      "chunk": "-1_01",
+      "built": true
+    },
+    {
+      "name": "NCP New Street",
+      "building": "yes",
+      "x": 27.058,
+      "z": 14.726,
+      "height": 12.8,
+      "chunk": "-1_02",
+      "built": true
+    },
+    {
+      "name": "Radisson Blu hotel",
+      "building": "commercial",
+      "x": 41.69,
+      "z": 48.66,
+      "height": 122.0,
+      "chunk": "-1_02",
+      "built": true
+    },
+    {
+      "name": "Scala House",
+      "building": "yes",
+      "x": 68.973,
+      "z": 11.0,
+      "height": 19.2,
+      "chunk": "-1_03",
+      "built": true
+    },
+    {
+      "name": "Scala House",
+      "building": "yes",
+      "x": 67.028,
+      "z": 36.486,
+      "height": 11.0,
+      "chunk": "-1_03",
+      "built": true
+    },
+    {
+      "name": "Clydesdale Tower",
+      "building": "apartments",
+      "x": 1.927,
+      "z": 3.151,
+      "height": 90.0,
+      "chunk": "-1_04",
+      "built": true
+    },
+    {
+      "name": "NCP Horsefair",
+      "building": "yes",
+      "x": 33.267,
+      "z": 39.892,
+      "height": 16.0,
+      "chunk": "-1_04",
+      "built": true
+    },
+    {
+      "name": "Birmingham Samaritans",
+      "building": "yes",
+      "x": 4.375,
+      "z": 3.359,
+      "height": 6.4,
+      "chunk": "-1_05",
+      "built": true
+    },
+    {
+      "name": "O2 Academy",
+      "building": "yes",
+      "x": 35.63,
+      "z": 21.884,
+      "height": 12.0,
+      "chunk": "-1_05",
+      "built": true
+    },
+    {
+      "name": "St. Catherine's Catholic Church",
+      "building": "church",
+      "x": 23.143,
+      "z": 8.594,
+      "height": 9.6,
+      "chunk": "-1_06",
+      "built": true
+    },
+    {
+      "name": "Ibis Budget",
+      "building": "yes",
+      "x": 27.736,
+      "z": 25.869,
+      "height": 16.0,
+      "chunk": "-1_07",
+      "built": true
+    },
+    {
+      "name": "The Orion Building",
+      "building": "yes",
+      "x": 11.544,
+      "z": 78.223,
+      "height": 8.0,
+      "chunk": "-2_-1",
+      "built": true
+    },
+    {
+      "name": "Caff\u00e8 Nero",
+      "building": "retail",
+      "x": 30.376,
+      "z": 1.794,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Ethos",
+      "building": "retail",
+      "x": 28.382,
+      "z": 11.65,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Fat Burgers",
+      "building": "retail",
+      "x": 56.979,
+      "z": 3.034,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Greggs",
+      "building": "retail",
+      "x": 25.304,
+      "z": 1.134,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "The Tanning Shop",
+      "building": "retail",
+      "x": 18.713,
+      "z": 5.847,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Victoria Square House",
+      "building": "office",
+      "x": 14.742,
+      "z": 44.756,
+      "height": 35.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Yun Ling Herbal & Natural Care",
+      "building": "retail",
+      "x": 29.599,
+      "z": 17.085,
+      "height": 26.0,
+      "chunk": "-2_-2",
+      "built": true
+    },
+    {
+      "name": "Blank Street Coffee",
+      "building": "retail",
+      "x": 6.141,
+      "z": 75.751,
+      "height": 26.0,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "Christchurch House",
+      "building": "commercial",
+      "x": 33.932,
+      "z": 9.188,
+      "height": 9.6,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "Simply Local",
+      "building": "retail",
+      "x": 19.458,
+      "z": 78.765,
+      "height": 26.0,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "Theatrix",
+      "building": "retail",
+      "x": 14.777,
+      "z": 4.212,
+      "height": 12.8,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "Tortilla",
+      "building": "retail",
+      "x": 13.225,
+      "z": 76.805,
+      "height": 26.0,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "Twelve Dental",
+      "building": "yes",
+      "x": 74.009,
+      "z": 16.687,
+      "height": 41.0,
+      "chunk": "-2_-3",
+      "built": true
+    },
+    {
+      "name": "103 Colmore Row",
+      "building": "yes",
+      "x": 46.781,
+      "z": 9.105,
+      "height": 108.0,
+      "chunk": "-2_-4",
+      "built": true
+    },
+    {
+      "name": "Java Roastery",
+      "building": "heritage",
+      "x": 26.632,
+      "z": 72.12,
+      "height": 23.0,
+      "chunk": "-2_-4",
+      "built": true
+    },
+    {
+      "name": "The Co-operative Bank",
+      "building": "yes",
+      "x": 35.45,
+      "z": 65.587,
+      "height": 23.0,
+      "chunk": "-2_-4",
+      "built": true
+    },
+    {
+      "name": "Victoria House",
+      "building": "yes",
+      "x": 42.752,
+      "z": 60.136,
+      "height": 23.0,
+      "chunk": "-2_-4",
+      "built": true
+    },
+    {
+      "name": "Waterloo Court",
+      "building": "office",
+      "x": 73.367,
+      "z": 66.761,
+      "height": 12.8,
+      "chunk": "-2_-4",
+      "built": true
+    },
+    {
+      "name": "1 Newhall Street",
+      "building": "commercial",
+      "x": 67.899,
+      "z": 57.201,
+      "height": 35.2,
+      "chunk": "-2_-5",
+      "built": true
+    },
+    {
+      "name": "4 Edmund Gardens",
+      "building": "office",
+      "x": 79.607,
+      "z": 3.258,
+      "height": 16.0,
+      "chunk": "-2_-5",
+      "built": true
+    },
+    {
+      "name": "Edmund Street Taxi Rank",
+      "building": null,
+      "x": 34.679,
+      "z": 13.61,
+      "height": 0.0,
+      "chunk": "-2_-5",
+      "built": false
+    },
+    {
+      "name": "One Eleven",
+      "building": "office",
+      "x": 63.088,
+      "z": 21.698,
+      "height": 25.6,
+      "chunk": "-2_-5",
+      "built": true
+    },
+    {
+      "name": "The Exchange",
+      "building": "commercial",
+      "x": 39.693,
+      "z": 32.537,
+      "height": 19.2,
+      "chunk": "-2_-5",
+      "built": true
+    },
+    {
+      "name": "35 Newhall",
+      "building": "office",
+      "x": 2.66,
+      "z": 77.727,
+      "height": 25.6,
+      "chunk": "-2_-6",
+      "built": true
+    },
+    {
+      "name": "Billiards Building",
+      "building": "office",
+      "x": 47.133,
+      "z": 44.196,
+      "height": 35.2,
+      "chunk": "-2_-6",
+      "built": true
+    },
+    {
+      "name": "ESB EV Charging Station- Edmund Street",
+      "building": null,
+      "x": 70.175,
+      "z": 60.031,
+      "height": 0.0,
+      "chunk": "-2_-6",
+      "built": false
+    },
+    {
+      "name": "Rutland House",
+      "building": "commercial",
+      "x": 69.837,
+      "z": 18.801,
+      "height": 38.4,
+      "chunk": "-2_-6",
+      "built": true
+    },
+    {
+      "name": "Spectrum House",
+      "building": "office",
+      "x": 58.547,
+      "z": 31.834,
+      "height": 35.2,
+      "chunk": "-2_-6",
+      "built": true
+    },
+    {
+      "name": "The Drapery",
+      "building": "construction",
+      "x": 28.18,
+      "z": 62.221,
+      "height": 8.0,
+      "chunk": "-2_-6",
+      "built": true
+    },
+    {
+      "name": "Anchor Exchange Lift Shaft 2 and Ventilation Tower",
+      "building": "service",
+      "x": 19.176,
+      "z": 71.628,
+      "height": 8.0,
+      "chunk": "-2_-7",
+      "built": true
+    },
+    {
+      "name": "The Royal",
+      "building": "retail",
+      "x": 58.785,
+      "z": 48.117,
+      "height": 8.0,
+      "chunk": "-2_-7",
+      "built": true
+    },
+    {
+      "name": "The Townsend",
+      "building": "apartments",
+      "x": 32.041,
+      "z": 25.217,
+      "height": 22.4,
+      "chunk": "-2_-7",
+      "built": true
+    },
+    {
+      "name": "Wolo House Courtyard Car Park",
+      "building": null,
+      "x": 15.314,
+      "z": 60.796,
+      "height": 0.0,
+      "chunk": "-2_-7",
+      "built": false
+    },
+    {
+      "name": "Livery Place",
+      "building": "commercial",
+      "x": 77.214,
+      "z": 58.512,
+      "height": 25.6,
+      "chunk": "-2_-8",
+      "built": true
+    },
+    {
+      "name": "Bonehead",
+      "building": "yes",
+      "x": 69.478,
+      "z": 51.776,
+      "height": 8.0,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Cherry Reds",
+      "building": "yes",
+      "x": 64.29,
+      "z": 55.648,
+      "height": 9.6,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Easyhotel Birmingham",
+      "building": "yes",
+      "x": 38.971,
+      "z": 74.294,
+      "height": 8.0,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Geoffrey Buildings",
+      "building": "yes",
+      "x": 41.123,
+      "z": 43.375,
+      "height": 8.0,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Savoy Buildings",
+      "building": "yes",
+      "x": 61.11,
+      "z": 19.348,
+      "height": 16.0,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Select & Save",
+      "building": "yes",
+      "x": 79.43,
+      "z": 45.311,
+      "height": 8.0,
+      "chunk": "-2_00",
+      "built": true
+    },
+    {
+      "name": "Callaghan Tailor",
+      "building": "yes",
+      "x": 68.812,
+      "z": 75.112,
+      "height": 6.4,
+      "chunk": "-2_01",
+      "built": true
+    },
+    {
+      "name": "Chop Wok",
+      "building": "yes",
+      "x": 72.475,
+      "z": 0.554,
+      "height": 6.4,
+      "chunk": "-2_02",
+      "built": true
+    },
+    {
+      "name": "NCP Gough Street",
+      "building": "yes",
+      "x": 12.497,
+      "z": 57.424,
+      "height": 8.0,
+      "chunk": "-2_02",
+      "built": true
+    },
+    {
+      "name": "Universal Church of the Kingdom of God Help Centre",
+      "building": "yes",
+      "x": 16.491,
+      "z": 7.701,
+      "height": 8.0,
+      "chunk": "-2_02",
+      "built": true
+    },
+    {
+      "name": "Cleveland Tower",
+      "building": "apartments",
+      "x": 43.002,
+      "z": 18.909,
+      "height": 90.0,
+      "chunk": "-2_03",
+      "built": true
+    },
+    {
+      "name": "B1 Central Garage",
+      "building": "yes",
+      "x": 24.949,
+      "z": 31.804,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Best-one",
+      "building": "retail",
+      "x": 26.077,
+      "z": 4.284,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Bethel Presbyterian Church of Wales",
+      "building": "yes",
+      "x": 46.23,
+      "z": 9.563,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Esso",
+      "building": "roof",
+      "x": 2.358,
+      "z": 14.021,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Exit",
+      "building": "yes",
+      "x": 36.769,
+      "z": 22.753,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Institute of Materials Finishing",
+      "building": "yes",
+      "x": 8.286,
+      "z": 21.744,
+      "height": 8.0,
+      "chunk": "-2_04",
+      "built": true
+    },
+    {
+      "name": "Citywalk",
+      "building": "residential",
+      "x": 59.65,
+      "z": 42.119,
+      "height": 16.0,
+      "chunk": "-2_05",
+      "built": true
+    },
+    {
+      "name": "Ibis (Reception and Bar)",
+      "building": "yes",
+      "x": 0.258,
+      "z": 52.821,
+      "height": 8.0,
+      "chunk": "-2_05",
+      "built": true
+    },
+    {
+      "name": "Mica Point",
+      "building": "yes",
+      "x": 42.717,
+      "z": 77.477,
+      "height": 8.0,
+      "chunk": "-2_06",
+      "built": true
+    },
+    {
+      "name": "St Catherine of Siena Catholic Primary School",
+      "building": null,
+      "x": 65.3,
+      "z": 30.594,
+      "height": 0.0,
+      "chunk": "-2_06",
+      "built": false
+    },
+    {
+      "name": "Mica Point",
+      "building": "apartments",
+      "x": 8.43,
+      "z": 8.316,
+      "height": 8.0,
+      "chunk": "-2_07",
+      "built": true
+    },
+    {
+      "name": "The Colwyn",
+      "building": "yes",
+      "x": 30.771,
+      "z": 37.481,
+      "height": 8.0,
+      "chunk": "-2_07",
+      "built": true
+    },
+    {
+      "name": "New Street Power Signal Box",
+      "building": "yes",
+      "x": 66.74,
+      "z": 46.02,
+      "height": 29.0,
+      "chunk": "-3_-1",
+      "built": true
+    },
+    {
+      "name": "Town Hall Car Park",
+      "building": "yes",
+      "x": 19.285,
+      "z": 54.317,
+      "height": 18.0,
+      "chunk": "-3_-1",
+      "built": true
+    },
+    {
+      "name": "1 Victoria Square",
+      "building": "apartments",
+      "x": 31.6,
+      "z": 30.986,
+      "height": 44.0,
+      "chunk": "-3_-2",
+      "built": true
+    },
+    {
+      "name": "Birmingham Post Office",
+      "building": "yes",
+      "x": 74.441,
+      "z": 18.821,
+      "height": 35.0,
+      "chunk": "-3_-2",
+      "built": true
+    },
+    {
+      "name": "Queens College Chambers",
+      "building": "apartments",
+      "x": 5.366,
+      "z": 48.786,
+      "height": 44.0,
+      "chunk": "-3_-2",
+      "built": true
+    },
+    {
+      "name": "Victoria Square House",
+      "building": "heritage",
+      "x": 62.078,
+      "z": 6.307,
+      "height": 35.0,
+      "chunk": "-3_-2",
+      "built": true
+    },
+    {
+      "name": "Birmingham Museum & Art Gallery",
+      "building": "heritage",
+      "x": 22.837,
+      "z": 53.877,
+      "height": 19.2,
+      "chunk": "-3_-4",
+      "built": true
+    },
+    {
+      "name": "Council House",
+      "building": "public",
+      "x": 42.731,
+      "z": 79.482,
+      "height": 19.2,
+      "chunk": "-3_-4",
+      "built": true
+    },
+    {
+      "name": "Birmingham School of Art",
+      "building": "heritage",
+      "x": 28.059,
+      "z": 58.314,
+      "height": 16.0,
+      "chunk": "-3_-5",
+      "built": true
+    },
+    {
+      "name": "Cornwall Chambers",
+      "building": "yes",
+      "x": 18.763,
+      "z": 12.933,
+      "height": 12.8,
+      "chunk": "-3_-5",
+      "built": true
+    },
+    {
+      "name": "Empire House",
+      "building": "yes",
+      "x": 44.276,
+      "z": 65.263,
+      "height": 16.0,
+      "chunk": "-3_-5",
+      "built": true
+    },
+    {
+      "name": "Louisa Ryland House",
+      "building": "yes",
+      "x": 60.607,
+      "z": 32.815,
+      "height": 16.0,
+      "chunk": "-3_-5",
+      "built": true
+    },
+    {
+      "name": "Cornwall Buildings",
+      "building": "office",
+      "x": 54.169,
+      "z": 49.531,
+      "height": 19.2,
+      "chunk": "-3_-6",
+      "built": true
+    },
+    {
+      "name": "Devonshire House",
+      "building": "apartments",
+      "x": 46.606,
+      "z": 24.29,
+      "height": 35.2,
+      "chunk": "-3_-6",
+      "built": true
+    },
+    {
+      "name": "The Lightwell",
+      "building": "apartments",
+      "x": 76.343,
+      "z": 24.501,
+      "height": 25.6,
+      "chunk": "-3_-6",
+      "built": true
+    },
+    {
+      "name": "Great Charles Street Car Park",
+      "building": null,
+      "x": 32.721,
+      "z": 41.451,
+      "height": 0.0,
+      "chunk": "-3_-7",
+      "built": false
+    },
+    {
+      "name": "Lionel Street Car Park",
+      "building": null,
+      "x": 11.661,
+      "z": 17.734,
+      "height": 0.0,
+      "chunk": "-3_-7",
+      "built": false
+    },
+    {
+      "name": "Chubb",
+      "building": "yes",
+      "x": 58.734,
+      "z": 50.951,
+      "height": 8.0,
+      "chunk": "-3_-9",
+      "built": true
+    },
+    {
+      "name": "Hobs Reprographic",
+      "building": "yes",
+      "x": 0.606,
+      "z": 54.241,
+      "height": 8.0,
+      "chunk": "-3_-9",
+      "built": true
+    },
+    {
+      "name": "Queensway House",
+      "building": "yes",
+      "x": 77.959,
+      "z": 31.232,
+      "height": 8.0,
+      "chunk": "-3_-9",
+      "built": true
+    },
+    {
+      "name": "Yoga Haven",
+      "building": "yes",
+      "x": 67.28,
+      "z": 20.312,
+      "height": 8.0,
+      "chunk": "-3_-9",
+      "built": true
+    },
+    {
+      "name": "Subway",
+      "building": "yes",
+      "x": 46.349,
+      "z": 12.179,
+      "height": 90.0,
+      "chunk": "-3_00",
+      "built": true
+    },
+    {
+      "name": "The Orion Building",
+      "building": "yes",
+      "x": 58.236,
+      "z": 22.372,
+      "height": 90.0,
+      "chunk": "-3_00",
+      "built": true
+    },
+    {
+      "name": "Queens Gate",
+      "building": "yes",
+      "x": 63.122,
+      "z": 41.522,
+      "height": 28.8,
+      "chunk": "-3_01",
+      "built": true
+    },
+    {
+      "name": "Communal Hall Birmingham Congregation of Jews",
+      "building": "yes",
+      "x": 25.678,
+      "z": 16.534,
+      "height": 8.0,
+      "chunk": "-3_02",
+      "built": true
+    },
+    {
+      "name": "Singers Hill Synagogue",
+      "building": "yes",
+      "x": 2.592,
+      "z": 29.73,
+      "height": 8.0,
+      "chunk": "-3_02",
+      "built": true
+    },
+    {
+      "name": "The British School",
+      "building": "yes",
+      "x": 3.391,
+      "z": 2.682,
+      "height": 9.6,
+      "chunk": "-3_02",
+      "built": true
+    },
+    {
+      "name": "Lee Bank Business Centre",
+      "building": "office",
+      "x": 38.363,
+      "z": 69.968,
+      "height": 25.6,
+      "chunk": "-3_03",
+      "built": true
+    },
+    {
+      "name": "Trefoil House",
+      "building": "civic",
+      "x": 59.677,
+      "z": 19.921,
+      "height": 6.4,
+      "chunk": "-3_03",
+      "built": true
+    },
+    {
+      "name": "B&B Hotel Birmingham Centre",
+      "building": "yes",
+      "x": 73.287,
+      "z": 40.948,
+      "height": 22.4,
+      "chunk": "-3_04",
+      "built": true
+    },
+    {
+      "name": "Costcutter",
+      "building": "yes",
+      "x": 76.756,
+      "z": 21.386,
+      "height": 8.0,
+      "chunk": "-3_04",
+      "built": true
+    },
+    {
+      "name": "Kwik Fit",
+      "building": "yes",
+      "x": 17.964,
+      "z": 6.869,
+      "height": 8.0,
+      "chunk": "-3_04",
+      "built": true
+    },
+    {
+      "name": "Ibis (Rooms)",
+      "building": "yes",
+      "x": 59.428,
+      "z": 59.023,
+      "height": 8.0,
+      "chunk": "-3_05",
+      "built": true
+    },
+    {
+      "name": "Ibis (Rooms)",
+      "building": "yes",
+      "x": 38.153,
+      "z": 61.557,
+      "height": 8.0,
+      "chunk": "-3_05",
+      "built": true
+    },
+    {
+      "name": "Lansdown House",
+      "building": "residential",
+      "x": 43.997,
+      "z": 61.959,
+      "height": 19.2,
+      "chunk": "-3_07",
+      "built": true
+    },
+    {
+      "name": "Mica Point",
+      "building": "yes",
+      "x": 60.191,
+      "z": 5.946,
+      "height": 8.0,
+      "chunk": "-3_07",
+      "built": true
+    },
+    {
+      "name": "Nash House",
+      "building": "residential",
+      "x": 31.838,
+      "z": 52.5,
+      "height": 19.2,
+      "chunk": "-3_08",
+      "built": true
+    },
+    {
+      "name": "Navigation Street Car Park",
+      "building": null,
+      "x": 76.143,
+      "z": 75.38,
+      "height": 0.0,
+      "chunk": "-4_-1",
+      "built": false
+    },
+    {
+      "name": "Latham House",
+      "building": "apartments",
+      "x": 55.883,
+      "z": 56.078,
+      "height": 44.0,
+      "chunk": "-4_-2",
+      "built": true
+    },
+    {
+      "name": "Chamberlain Memorial Fountain",
+      "building": null,
+      "x": 49.568,
+      "z": 19.401,
+      "height": 0.0,
+      "chunk": "-4_-3",
+      "built": false
+    },
+    {
+      "name": "Chamberlain Memorial Spire",
+      "building": "yes",
+      "x": 44.992,
+      "z": 20.935,
+      "height": 20.0,
+      "chunk": "-4_-3",
+      "built": true
+    },
+    {
+      "name": "Three Chamberlain Square",
+      "building": "commercial",
+      "x": 33.592,
+      "z": 77.414,
+      "height": 42.0,
+      "chunk": "-4_-3",
+      "built": true
+    },
+    {
+      "name": "Town Hall",
+      "building": "heritage",
+      "x": 79.581,
+      "z": 57.652,
+      "height": 8.0,
+      "chunk": "-4_-3",
+      "built": true
+    },
+    {
+      "name": "Two Chamberlain Square",
+      "building": "commercial",
+      "x": 3.672,
+      "z": 38.777,
+      "height": 38.0,
+      "chunk": "-4_-3",
+      "built": true
+    },
+    {
+      "name": "Birmingham Museum and Art Gallery",
+      "building": "bridge",
+      "x": 68.166,
+      "z": 55.3,
+      "height": 11.0,
+      "chunk": "-4_-4",
+      "built": true
+    },
+    {
+      "name": "Council House Extension",
+      "building": "yes",
+      "x": 40.664,
+      "z": 12.583,
+      "height": 20.0,
+      "chunk": "-4_-4",
+      "built": true
+    },
+    {
+      "name": "Birmingham & Midland Institute",
+      "building": "yes",
+      "x": 75.202,
+      "z": 40.149,
+      "height": 12.8,
+      "chunk": "-4_-5",
+      "built": true
+    },
+    {
+      "name": "Charles House",
+      "building": "yes",
+      "x": 9.035,
+      "z": 1.626,
+      "height": 8.0,
+      "chunk": "-4_-5",
+      "built": true
+    },
+    {
+      "name": "Galbraith House",
+      "building": "yes",
+      "x": 55.416,
+      "z": 42.757,
+      "height": 8.0,
+      "chunk": "-4_-6",
+      "built": true
+    },
+    {
+      "name": "Lombard House",
+      "building": "yes",
+      "x": 29.93,
+      "z": 62.212,
+      "height": 8.0,
+      "chunk": "-4_-6",
+      "built": true
+    },
+    {
+      "name": "Newhall Solicitors",
+      "building": "yes",
+      "x": 57.955,
+      "z": 3.957,
+      "height": 8.0,
+      "chunk": "-4_-6",
+      "built": true
+    },
+    {
+      "name": "Remploy",
+      "building": "yes",
+      "x": 16.586,
+      "z": 6.039,
+      "height": 8.0,
+      "chunk": "-4_-6",
+      "built": true
+    },
+    {
+      "name": "University College Birmingham",
+      "building": "yes",
+      "x": 39.259,
+      "z": 26.784,
+      "height": 8.0,
+      "chunk": "-4_-6",
+      "built": true
+    },
+    {
+      "name": "BT Tower",
+      "building": "yes",
+      "x": 44.914,
+      "z": 0.089,
+      "height": 5.0,
+      "chunk": "-4_-7",
+      "built": true
+    },
+    {
+      "name": "Canterbury House",
+      "building": "office",
+      "x": 49.052,
+      "z": 59.068,
+      "height": 8.0,
+      "chunk": "-4_-7",
+      "built": true
+    },
+    {
+      "name": "Millennium Apartments",
+      "building": "apartments",
+      "x": 12.674,
+      "z": 28.671,
+      "height": 10.0,
+      "chunk": "-4_-7",
+      "built": true
+    },
+    {
+      "name": "St John Ambulance",
+      "building": "yes",
+      "x": 68.293,
+      "z": 39.457,
+      "height": 8.0,
+      "chunk": "-4_-7",
+      "built": true
+    },
+    {
+      "name": "Actress & Bishop",
+      "building": "yes",
+      "x": 13.854,
+      "z": 71.126,
+      "height": 8.0,
+      "chunk": "-4_-9",
+      "built": true
+    },
+    {
+      "name": "Cucina Rustica",
+      "building": "yes",
+      "x": 36.993,
+      "z": 57.08,
+      "height": 8.0,
+      "chunk": "-4_-9",
+      "built": true
+    },
+    {
+      "name": "Ludgate House",
+      "building": "office",
+      "x": 14.218,
+      "z": 39.628,
+      "height": 8.0,
+      "chunk": "-4_-9",
+      "built": true
+    },
+    {
+      "name": "The Jam House",
+      "building": "yes",
+      "x": 21.382,
+      "z": 27.796,
+      "height": 8.0,
+      "chunk": "-4_-9",
+      "built": true
+    },
+    {
+      "name": "Victory House",
+      "building": "yes",
+      "x": 29.215,
+      "z": 49.526,
+      "height": 8.0,
+      "chunk": "-4_-9",
+      "built": true
+    },
+    {
+      "name": "Associated Architects",
+      "building": "office",
+      "x": 16.796,
+      "z": 25.895,
+      "height": 8.0,
+      "chunk": "-4_02",
+      "built": true
+    },
+    {
+      "name": "The Craven Arms",
+      "building": "retail",
+      "x": 73.127,
+      "z": 77.994,
+      "height": 8.0,
+      "chunk": "-4_02",
+      "built": true
+    },
+    {
+      "name": "Trinity House",
+      "building": "apartments",
+      "x": 54.544,
+      "z": 15.997,
+      "height": 12.8,
+      "chunk": "-4_02",
+      "built": true
+    },
+    {
+      "name": "Birmingham Chinese Evangelical Church",
+      "building": "yes",
+      "x": 31.923,
+      "z": 30.971,
+      "height": 8.0,
+      "chunk": "-4_03",
+      "built": true
+    },
+    {
+      "name": "Keg and Grill",
+      "building": "yes",
+      "x": 40.953,
+      "z": 52.204,
+      "height": 8.0,
+      "chunk": "-4_03",
+      "built": true
+    },
+    {
+      "name": "Ultimate Fitness",
+      "building": "yes",
+      "x": 51.214,
+      "z": 8.008,
+      "height": 8.0,
+      "chunk": "-4_03",
+      "built": true
+    },
+    {
+      "name": "Watson Engineering Ltd",
+      "building": "yes",
+      "x": 42.492,
+      "z": 21.635,
+      "height": 8.0,
+      "chunk": "-4_03",
+      "built": true
+    },
+    {
+      "name": "Landvan Self-storage",
+      "building": "yes",
+      "x": 79.991,
+      "z": 18.84,
+      "height": 8.0,
+      "chunk": "-4_04",
+      "built": true
+    },
+    {
+      "name": "Sidekick Games",
+      "building": "yes",
+      "x": 35.253,
+      "z": 44.19,
+      "height": 8.0,
+      "chunk": "-4_04",
+      "built": true
+    },
+    {
+      "name": "Oriental Supermarket",
+      "building": "yes",
+      "x": 60.838,
+      "z": 2.913,
+      "height": 9.6,
+      "chunk": "-4_05",
+      "built": true
+    },
+    {
+      "name": "E R Mason Youth Centre",
+      "building": "yes",
+      "x": 70.043,
+      "z": 21.443,
+      "height": 8.0,
+      "chunk": "-4_06",
+      "built": true
+    },
+    {
+      "name": "St Thomas Church of England Primary School",
+      "building": null,
+      "x": 23.309,
+      "z": 43.715,
+      "height": 0.0,
+      "chunk": "-4_06",
+      "built": false
+    },
+    {
+      "name": "St Luke's Church Centre",
+      "building": "church",
+      "x": 71.169,
+      "z": 34.83,
+      "height": 8.0,
+      "chunk": "-4_07",
+      "built": true
+    },
+    {
+      "name": "Aston Place",
+      "building": "residential",
+      "x": 31.334,
+      "z": 35.871,
+      "height": 80.0,
+      "chunk": "-5_-1",
+      "built": true
+    },
+    {
+      "name": "Aston Place",
+      "building": "residential",
+      "x": 58.457,
+      "z": 26.07,
+      "height": 80.0,
+      "chunk": "-5_-1",
+      "built": true
+    },
+    {
+      "name": "Crowne Plaza Birmingham City Centre",
+      "building": "yes",
+      "x": 7.92,
+      "z": 59.157,
+      "height": 45.0,
+      "chunk": "-5_-1",
+      "built": true
+    },
+    {
+      "name": "Alpha Tower",
+      "building": "yes",
+      "x": 9.104,
+      "z": 73.843,
+      "height": 100.0,
+      "chunk": "-5_-2",
+      "built": true
+    },
+    {
+      "name": "One Centenary Way",
+      "building": "yes",
+      "x": 38.32,
+      "z": 66.057,
+      "height": 8.0,
+      "chunk": "-5_-3",
+      "built": true
+    },
+    {
+      "name": "Birmingham Chest Clinic",
+      "building": "yes",
+      "x": 78.196,
+      "z": 22.72,
+      "height": 8.0,
+      "chunk": "-5_-5",
+      "built": true
+    },
+    {
+      "name": "Civic House",
+      "building": "office",
+      "x": 44.087,
+      "z": 48.339,
+      "height": 8.0,
+      "chunk": "-5_-5",
+      "built": true
+    },
+    {
+      "name": "University College Birmingham",
+      "building": "university",
+      "x": 22.852,
+      "z": 16.324,
+      "height": 25.6,
+      "chunk": "-5_-5",
+      "built": true
+    },
+    {
+      "name": "Royal Mail",
+      "building": "yes",
+      "x": 67.197,
+      "z": 43.032,
+      "height": 32.0,
+      "chunk": "-5_-6",
+      "built": true
+    },
+    {
+      "name": "Islington Gates",
+      "building": "apartments",
+      "x": 2.54,
+      "z": 70.92,
+      "height": 33.0,
+      "chunk": "-5_-7",
+      "built": true
+    },
+    {
+      "name": "Islington Gates",
+      "building": "apartments",
+      "x": 38.737,
+      "z": 33.413,
+      "height": 33.0,
+      "chunk": "-5_-7",
+      "built": true
+    },
+    {
+      "name": "Brindley House",
+      "building": "yes",
+      "x": 78.112,
+      "z": 76.754,
+      "height": 65.0,
+      "chunk": "-5_-8",
+      "built": true
+    },
+    {
+      "name": "Michael Dufty Partnerships Ltd",
+      "building": "yes",
+      "x": 8.351,
+      "z": 17.536,
+      "height": 8.0,
+      "chunk": "-5_-8",
+      "built": true
+    },
+    {
+      "name": "The Assay Office",
+      "building": "office",
+      "x": 18.724,
+      "z": 46.685,
+      "height": 8.0,
+      "chunk": "-5_-8",
+      "built": true
+    },
+    {
+      "name": "The Old Chapel",
+      "building": "apartments",
+      "x": 55.43,
+      "z": 10.725,
+      "height": 8.0,
+      "chunk": "-5_-8",
+      "built": true
+    },
+    {
+      "name": "Fleurets",
+      "building": "yes",
+      "x": 72.996,
+      "z": 50.777,
+      "height": 8.0,
+      "chunk": "-5_-9",
+      "built": true
+    },
+    {
+      "name": "Locanta",
+      "building": "yes",
+      "x": 77.644,
+      "z": 54.709,
+      "height": 8.0,
+      "chunk": "-5_-9",
+      "built": true
+    },
+    {
+      "name": "The Rectory Bar & Restaurant",
+      "building": "yes",
+      "x": 0.566,
+      "z": 61.521,
+      "height": 8.0,
+      "chunk": "-5_-9",
+      "built": true
+    },
+    {
+      "name": "Centenary Plaza",
+      "building": "apartments",
+      "x": 9.189,
+      "z": 5.65,
+      "height": 60.8,
+      "chunk": "-5_01",
+      "built": true
+    },
+    {
+      "name": "Vodafone",
+      "building": "service",
+      "x": 24.215,
+      "z": 54.91,
+      "height": 8.0,
+      "chunk": "-5_01",
+      "built": true
+    },
+    {
+      "name": "The Mailbox",
+      "building": "retail",
+      "x": 17.702,
+      "z": 62.564,
+      "height": 8.0,
+      "chunk": "-5_02",
+      "built": true
+    },
+    {
+      "name": "G.N. House",
+      "building": "yes",
+      "x": 74.655,
+      "z": 2.069,
+      "height": 8.0,
+      "chunk": "-5_05",
+      "built": true
+    },
+    {
+      "name": "St Thomas's Church",
+      "building": "yes",
+      "x": 7.047,
+      "z": 10.376,
+      "height": 8.0,
+      "chunk": "-5_05",
+      "built": true
+    },
+    {
+      "name": "Kerria Court Care Home",
+      "building": "residential",
+      "x": 59.15,
+      "z": 37.962,
+      "height": 8.0,
+      "chunk": "-5_07",
+      "built": true
+    },
+    {
+      "name": "3 Arena Central",
+      "building": "yes",
+      "x": 47.226,
+      "z": 62.257,
+      "height": 44.8,
+      "chunk": "-6_-1",
+      "built": true
+    },
+    {
+      "name": "HSBC UK",
+      "building": "commercial",
+      "x": 49.259,
+      "z": 72.73,
+      "height": 32.0,
+      "chunk": "-6_-2",
+      "built": true
+    },
+    {
+      "name": "The Exchange University of Birmingham",
+      "building": "yes",
+      "x": 9.886,
+      "z": 70.107,
+      "height": 8.0,
+      "chunk": "-6_-2",
+      "built": true
+    },
+    {
+      "name": "Baskerville House",
+      "building": "office",
+      "x": 18.489,
+      "z": 13.484,
+      "height": 22.4,
+      "chunk": "-6_-3",
+      "built": true
+    },
+    {
+      "name": "Hall of Memory",
+      "building": "heritage",
+      "x": 43.426,
+      "z": 68.571,
+      "height": 8.0,
+      "chunk": "-6_-3",
+      "built": true
+    },
+    {
+      "name": "The Octagon",
+      "building": "apartments",
+      "x": 58.835,
+      "z": 19.499,
+      "height": 155.0,
+      "chunk": "-6_-4",
+      "built": true
+    },
+    {
+      "name": "Bantu",
+      "building": "yes",
+      "x": 15.975,
+      "z": 3.734,
+      "height": 8.0,
+      "chunk": "-6_-5",
+      "built": true
+    },
+    {
+      "name": "The Shakespeare",
+      "building": "yes",
+      "x": 53.163,
+      "z": 28.706,
+      "height": 16.0,
+      "chunk": "-6_-5",
+      "built": true
+    },
+    {
+      "name": "Fleet Consulting",
+      "building": "yes",
+      "x": 15.684,
+      "z": 50.671,
+      "height": 8.0,
+      "chunk": "-6_-6",
+      "built": true
+    },
+    {
+      "name": "Ibis Styles",
+      "building": "yes",
+      "x": 78.059,
+      "z": 69.545,
+      "height": 28.0,
+      "chunk": "-6_-6",
+      "built": true
+    },
+    {
+      "name": "Mitchells & Butlers",
+      "building": "office",
+      "x": 62.811,
+      "z": 48.592,
+      "height": 24.0,
+      "chunk": "-6_-6",
+      "built": true
+    },
+    {
+      "name": "Staycity Aparthotel",
+      "building": "residential",
+      "x": 4.883,
+      "z": 12.55,
+      "height": 8.0,
+      "chunk": "-6_-6",
+      "built": true
+    },
+    {
+      "name": "Canal Warehouse",
+      "building": "yes",
+      "x": 37.845,
+      "z": 57.944,
+      "height": 8.0,
+      "chunk": "-6_-7",
+      "built": true
+    },
+    {
+      "name": "OAT",
+      "building": "office",
+      "x": 77.332,
+      "z": 10.338,
+      "height": 8.0,
+      "chunk": "-6_-7",
+      "built": true
+    },
+    {
+      "name": "Staycity Aparthotel",
+      "building": "yes",
+      "x": 38.383,
+      "z": 29.031,
+      "height": 8.0,
+      "chunk": "-6_-7",
+      "built": true
+    },
+    {
+      "name": "Travelodge Birmingham Central",
+      "building": "yes",
+      "x": 57.625,
+      "z": 6.915,
+      "height": 8.0,
+      "chunk": "-6_-7",
+      "built": true
+    },
+    {
+      "name": "Central Academy",
+      "building": "school",
+      "x": 29.577,
+      "z": 57.586,
+      "height": 8.0,
+      "chunk": "-6_-8",
+      "built": true
+    },
+    {
+      "name": "Home Fundraising",
+      "building": "yes",
+      "x": 1.54,
+      "z": 16.262,
+      "height": 8.0,
+      "chunk": "-6_-8",
+      "built": true
+    },
+    {
+      "name": "Queens Arms",
+      "building": "yes",
+      "x": 70.247,
+      "z": 72.255,
+      "height": 8.0,
+      "chunk": "-6_-8",
+      "built": true
+    },
+    {
+      "name": "Dakota Buildings",
+      "building": "yes",
+      "x": 13.648,
+      "z": 25.048,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "Digital Village",
+      "building": "yes",
+      "x": 7.991,
+      "z": 20.124,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "Matthew Linwood House",
+      "building": "apartments",
+      "x": 37.496,
+      "z": 36.062,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "Newhall Street Car Park",
+      "building": "yes",
+      "x": 37.317,
+      "z": 67.392,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "Pasta di Piazza",
+      "building": "yes",
+      "x": 25.47,
+      "z": 51.227,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "RBSA Gallery",
+      "building": "yes",
+      "x": 20.456,
+      "z": 27.828,
+      "height": 8.0,
+      "chunk": "-6_-9",
+      "built": true
+    },
+    {
+      "name": "Holiday Inn Express Birmingham - City Centre",
+      "building": "yes",
+      "x": 67.876,
+      "z": 18.199,
+      "height": 60.0,
+      "chunk": "-6_00",
+      "built": true
+    },
+    {
+      "name": "Nitenite Hotel",
+      "building": "apartments",
+      "x": 56.498,
+      "z": 9.414,
+      "height": 60.8,
+      "chunk": "-6_01",
+      "built": true
+    },
+    {
+      "name": "Newcombe House",
+      "building": "residential",
+      "x": 12.518,
+      "z": 76.232,
+      "height": 8.0,
+      "chunk": "-6_03",
+      "built": true
+    },
+    {
+      "name": "The Cube",
+      "building": "yes",
+      "x": 49.452,
+      "z": 6.638,
+      "height": 8.0,
+      "chunk": "-6_03",
+      "built": true
+    },
+    {
+      "name": "Clarks Courtyard",
+      "building": "residential",
+      "x": 18.986,
+      "z": 15.245,
+      "height": 8.0,
+      "chunk": "-6_04",
+      "built": true
+    },
+    {
+      "name": "Cycle Parking",
+      "building": null,
+      "x": 28.126,
+      "z": 51.295,
+      "height": 0.0,
+      "chunk": "-6_04",
+      "built": false
+    },
+    {
+      "name": "Long House",
+      "building": "residential",
+      "x": 32.03,
+      "z": 27.916,
+      "height": 8.0,
+      "chunk": "-6_04",
+      "built": true
+    },
+    {
+      "name": "Skyline",
+      "building": "residential",
+      "x": 3.709,
+      "z": 67.124,
+      "height": 8.0,
+      "chunk": "-6_04",
+      "built": true
+    },
+    {
+      "name": "Skyline",
+      "building": "residential",
+      "x": 48.189,
+      "z": 68.315,
+      "height": 8.0,
+      "chunk": "-6_04",
+      "built": true
+    },
+    {
+      "name": "Midland Heart",
+      "building": "office",
+      "x": 35.835,
+      "z": 62.799,
+      "height": 8.0,
+      "chunk": "-6_05",
+      "built": true
+    },
+    {
+      "name": "Tesco Express",
+      "building": "retail",
+      "x": 52.675,
+      "z": 22.529,
+      "height": 8.0,
+      "chunk": "-6_05",
+      "built": true
+    },
+    {
+      "name": "City Academy",
+      "building": "yes",
+      "x": 61.775,
+      "z": 2.703,
+      "height": 8.0,
+      "chunk": "-6_06",
+      "built": true
+    },
+    {
+      "name": "Langley Point",
+      "building": "yes",
+      "x": 60.804,
+      "z": 2.194,
+      "height": 8.0,
+      "chunk": "-6_06",
+      "built": true
+    },
+    {
+      "name": "Amphitheatre",
+      "building": "yes",
+      "x": 66.516,
+      "z": 79.245,
+      "height": 0.0,
+      "chunk": "-7_-3",
+      "built": false
+    },
+    {
+      "name": "Library of Birmingham",
+      "building": "library",
+      "x": 41.768,
+      "z": 42.25,
+      "height": 25.0,
+      "chunk": "-7_-3",
+      "built": true
+    },
+    {
+      "name": "Islington Gates",
+      "building": "apartments",
+      "x": 70.839,
+      "z": 76.771,
+      "height": 28.0,
+      "chunk": "-7_-6",
+      "built": true
+    },
+    {
+      "name": "The Link",
+      "building": "office",
+      "x": 24.717,
+      "z": 71.738,
+      "height": 25.6,
+      "chunk": "-7_-6",
+      "built": true
+    },
+    {
+      "name": "House of York",
+      "building": "apartments",
+      "x": 50.93,
+      "z": 43.612,
+      "height": 8.0,
+      "chunk": "-7_-7",
+      "built": true
+    },
+    {
+      "name": "UCB",
+      "building": "yes",
+      "x": 34.751,
+      "z": 66.526,
+      "height": 12.8,
+      "chunk": "-7_-7",
+      "built": true
+    },
+    {
+      "name": "UCB Health Skills, Simulation Suite & Exhibition Space",
+      "building": "yes",
+      "x": 20.257,
+      "z": 5.492,
+      "height": 8.0,
+      "chunk": "-7_-7",
+      "built": true
+    },
+    {
+      "name": "Broughton Works",
+      "building": "yes",
+      "x": 47.404,
+      "z": 70.845,
+      "height": 8.0,
+      "chunk": "-7_-8",
+      "built": true
+    },
+    {
+      "name": "Crosby Court",
+      "building": "yes",
+      "x": 63.216,
+      "z": 51.484,
+      "height": 8.0,
+      "chunk": "-7_-8",
+      "built": true
+    },
+    {
+      "name": "Maguire Jackson",
+      "building": "yes",
+      "x": 73.646,
+      "z": 5.218,
+      "height": 8.0,
+      "chunk": "-7_-8",
+      "built": true
+    },
+    {
+      "name": "Baker & Finnemore",
+      "building": "yes",
+      "x": 74.522,
+      "z": 37.802,
+      "height": 8.0,
+      "chunk": "-7_-9",
+      "built": true
+    },
+    {
+      "name": "Baker & Finnemore",
+      "building": "yes",
+      "x": 69.527,
+      "z": 49.945,
+      "height": 8.0,
+      "chunk": "-7_-9",
+      "built": true
+    },
+    {
+      "name": "Spice Hut",
+      "building": "yes",
+      "x": 68.656,
+      "z": 36.127,
+      "height": 8.0,
+      "chunk": "-7_00",
+      "built": true
+    },
+    {
+      "name": "The Botanist Gas Street Basin",
+      "building": "yes",
+      "x": 21.538,
+      "z": 20.354,
+      "height": 8.0,
+      "chunk": "-7_00",
+      "built": true
+    },
+    {
+      "name": "Premier Inn Birmingham City Centre",
+      "building": "hotel",
+      "x": 58.6,
+      "z": 19.392,
+      "height": 16.0,
+      "chunk": "-7_01",
+      "built": true
+    },
+    {
+      "name": "Birmingham Register Office",
+      "building": "public",
+      "x": 36.726,
+      "z": 50.897,
+      "height": 8.0,
+      "chunk": "-7_02",
+      "built": true
+    },
+    {
+      "name": "Bellamy House",
+      "building": "residential",
+      "x": 75.856,
+      "z": 66.519,
+      "height": 8.0,
+      "chunk": "-7_03",
+      "built": true
+    },
+    {
+      "name": "Davenports House",
+      "building": "residential",
+      "x": 29.077,
+      "z": 70.543,
+      "height": 8.0,
+      "chunk": "-7_03",
+      "built": true
+    },
+    {
+      "name": "Reception",
+      "building": "yes",
+      "x": 56.931,
+      "z": 61.733,
+      "height": 8.0,
+      "chunk": "-7_03",
+      "built": true
+    },
+    {
+      "name": "Atkinson House",
+      "building": "residential",
+      "x": 12.237,
+      "z": 73.764,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Dares House",
+      "building": "residential",
+      "x": 12.815,
+      "z": 7.095,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Golding House",
+      "building": "residential",
+      "x": 4.989,
+      "z": 57.305,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Hargreaves House",
+      "building": "residential",
+      "x": 68.467,
+      "z": 16.038,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Northdown House",
+      "building": "residential",
+      "x": 35.977,
+      "z": 45.945,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Oast House",
+      "building": "residential",
+      "x": 54.03,
+      "z": 42.614,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Smith House",
+      "building": "residential",
+      "x": 37.209,
+      "z": 66.932,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "Thomas House",
+      "building": "residential",
+      "x": 77.047,
+      "z": 40.657,
+      "height": 8.0,
+      "chunk": "-7_04",
+      "built": true
+    },
+    {
+      "name": "UCB The Maltings student residences",
+      "building": null,
+      "x": 41.118,
+      "z": 43.321,
+      "height": 0.0,
+      "chunk": "-7_04",
+      "built": false
+    },
+    {
+      "name": "Attwood Green Health Centre",
+      "building": "health",
+      "x": 41.846,
+      "z": 66.372,
+      "height": 8.0,
+      "chunk": "-7_05",
+      "built": true
+    },
+    {
+      "name": "Darby House",
+      "building": "residential",
+      "x": 18.226,
+      "z": 5.949,
+      "height": 8.0,
+      "chunk": "-7_05",
+      "built": true
+    },
+    {
+      "name": "Holder House",
+      "building": "residential",
+      "x": 22.835,
+      "z": 29.723,
+      "height": 8.0,
+      "chunk": "-7_05",
+      "built": true
+    },
+    {
+      "name": "Vulcan House",
+      "building": "residential",
+      "x": 51.013,
+      "z": 30.606,
+      "height": 8.0,
+      "chunk": "-7_05",
+      "built": true
+    },
+    {
+      "name": "Faraday House",
+      "building": "apartments",
+      "x": 1.76,
+      "z": 33.491,
+      "height": 25.6,
+      "chunk": "-7_08",
+      "built": true
+    },
+    {
+      "name": "Hogarth House",
+      "building": "apartments",
+      "x": 39.636,
+      "z": 60.15,
+      "height": 25.6,
+      "chunk": "-7_08",
+      "built": true
+    },
+    {
+      "name": "Hyatt Regency Birmingham",
+      "building": "yes",
+      "x": 78.766,
+      "z": 38.616,
+      "height": 8.0,
+      "chunk": "-8_-1",
+      "built": true
+    },
+    {
+      "name": "Walkabout",
+      "building": "retail",
+      "x": 3.835,
+      "z": 58.159,
+      "height": 8.0,
+      "chunk": "-8_-1",
+      "built": true
+    },
+    {
+      "name": "Symphony Hall",
+      "building": "concert_hall",
+      "x": 22.587,
+      "z": 70.724,
+      "height": 28.0,
+      "chunk": "-8_-2",
+      "built": true
+    },
+    {
+      "name": "Birmingham Rep",
+      "building": "heritage",
+      "x": 72.794,
+      "z": 63.231,
+      "height": 15.0,
+      "chunk": "-8_-3",
+      "built": true
+    },
+    {
+      "name": "Birmingham Christian Centre",
+      "building": "church",
+      "x": 14.956,
+      "z": 4.345,
+      "height": 8.0,
+      "chunk": "-8_-5",
+      "built": true
+    },
+    {
+      "name": "Camden House East - UCB Birmingham",
+      "building": "university",
+      "x": 56.242,
+      "z": 42.641,
+      "height": 9.6,
+      "chunk": "-8_-6",
+      "built": true
+    },
+    {
+      "name": "UCB George Street Car Park",
+      "building": "yes",
+      "x": 64.774,
+      "z": 12.622,
+      "height": 8.0,
+      "chunk": "-8_-6",
+      "built": true
+    },
+    {
+      "name": "University College Birmingham",
+      "building": "college",
+      "x": 22.117,
+      "z": 20.904,
+      "height": 12.8,
+      "chunk": "-8_-6",
+      "built": true
+    },
+    {
+      "name": "New Hall Works",
+      "building": "apartments",
+      "x": 33.462,
+      "z": 27.916,
+      "height": 8.0,
+      "chunk": "-8_-7",
+      "built": true
+    },
+    {
+      "name": "Rajdoott",
+      "building": "yes",
+      "x": 6.238,
+      "z": 68.846,
+      "height": 8.0,
+      "chunk": "-8_-7",
+      "built": true
+    },
+    {
+      "name": "UCB Moss House",
+      "building": "yes",
+      "x": 77.42,
+      "z": 35.24,
+      "height": 8.0,
+      "chunk": "-8_-7",
+      "built": true
+    },
+    {
+      "name": "Ramgarhia Sikh Temple",
+      "building": "temple",
+      "x": 27.575,
+      "z": 19.218,
+      "height": 8.0,
+      "chunk": "-8_-8",
+      "built": true
+    },
+    {
+      "name": "A E Harris",
+      "building": "yes",
+      "x": 54.783,
+      "z": 24.998,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "Farthing Court",
+      "building": "apartments",
+      "x": 78.663,
+      "z": 78.701,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "Osmosis Gym",
+      "building": "yes",
+      "x": 32.303,
+      "z": 22.982,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "S&X Creative Media",
+      "building": "yes",
+      "x": 4.512,
+      "z": 64.928,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "Sovereign Court",
+      "building": "yes",
+      "x": 50.458,
+      "z": 56.658,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "UHY (B'ham) LLP Accountants",
+      "building": "yes",
+      "x": 17.448,
+      "z": 46.898,
+      "height": 8.0,
+      "chunk": "-8_-9",
+      "built": true
+    },
+    {
+      "name": "Canalside Caf\u00e9",
+      "building": "yes",
+      "x": 42.633,
+      "z": 47.652,
+      "height": 8.0,
+      "chunk": "-8_00",
+      "built": true
+    },
+    {
+      "name": "Ciaro",
+      "building": "yes",
+      "x": 52.816,
+      "z": 56.412,
+      "height": 8.0,
+      "chunk": "-8_00",
+      "built": true
+    },
+    {
+      "name": "The Coconut Tree",
+      "building": "yes",
+      "x": 34.969,
+      "z": 62.22,
+      "height": 8.0,
+      "chunk": "-8_00",
+      "built": true
+    },
+    {
+      "name": "ITV Central",
+      "building": "yes",
+      "x": 16.405,
+      "z": 4.81,
+      "height": 8.0,
+      "chunk": "-8_01",
+      "built": true
+    },
+    {
+      "name": "St Luke's, Gas Street Church",
+      "building": "yes",
+      "x": 59.1,
+      "z": 17.476,
+      "height": 8.0,
+      "chunk": "-8_01",
+      "built": true
+    },
+    {
+      "name": "British American Media",
+      "building": "yes",
+      "x": 72.971,
+      "z": 79.166,
+      "height": 8.0,
+      "chunk": "-8_02",
+      "built": true
+    },
+    {
+      "name": "Churchgate Plaza",
+      "building": "yes",
+      "x": 49.991,
+      "z": 63.493,
+      "height": 16.0,
+      "chunk": "-8_02",
+      "built": true
+    },
+    {
+      "name": "City of Birmingham Symphony Orchestra",
+      "building": "yes",
+      "x": 70.284,
+      "z": 29.842,
+      "height": 8.0,
+      "chunk": "-8_02",
+      "built": true
+    },
+    {
+      "name": "Cherry House",
+      "building": "residential",
+      "x": 78.809,
+      "z": 18.902,
+      "height": 8.0,
+      "chunk": "-8_04",
+      "built": true
+    },
+    {
+      "name": "Lady Astor House",
+      "building": "residential",
+      "x": 79.29,
+      "z": 34.664,
+      "height": 8.0,
+      "chunk": "-8_04",
+      "built": true
+    },
+    {
+      "name": "Chiswick House",
+      "building": "apartments",
+      "x": 44.248,
+      "z": 7.194,
+      "height": 25.6,
+      "chunk": "-8_08",
+      "built": true
+    },
+    {
+      "name": "Barajee",
+      "building": "yes",
+      "x": 72.071,
+      "z": 67.729,
+      "height": 8.0,
+      "chunk": "-9_-1",
+      "built": true
+    },
+    {
+      "name": "O Bar",
+      "building": "yes",
+      "x": 67.245,
+      "z": 72.896,
+      "height": 8.0,
+      "chunk": "-9_-1",
+      "built": true
+    },
+    {
+      "name": "Reflex 80s Bar",
+      "building": "yes",
+      "x": 77.537,
+      "z": 21.591,
+      "height": 8.0,
+      "chunk": "-9_-1",
+      "built": true
+    },
+    {
+      "name": "The Brasshouse",
+      "building": "yes",
+      "x": 38.376,
+      "z": 62.015,
+      "height": 8.0,
+      "chunk": "-9_-1",
+      "built": true
+    },
+    {
+      "name": "International Convention Centre",
+      "building": "convention_centre",
+      "x": 59.013,
+      "z": 22.479,
+      "height": 24.0,
+      "chunk": "-9_-2",
+      "built": true
+    },
+    {
+      "name": "Prince of Wales",
+      "building": "retail",
+      "x": 19.779,
+      "z": 62.591,
+      "height": 8.0,
+      "chunk": "-9_-3",
+      "built": true
+    },
+    {
+      "name": "Groundwork",
+      "building": "office",
+      "x": 20.223,
+      "z": 71.895,
+      "height": 8.0,
+      "chunk": "-9_-5",
+      "built": true
+    },
+    {
+      "name": "Hallmark Apartments",
+      "building": "apartments",
+      "x": 75.463,
+      "z": 58.917,
+      "height": 8.0,
+      "chunk": "-9_-7",
+      "built": true
+    },
+    {
+      "name": "Maharaja Jassa Singh Ramgarhia Hall",
+      "building": "yes",
+      "x": 18.68,
+      "z": 28.835,
+      "height": 8.0,
+      "chunk": "-9_-8",
+      "built": true
+    },
+    {
+      "name": "Newhall Place",
+      "building": "yes",
+      "x": 69.106,
+      "z": 67.955,
+      "height": 8.0,
+      "chunk": "-9_-8",
+      "built": true
+    },
+    {
+      "name": "Temple Car Park ( for temple worshippers)",
+      "building": null,
+      "x": 71.945,
+      "z": 25.873,
+      "height": 0.0,
+      "chunk": "-9_-8",
+      "built": false
+    },
+    {
+      "name": "383project.com",
+      "building": "yes",
+      "x": 77.715,
+      "z": 71.844,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "Birmingham Mind",
+      "building": "yes",
+      "x": 69.039,
+      "z": 73.393,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "Databuild",
+      "building": "yes",
+      "x": 51.924,
+      "z": 75.278,
+      "height": 9.6,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "Delta Pi Office Equipment",
+      "building": "yes",
+      "x": 10.656,
+      "z": 33.89,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "M-tec",
+      "building": "yes",
+      "x": 39.507,
+      "z": 36.721,
+      "height": 9.6,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "Sargeant Partnership",
+      "building": "yes",
+      "x": 67.406,
+      "z": 47.739,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "The Albert Wing Argent Centre",
+      "building": "yes",
+      "x": 0.598,
+      "z": 78.351,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "The Argent Centre",
+      "building": "heritage",
+      "x": 15.692,
+      "z": 61.754,
+      "height": 8.0,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "rewired",
+      "building": "yes",
+      "x": 36.24,
+      "z": 58.656,
+      "height": 9.6,
+      "chunk": "-9_-9",
+      "built": true
+    },
+    {
+      "name": "Fab Street Eats",
+      "building": null,
+      "x": 30.332,
+      "z": 36.036,
+      "height": 0.0,
+      "chunk": "-9_00",
+      "built": false
+    },
+    {
+      "name": "One Brindley Place",
+      "building": "commercial",
+      "x": 2.591,
+      "z": 13.931,
+      "height": 16.0,
+      "chunk": "-9_00",
+      "built": true
+    },
+    {
+      "name": "Leonardo Royal Hotel",
+      "building": "hotel",
+      "x": 36.008,
+      "z": 8.76,
+      "height": 61.0,
+      "chunk": "-9_01",
+      "built": true
+    },
+    {
+      "name": "Arden Gate",
+      "building": "residential",
+      "x": 9.953,
+      "z": 25.88,
+      "height": 16.0,
+      "chunk": "-9_04",
+      "built": true
+    },
+    {
+      "name": "The Toybox",
+      "building": "yes",
+      "x": 4.127,
+      "z": 21.708,
+      "height": 44.8,
+      "chunk": "-9_05",
+      "built": true
+    },
+    {
+      "name": "Eanwulf Court",
+      "building": "yes",
+      "x": 72.403,
+      "z": 55.356,
+      "height": 8.0,
+      "chunk": "-9_08",
+      "built": true
+    },
+    {
+      "name": "Leofric Court",
+      "building": "yes",
+      "x": 30.175,
+      "z": 26.632,
+      "height": 8.0,
+      "chunk": "-9_08",
+      "built": true
+    },
+    {
+      "name": "Barclays",
+      "building": null,
+      "x": 19.88,
+      "z": 49.031,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Caffe Concerto",
+      "building": null,
+      "x": 38.964,
+      "z": 38.449,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Frizzenti",
+      "building": null,
+      "x": 15.899,
+      "z": 73.977,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Giraffe",
+      "building": null,
+      "x": 59.901,
+      "z": 79.569,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Greggs",
+      "building": null,
+      "x": 15.156,
+      "z": 13.947,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Mrs Chews",
+      "building": null,
+      "x": 68.616,
+      "z": 79.488,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Pho",
+      "building": null,
+      "x": 50.808,
+      "z": 72.188,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Pret A Manger",
+      "building": null,
+      "x": 38.51,
+      "z": 70.919,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Tapas Revolution",
+      "building": null,
+      "x": 57.856,
+      "z": 49.752,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Tortilla",
+      "building": null,
+      "x": 65.845,
+      "z": 67.148,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "YO! Sushi",
+      "building": null,
+      "x": 54.337,
+      "z": 60.962,
+      "height": 0.0,
+      "chunk": "00_-1",
+      "built": false
+    },
+    {
+      "name": "Apple Birmingham",
+      "building": "retail",
+      "x": 61.295,
+      "z": 46.034,
+      "height": 31.0,
+      "chunk": "00_-2",
+      "built": true
+    },
+    {
+      "name": "Grand Central Kitchen",
+      "building": "yes",
+      "x": 27.646,
+      "z": 54.832,
+      "height": 31.0,
+      "chunk": "00_-2",
+      "built": true
+    },
+    {
+      "name": "ONU",
+      "building": "yes",
+      "x": 32.248,
+      "z": 55.593,
+      "height": 31.0,
+      "chunk": "00_-2",
+      "built": true
+    },
+    {
+      "name": "Suits U",
+      "building": "yes",
+      "x": 38.991,
+      "z": 58.609,
+      "height": 31.0,
+      "chunk": "00_-2",
+      "built": true
+    },
+    {
+      "name": "claire's",
+      "building": "retail",
+      "x": 73.944,
+      "z": 2.09,
+      "height": 24.0,
+      "chunk": "00_-2",
+      "built": true
+    },
+    {
+      "name": "Acra",
+      "building": "office",
+      "x": 74.776,
+      "z": 5.119,
+      "height": 35.2,
+      "chunk": "00_-3",
+      "built": true
+    },
+    {
+      "name": "GAIL's",
+      "building": null,
+      "x": 39.854,
+      "z": 75.596,
+      "height": 0.0,
+      "chunk": "00_-3",
+      "built": false
+    },
+    {
+      "name": "Newton Chambers Apartments",
+      "building": "apartments",
+      "x": 50.645,
+      "z": 59.9,
+      "height": 16.0,
+      "chunk": "00_-3",
+      "built": true
+    },
+    {
+      "name": "Northspring",
+      "building": "office",
+      "x": 30.103,
+      "z": 33.864,
+      "height": 25.6,
+      "chunk": "00_-3",
+      "built": true
+    },
+    {
+      "name": "size?",
+      "building": "retail",
+      "x": 66.253,
+      "z": 78.826,
+      "height": 24.0,
+      "chunk": "00_-3",
+      "built": true
+    },
+    {
+      "name": "Fumo",
+      "building": "yes",
+      "x": 15.644,
+      "z": 48.222,
+      "height": 34.0,
+      "chunk": "00_-4",
+      "built": true
+    },
+    {
+      "name": "Revoluci\u00f3n de Cuba",
+      "building": "retail",
+      "x": 5.886,
+      "z": 75.109,
+      "height": 34.0,
+      "chunk": "00_-4",
+      "built": true
+    },
+    {
+      "name": "San Carlo",
+      "building": "yes",
+      "x": 12.0,
+      "z": 60.7,
+      "height": 34.0,
+      "chunk": "00_-4",
+      "built": true
+    },
+    {
+      "name": "Cathedral Church of Saint Philip",
+      "building": "church",
+      "x": 33.273,
+      "z": 63.454,
+      "height": 12.0,
+      "chunk": "00_-5",
+      "built": true
+    },
+    {
+      "name": "St Phillip's Churchyard",
+      "building": null,
+      "x": 48.835,
+      "z": 58.32,
+      "height": 0.0,
+      "chunk": "00_-5",
+      "built": false
+    },
+    {
+      "name": "Direct Line House",
+      "building": "office",
+      "x": 10.464,
+      "z": 16.155,
+      "height": 22.4,
+      "chunk": "00_-6",
+      "built": true
+    },
+    {
+      "name": "Five Street Philips",
+      "building": "yes",
+      "x": 79.116,
+      "z": 69.334,
+      "height": 36.0,
+      "chunk": "00_-6",
+      "built": true
+    },
+    {
+      "name": "Grand Hotel",
+      "building": "hotel",
+      "x": 15.638,
+      "z": 66.342,
+      "height": 25.6,
+      "chunk": "00_-6",
+      "built": true
+    },
+    {
+      "name": "New Colmore Corner",
+      "building": "office",
+      "x": 68.272,
+      "z": 14.885,
+      "height": 22.4,
+      "chunk": "00_-6",
+      "built": true
+    },
+    {
+      "name": "Primitivo Bar & Eatery",
+      "building": null,
+      "x": 32.621,
+      "z": 35.208,
+      "height": 0.0,
+      "chunk": "00_-6",
+      "built": false
+    },
+    {
+      "name": "The Barwick Suite",
+      "building": null,
+      "x": 28.154,
+      "z": 40.347,
+      "height": 0.0,
+      "chunk": "00_-6",
+      "built": false
+    },
+    {
+      "name": "New Colmore Corner",
+      "building": "office",
+      "x": 61.211,
+      "z": 73.419,
+      "height": 32.0,
+      "chunk": "00_-7",
+      "built": true
+    },
+    {
+      "name": "One Snowhill",
+      "building": "commercial",
+      "x": 74.871,
+      "z": 74.862,
+      "height": 65.0,
+      "chunk": "00_-8",
+      "built": true
+    },
+    {
+      "name": "Snowhill Winter Garden",
+      "building": "yes",
+      "x": 48.856,
+      "z": 54.982,
+      "height": 10.0,
+      "chunk": "00_-8",
+      "built": true
+    },
+    {
+      "name": "Two Snowhill",
+      "building": "commercial",
+      "x": 36.187,
+      "z": 27.752,
+      "height": 75.0,
+      "chunk": "00_-8",
+      "built": true
+    },
+    {
+      "name": "Holiday Inn Express",
+      "building": "yes",
+      "x": 64.229,
+      "z": 40.103,
+      "height": 72.0,
+      "chunk": "00_-9",
+      "built": true
+    },
+    {
+      "name": "Three Snowhill",
+      "building": "office",
+      "x": 6.623,
+      "z": 63.226,
+      "height": 90.0,
+      "chunk": "00_-9",
+      "built": true
+    },
+    {
+      "name": "Bagel Factory",
+      "building": null,
+      "x": 51.424,
+      "z": 10.931,
+      "height": 0.0,
+      "chunk": "00_00",
+      "built": false
+    },
+    {
+      "name": "Joe & The Juice",
+      "building": null,
+      "x": 29.448,
+      "z": 10.058,
+      "height": 0.0,
+      "chunk": "00_00",
+      "built": false
+    },
+    {
+      "name": "LEON",
+      "building": "yes",
+      "x": 69.613,
+      "z": 5.045,
+      "height": 8.0,
+      "chunk": "00_00",
+      "built": true
+    },
+    {
+      "name": "Slim Chickens",
+      "building": null,
+      "x": 59.282,
+      "z": 11.148,
+      "height": 0.0,
+      "chunk": "00_00",
+      "built": false
+    },
+    {
+      "name": "Wasabi",
+      "building": null,
+      "x": 36.499,
+      "z": 3.813,
+      "height": 0.0,
+      "chunk": "00_00",
+      "built": false
+    },
+    {
+      "name": "Centre City",
+      "building": "office",
+      "x": 58.128,
+      "z": 62.351,
+      "height": 16.0,
+      "chunk": "00_01",
+      "built": true
+    },
+    {
+      "name": "Comfort Inn",
+      "building": "yes",
+      "x": 76.786,
+      "z": 0.858,
+      "height": 12.8,
+      "chunk": "00_01",
+      "built": true
+    },
+    {
+      "name": "The Crown",
+      "building": "yes",
+      "x": 9.564,
+      "z": 31.176,
+      "height": 9.6,
+      "chunk": "00_01",
+      "built": true
+    },
+    {
+      "name": "The Electric Cinema",
+      "building": "yes",
+      "x": 47.427,
+      "z": 21.29,
+      "height": 12.8,
+      "chunk": "00_01",
+      "built": true
+    },
+    {
+      "name": "The Old Repertory Theatre",
+      "building": "yes",
+      "x": 68.829,
+      "z": 13.116,
+      "height": 12.8,
+      "chunk": "00_01",
+      "built": true
+    },
+    {
+      "name": "Holiday Inn",
+      "building": "yes",
+      "x": 11.738,
+      "z": 22.086,
+      "height": 6.4,
+      "chunk": "00_02",
+      "built": true
+    },
+    {
+      "name": "SBQ1",
+      "building": "yes",
+      "x": 15.363,
+      "z": 70.427,
+      "height": 19.2,
+      "chunk": "00_02",
+      "built": true
+    },
+    {
+      "name": "SBQ2",
+      "building": "yes",
+      "x": 47.623,
+      "z": 50.79,
+      "height": 19.2,
+      "chunk": "00_02",
+      "built": true
+    },
+    {
+      "name": "South Central",
+      "building": "construction",
+      "x": 27.971,
+      "z": 64.137,
+      "height": 96.0,
+      "chunk": "00_04",
+      "built": true
+    },
+    {
+      "name": "The Bierkeller",
+      "building": "yes",
+      "x": 73.555,
+      "z": 46.081,
+      "height": 6.4,
+      "chunk": "00_04",
+      "built": true
+    },
+    {
+      "name": "Telephone Exchange",
+      "building": "yes",
+      "x": 65.11,
+      "z": 60.465,
+      "height": 6.4,
+      "chunk": "00_05",
+      "built": true
+    },
+    {
+      "name": "Nisbets",
+      "building": "yes",
+      "x": 17.163,
+      "z": 7.741,
+      "height": 6.4,
+      "chunk": "00_06",
+      "built": true
+    },
+    {
+      "name": "The Bath House",
+      "building": "construction",
+      "x": 46.624,
+      "z": 32.659,
+      "height": 60.8,
+      "chunk": "00_06",
+      "built": true
+    },
+    {
+      "name": "The Bath House",
+      "building": "construction",
+      "x": 71.578,
+      "z": 15.145,
+      "height": 25.6,
+      "chunk": "00_06",
+      "built": true
+    },
+    {
+      "name": "The Wellington",
+      "building": "yes",
+      "x": 20.135,
+      "z": 52.131,
+      "height": 9.6,
+      "chunk": "00_06",
+      "built": true
+    },
+    {
+      "name": "Bristol St Student Accommodation",
+      "building": "yes",
+      "x": 12.788,
+      "z": 1.091,
+      "height": 15.0,
+      "chunk": "00_07",
+      "built": true
+    },
+    {
+      "name": "Mowgli Street Food",
+      "building": null,
+      "x": 5.243,
+      "z": 50.013,
+      "height": 0.0,
+      "chunk": "01_-1",
+      "built": false
+    },
+    {
+      "name": "Odeon",
+      "building": "yes",
+      "x": 70.783,
+      "z": 9.368,
+      "height": 16.0,
+      "chunk": "01_-1",
+      "built": true
+    },
+    {
+      "name": "Britannia Hotel",
+      "building": "yes",
+      "x": 60.73,
+      "z": 14.99,
+      "height": 32.0,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "HSBC UK",
+      "building": "retail",
+      "x": 29.821,
+      "z": 41.634,
+      "height": 52.0,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "King Edward House",
+      "building": "yes",
+      "x": 68.8,
+      "z": 62.949,
+      "height": 25.6,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "Lloyds Bank",
+      "building": "retail",
+      "x": 4.188,
+      "z": 7.267,
+      "height": 24.0,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "Oricha",
+      "building": "retail",
+      "x": 41.861,
+      "z": 2.144,
+      "height": 19.2,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "Princes Chambers",
+      "building": "retail",
+      "x": 41.964,
+      "z": 11.696,
+      "height": 19.2,
+      "chunk": "01_-2",
+      "built": true
+    },
+    {
+      "name": "Birmingham Army Careers Centre",
+      "building": "retail",
+      "x": 61.329,
+      "z": 0.908,
+      "height": 25.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Birmingham City Council Legal & Democratic Services",
+      "building": "retail",
+      "x": 36.878,
+      "z": 12.307,
+      "height": 25.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "EasyGym",
+      "building": "yes",
+      "x": 78.625,
+      "z": 52.207,
+      "height": 16.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Hey Tea",
+      "building": "retail",
+      "x": 27.229,
+      "z": 20.324,
+      "height": 25.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Leeds Building Society",
+      "building": "retail",
+      "x": 45.689,
+      "z": 22.27,
+      "height": 25.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "News Express",
+      "building": "retail",
+      "x": 43.775,
+      "z": 77.658,
+      "height": 19.2,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Scrivens",
+      "building": "retail",
+      "x": 56.226,
+      "z": 7.228,
+      "height": 25.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Toni & Guy",
+      "building": "retail",
+      "x": 1.09,
+      "z": 50.456,
+      "height": 24.0,
+      "chunk": "01_-3",
+      "built": true
+    },
+    {
+      "name": "Evapo",
+      "building": "retail",
+      "x": 65.122,
+      "z": 68.174,
+      "height": 25.0,
+      "chunk": "01_-4",
+      "built": true
+    },
+    {
+      "name": "Colmore Gate",
+      "building": "yes",
+      "x": 47.971,
+      "z": 37.528,
+      "height": 70.0,
+      "chunk": "01_-6",
+      "built": true
+    },
+    {
+      "name": "Colmore Gate",
+      "building": "office",
+      "x": 58.859,
+      "z": 24.111,
+      "height": 70.0,
+      "chunk": "01_-6",
+      "built": true
+    },
+    {
+      "name": "Pret A Manger",
+      "building": "yes",
+      "x": 4.844,
+      "z": 64.817,
+      "height": 36.0,
+      "chunk": "01_-6",
+      "built": true
+    },
+    {
+      "name": "Sainsbury's Local",
+      "building": "retail",
+      "x": 13.785,
+      "z": 57.861,
+      "height": 36.0,
+      "chunk": "01_-6",
+      "built": true
+    },
+    {
+      "name": "Tesco Express",
+      "building": "yes",
+      "x": 46.252,
+      "z": 30.111,
+      "height": 70.0,
+      "chunk": "01_-6",
+      "built": true
+    },
+    {
+      "name": "One Colmore Row",
+      "building": "office",
+      "x": 21.719,
+      "z": 68.591,
+      "height": 32.0,
+      "chunk": "01_-7",
+      "built": true
+    },
+    {
+      "name": "One Snowhill Underground Car Park",
+      "building": null,
+      "x": 2.221,
+      "z": 42.484,
+      "height": 0.0,
+      "chunk": "01_-7",
+      "built": false
+    },
+    {
+      "name": "Wesleyan Assurance Society (Head Office)",
+      "building": "office",
+      "x": 73.115,
+      "z": 28.114,
+      "height": 4.0,
+      "chunk": "01_-7",
+      "built": true
+    },
+    {
+      "name": "B4 Parking",
+      "building": "parking",
+      "x": 68.26,
+      "z": 5.367,
+      "height": 8.0,
+      "chunk": "01_-8",
+      "built": true
+    },
+    {
+      "name": "West Midlands Police HQ (Lloyd House)",
+      "building": "commercial",
+      "x": 34.625,
+      "z": 43.124,
+      "height": 59.0,
+      "chunk": "01_-8",
+      "built": true
+    },
+    {
+      "name": "B4 Car Park Birmingham",
+      "building": "yes",
+      "x": 46.441,
+      "z": 38.984,
+      "height": 19.2,
+      "chunk": "01_-9",
+      "built": true
+    },
+    {
+      "name": "Doubletree By Hilton",
+      "building": "yes",
+      "x": 19.559,
+      "z": 14.813,
+      "height": 22.4,
+      "chunk": "01_-9",
+      "built": true
+    },
+    {
+      "name": "All Bar One",
+      "building": null,
+      "x": 27.721,
+      "z": 10.836,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Asahi",
+      "building": null,
+      "x": 25.521,
+      "z": 23.221,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Caff\u00e8 Nero",
+      "building": null,
+      "x": 7.475,
+      "z": 28.646,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Costa",
+      "building": null,
+      "x": 0.638,
+      "z": 26.909,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Five Guys",
+      "building": null,
+      "x": 15.013,
+      "z": 24.229,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Guide Dog Spending Pen",
+      "building": null,
+      "x": 13.971,
+      "z": 48.632,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Nando's",
+      "building": null,
+      "x": 15.539,
+      "z": 2.314,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "Shokupan",
+      "building": null,
+      "x": 18.78,
+      "z": 10.774,
+      "height": 0.0,
+      "chunk": "01_00",
+      "built": false
+    },
+    {
+      "name": "TK Maxx",
+      "building": "retail",
+      "x": 47.935,
+      "z": 59.79,
+      "height": 12.8,
+      "chunk": "01_00",
+      "built": true
+    },
+    {
+      "name": "Adult World Cinema",
+      "building": "yes",
+      "x": 10.029,
+      "z": 7.237,
+      "height": 12.8,
+      "chunk": "01_01",
+      "built": true
+    },
+    {
+      "name": "Dudley Street Car Park",
+      "building": null,
+      "x": 61.668,
+      "z": 42.795,
+      "height": 0.0,
+      "chunk": "01_01",
+      "built": false
+    },
+    {
+      "name": "Meridian House",
+      "building": "yes",
+      "x": 38.734,
+      "z": 5.535,
+      "height": 19.2,
+      "chunk": "01_02",
+      "built": true
+    },
+    {
+      "name": "Birmingham Hippodrome Theatre",
+      "building": "yes",
+      "x": 2.415,
+      "z": 72.704,
+      "height": 8.0,
+      "chunk": "01_03",
+      "built": true
+    },
+    {
+      "name": "Peters Library Service",
+      "building": "apartments",
+      "x": 30.508,
+      "z": 74.769,
+      "height": 12.8,
+      "chunk": "01_05",
+      "built": true
+    },
+    {
+      "name": "Unity House",
+      "building": "yes",
+      "x": 62.909,
+      "z": 41.917,
+      "height": 19.2,
+      "chunk": "01_05",
+      "built": true
+    },
+    {
+      "name": "Southall Bros & Co Ltd",
+      "building": "yes",
+      "x": 53.85,
+      "z": 31.192,
+      "height": 25.6,
+      "chunk": "01_06",
+      "built": true
+    },
+    {
+      "name": "Kent St Car Park",
+      "building": null,
+      "x": 47.426,
+      "z": 14.667,
+      "height": 0.0,
+      "chunk": "01_07",
+      "built": false
+    },
+    {
+      "name": "The Rotunda",
+      "building": "yes",
+      "x": 69.928,
+      "z": 14.497,
+      "height": 81.0,
+      "chunk": "02_-1",
+      "built": true
+    },
+    {
+      "name": "Oseyo",
+      "building": "retail",
+      "x": 19.898,
+      "z": 24.148,
+      "height": 22.4,
+      "chunk": "02_-2",
+      "built": true
+    },
+    {
+      "name": "Specsavers",
+      "building": "retail",
+      "x": 29.088,
+      "z": 26.17,
+      "height": 22.4,
+      "chunk": "02_-2",
+      "built": true
+    },
+    {
+      "name": "Sports Direct",
+      "building": "yes",
+      "x": 8.972,
+      "z": 21.361,
+      "height": 22.4,
+      "chunk": "02_-2",
+      "built": true
+    },
+    {
+      "name": "City Arcade",
+      "building": "retail",
+      "x": 18.389,
+      "z": 35.437,
+      "height": 12.8,
+      "chunk": "02_-3",
+      "built": true
+    },
+    {
+      "name": "City Centre House",
+      "building": "office",
+      "x": 38.734,
+      "z": 63.534,
+      "height": 8.0,
+      "chunk": "02_-3",
+      "built": true
+    },
+    {
+      "name": "Poundstretcher",
+      "building": "retail",
+      "x": 47.837,
+      "z": 14.041,
+      "height": 8.0,
+      "chunk": "02_-3",
+      "built": true
+    },
+    {
+      "name": "Superdrug",
+      "building": "retail",
+      "x": 2.768,
+      "z": 24.099,
+      "height": 19.2,
+      "chunk": "02_-3",
+      "built": true
+    },
+    {
+      "name": "TGJones",
+      "building": "retail",
+      "x": 63.094,
+      "z": 60.542,
+      "height": 8.0,
+      "chunk": "02_-3",
+      "built": true
+    },
+    {
+      "name": "Caff\u00e8 Nero",
+      "building": "retail",
+      "x": 63.949,
+      "z": 23.128,
+      "height": 8.0,
+      "chunk": "02_-4",
+      "built": true
+    },
+    {
+      "name": "Birmingham Civil & Family Justice Centre",
+      "building": "office",
+      "x": 79.499,
+      "z": 12.609,
+      "height": 25.6,
+      "chunk": "02_-5",
+      "built": true
+    },
+    {
+      "name": "Temple Point",
+      "building": "yes",
+      "x": 21.905,
+      "z": 52.738,
+      "height": 41.6,
+      "chunk": "02_-5",
+      "built": true
+    },
+    {
+      "name": "No. 1 Colmore Square",
+      "building": "office",
+      "x": 32.456,
+      "z": 20.035,
+      "height": 28.8,
+      "chunk": "02_-6",
+      "built": true
+    },
+    {
+      "name": "The Lewis Building",
+      "building": "office",
+      "x": 57.006,
+      "z": 58.603,
+      "height": 28.8,
+      "chunk": "02_-6",
+      "built": true
+    },
+    {
+      "name": "The Minories Shopping Arcade",
+      "building": "retail",
+      "x": 70.042,
+      "z": 75.508,
+      "height": 25.6,
+      "chunk": "02_-6",
+      "built": true
+    },
+    {
+      "name": "The Priory Rooms",
+      "building": "church",
+      "x": 53.794,
+      "z": 34.49,
+      "height": 8.0,
+      "chunk": "02_-6",
+      "built": true
+    },
+    {
+      "name": "The Colmore Building",
+      "building": "commercial",
+      "x": 40.426,
+      "z": 61.993,
+      "height": 54.0,
+      "chunk": "02_-8",
+      "built": true
+    },
+    {
+      "name": "Ambulance Parking",
+      "building": null,
+      "x": 38.692,
+      "z": 79.026,
+      "height": 0.0,
+      "chunk": "02_-9",
+      "built": false
+    },
+    {
+      "name": "Institute of Child Health",
+      "building": "yes",
+      "x": 63.38,
+      "z": 23.449,
+      "height": 8.0,
+      "chunk": "02_-9",
+      "built": true
+    },
+    {
+      "name": "Birmingham Indoor Market",
+      "building": "yes",
+      "x": 76.919,
+      "z": 75.365,
+      "height": 15.0,
+      "chunk": "02_01",
+      "built": true
+    },
+    {
+      "name": "Edgbaston Street Car Park",
+      "building": null,
+      "x": 76.927,
+      "z": 75.362,
+      "height": 0.0,
+      "chunk": "02_01",
+      "built": false
+    },
+    {
+      "name": "Ibis",
+      "building": "hotel",
+      "x": 18.259,
+      "z": 3.865,
+      "height": 3.2,
+      "chunk": "02_03",
+      "built": true
+    },
+    {
+      "name": "Arcadian Car Park",
+      "building": "yes",
+      "x": 65.176,
+      "z": 2.824,
+      "height": 3.2,
+      "chunk": "02_04",
+      "built": true
+    },
+    {
+      "name": "Chaplin Court",
+      "building": "yes",
+      "x": 28.019,
+      "z": 19.307,
+      "height": 14.0,
+      "chunk": "02_04",
+      "built": true
+    },
+    {
+      "name": "Missing Bar",
+      "building": "yes",
+      "x": 42.452,
+      "z": 49.78,
+      "height": 8.0,
+      "chunk": "02_04",
+      "built": true
+    },
+    {
+      "name": "Boltz",
+      "building": "retail",
+      "x": 7.796,
+      "z": 76.3,
+      "height": 9.6,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "Equator",
+      "building": "yes",
+      "x": 54.647,
+      "z": 30.495,
+      "height": 6.4,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "Nightingale Club",
+      "building": "yes",
+      "x": 35.415,
+      "z": 60.483,
+      "height": 9.6,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "Sidewalk",
+      "building": "yes",
+      "x": 64.061,
+      "z": 41.194,
+      "height": 6.4,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "Taste of Sichuan",
+      "building": "yes",
+      "x": 48.364,
+      "z": 22.984,
+      "height": 8.0,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "The Penthouse Confrences & Events",
+      "building": "yes",
+      "x": 30.735,
+      "z": 29.446,
+      "height": 6.4,
+      "chunk": "02_05",
+      "built": true
+    },
+    {
+      "name": "BASW",
+      "building": "yes",
+      "x": 2.384,
+      "z": 16.771,
+      "height": 9.6,
+      "chunk": "02_06",
+      "built": true
+    },
+    {
+      "name": "National Probation Service",
+      "building": null,
+      "x": 52.295,
+      "z": 5.176,
+      "height": 0.0,
+      "chunk": "02_06",
+      "built": false
+    },
+    {
+      "name": "The Fox",
+      "building": "retail",
+      "x": 59.723,
+      "z": 24.159,
+      "height": 9.6,
+      "chunk": "02_06",
+      "built": true
+    },
+    {
+      "name": "Alsure",
+      "building": "yes",
+      "x": 43.633,
+      "z": 48.74,
+      "height": 6.4,
+      "chunk": "02_07",
+      "built": true
+    },
+    {
+      "name": "Rhode's Health Club",
+      "building": "yes",
+      "x": 66.829,
+      "z": 26.088,
+      "height": 3.2,
+      "chunk": "02_07",
+      "built": true
+    },
+    {
+      "name": "Wrentham Tyres",
+      "building": "yes",
+      "x": 62.645,
+      "z": 58.533,
+      "height": 3.2,
+      "chunk": "02_07",
+      "built": true
+    },
+    {
+      "name": "Highgate House",
+      "building": "residential",
+      "x": 5.869,
+      "z": 17.069,
+      "height": 28.8,
+      "chunk": "02_08",
+      "built": true
+    },
+    {
+      "name": "JP Club Karaoke",
+      "building": "yes",
+      "x": 40.623,
+      "z": 12.519,
+      "height": 8.0,
+      "chunk": "02_08",
+      "built": true
+    },
+    {
+      "name": "My Cookie Dough",
+      "building": null,
+      "x": 62.022,
+      "z": 78.45,
+      "height": 0.0,
+      "chunk": "03_-1",
+      "built": false
+    },
+    {
+      "name": "Nationwide",
+      "building": "shopping_mall",
+      "x": 33.649,
+      "z": 4.703,
+      "height": 11.0,
+      "chunk": "03_-1",
+      "built": true
+    },
+    {
+      "name": "Sunglass Hut",
+      "building": "retail",
+      "x": 41.674,
+      "z": 4.155,
+      "height": 11.0,
+      "chunk": "03_-1",
+      "built": true
+    },
+    {
+      "name": "Vyve",
+      "building": null,
+      "x": 75.952,
+      "z": 70.651,
+      "height": 0.0,
+      "chunk": "03_-1",
+      "built": false
+    },
+    {
+      "name": "Yamas",
+      "building": null,
+      "x": 68.804,
+      "z": 74.409,
+      "height": 0.0,
+      "chunk": "03_-1",
+      "built": false
+    },
+    {
+      "name": "Primark",
+      "building": "retail",
+      "x": 67.29,
+      "z": 38.641,
+      "height": 16.0,
+      "chunk": "03_-2",
+      "built": true
+    },
+    {
+      "name": "Waterstones",
+      "building": "yes",
+      "x": 31.917,
+      "z": 75.388,
+      "height": 18.0,
+      "chunk": "03_-2",
+      "built": true
+    },
+    {
+      "name": "Boots",
+      "building": "retail",
+      "x": 17.674,
+      "z": 17.711,
+      "height": 8.0,
+      "chunk": "03_-3",
+      "built": true
+    },
+    {
+      "name": "Burger King",
+      "building": "retail",
+      "x": 18.503,
+      "z": 37.604,
+      "height": 9.6,
+      "chunk": "03_-3",
+      "built": true
+    },
+    {
+      "name": "Holland & Barrett",
+      "building": "retail",
+      "x": 63.683,
+      "z": 23.408,
+      "height": 19.2,
+      "chunk": "03_-3",
+      "built": true
+    },
+    {
+      "name": "Well Home",
+      "building": "retail",
+      "x": 76.976,
+      "z": 67.582,
+      "height": 13.0,
+      "chunk": "03_-3",
+      "built": true
+    },
+    {
+      "name": "Al Arabi Grill House Express",
+      "building": "yes",
+      "x": 29.381,
+      "z": 65.089,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "Awesome Chips",
+      "building": "retail",
+      "x": 23.157,
+      "z": 55.853,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "Beauty Central",
+      "building": "retail",
+      "x": 26.977,
+      "z": 75.799,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "CeX",
+      "building": "retail",
+      "x": 2.569,
+      "z": 27.618,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "Chopstix",
+      "building": "retail",
+      "x": 26.292,
+      "z": 60.652,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "H&T Pawnbrokers",
+      "building": "retail",
+      "x": 33.227,
+      "z": 68.39,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "KFC",
+      "building": "retail",
+      "x": 20.181,
+      "z": 51.304,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "Savers",
+      "building": "retail",
+      "x": 8.752,
+      "z": 39.751,
+      "height": 8.0,
+      "chunk": "03_-4",
+      "built": true
+    },
+    {
+      "name": "The Square Peg",
+      "building": null,
+      "x": 1.679,
+      "z": 16.864,
+      "height": 0.0,
+      "chunk": "03_-5",
+      "built": false
+    },
+    {
+      "name": "Multistory Old Square",
+      "building": "office",
+      "x": 33.068,
+      "z": 1.51,
+      "height": 25.6,
+      "chunk": "03_-6",
+      "built": true
+    },
+    {
+      "name": "Birmingham Coroner's Court",
+      "building": "government",
+      "x": 34.208,
+      "z": 11.898,
+      "height": 12.8,
+      "chunk": "03_-7",
+      "built": true
+    },
+    {
+      "name": "Birmingham Crown Court Annexe",
+      "building": "yes",
+      "x": 73.208,
+      "z": 47.004,
+      "height": 9.6,
+      "chunk": "03_-7",
+      "built": true
+    },
+    {
+      "name": "Multistory Colmore Square",
+      "building": "office",
+      "x": 2.679,
+      "z": 42.215,
+      "height": 25.6,
+      "chunk": "03_-7",
+      "built": true
+    },
+    {
+      "name": "Probation Service Victim Liaison Office",
+      "building": "yes",
+      "x": 43.563,
+      "z": 32.016,
+      "height": 9.6,
+      "chunk": "03_-7",
+      "built": true
+    },
+    {
+      "name": "The Queen's Head",
+      "building": "retail",
+      "x": 22.381,
+      "z": 16.34,
+      "height": 12.8,
+      "chunk": "03_-7",
+      "built": true
+    },
+    {
+      "name": "Birmingham Children's Hospital",
+      "building": null,
+      "x": 41.305,
+      "z": 23.072,
+      "height": 0.0,
+      "chunk": "03_-9",
+      "built": false
+    },
+    {
+      "name": "Ladywood House",
+      "building": "yes",
+      "x": 2.367,
+      "z": 71.225,
+      "height": 19.2,
+      "chunk": "03_-9",
+      "built": true
+    },
+    {
+      "name": "Bull Ring",
+      "building": "retail",
+      "x": 2.249,
+      "z": 35.521,
+      "height": 28.0,
+      "chunk": "03_00",
+      "built": true
+    },
+    {
+      "name": "Mr. Pretzels",
+      "building": null,
+      "x": 7.145,
+      "z": 27.68,
+      "height": 0.0,
+      "chunk": "03_00",
+      "built": false
+    },
+    {
+      "name": "Pop Street",
+      "building": null,
+      "x": 76.533,
+      "z": 5.776,
+      "height": 0.0,
+      "chunk": "03_00",
+      "built": false
+    },
+    {
+      "name": "Birmingham Rag Market",
+      "building": "retail",
+      "x": 67.64,
+      "z": 57.119,
+      "height": 10.0,
+      "chunk": "03_01",
+      "built": true
+    },
+    {
+      "name": "Premier Suites",
+      "building": "yes",
+      "x": 74.542,
+      "z": 47.47,
+      "height": 16.0,
+      "chunk": "03_02",
+      "built": true
+    },
+    {
+      "name": "Travelodge",
+      "building": "yes",
+      "x": 53.215,
+      "z": 73.95,
+      "height": 19.2,
+      "chunk": "03_02",
+      "built": true
+    },
+    {
+      "name": "The Forum",
+      "building": "residential",
+      "x": 62.193,
+      "z": 46.004,
+      "height": 3.2,
+      "chunk": "03_03",
+      "built": true
+    },
+    {
+      "name": "True Student Birmingham Accomodation",
+      "building": "residential",
+      "x": 24.814,
+      "z": 8.416,
+      "height": 16.0,
+      "chunk": "03_03",
+      "built": true
+    },
+    {
+      "name": "Latitude",
+      "building": "apartments",
+      "x": 7.608,
+      "z": 58.317,
+      "height": 6.4,
+      "chunk": "03_04",
+      "built": true
+    },
+    {
+      "name": "Jubilee Business Center",
+      "building": null,
+      "x": 75.334,
+      "z": 46.633,
+      "height": 0.0,
+      "chunk": "03_05",
+      "built": false
+    },
+    {
+      "name": "GHM Furniture",
+      "building": "yes",
+      "x": 59.491,
+      "z": 5.614,
+      "height": 6.4,
+      "chunk": "03_06",
+      "built": true
+    },
+    {
+      "name": "Boltz",
+      "building": null,
+      "x": 45.876,
+      "z": 52.122,
+      "height": 0.0,
+      "chunk": "03_07",
+      "built": false
+    },
+    {
+      "name": "Central Auto Services",
+      "building": "yes",
+      "x": 4.081,
+      "z": 57.478,
+      "height": 3.2,
+      "chunk": "03_07",
+      "built": true
+    },
+    {
+      "name": "Chasing Clouds",
+      "building": "yes",
+      "x": 16.184,
+      "z": 67.33,
+      "height": 3.2,
+      "chunk": "03_07",
+      "built": true
+    },
+    {
+      "name": "Keyhunter Escape Rooms",
+      "building": "yes",
+      "x": 33.38,
+      "z": 73.605,
+      "height": 9.6,
+      "chunk": "03_07",
+      "built": true
+    },
+    {
+      "name": "W.G. Eaton Ltd.",
+      "building": "yes",
+      "x": 0.349,
+      "z": 36.006,
+      "height": 3.2,
+      "chunk": "03_07",
+      "built": true
+    },
+    {
+      "name": "Yoshi's",
+      "building": "yes",
+      "x": 10.936,
+      "z": 71.988,
+      "height": 3.2,
+      "chunk": "03_07",
+      "built": true
+    },
+    {
+      "name": "Access Self Storage",
+      "building": "yes",
+      "x": 40.657,
+      "z": 73.179,
+      "height": 8.0,
+      "chunk": "03_08",
+      "built": true
+    },
+    {
+      "name": "Costa",
+      "building": null,
+      "x": 11.79,
+      "z": 74.476,
+      "height": 0.0,
+      "chunk": "04_-1",
+      "built": false
+    },
+    {
+      "name": "Greggs",
+      "building": null,
+      "x": 18.312,
+      "z": 78.649,
+      "height": 0.0,
+      "chunk": "04_-1",
+      "built": false
+    },
+    {
+      "name": "MeeCha",
+      "building": null,
+      "x": 19.113,
+      "z": 57.605,
+      "height": 0.0,
+      "chunk": "04_-1",
+      "built": false
+    },
+    {
+      "name": "Snowflake",
+      "building": null,
+      "x": 10.842,
+      "z": 62.373,
+      "height": 0.0,
+      "chunk": "04_-1",
+      "built": false
+    },
+    {
+      "name": "Birmingham Children's Hospital A&E",
+      "building": "yes",
+      "x": 54.507,
+      "z": 76.902,
+      "height": 8.0,
+      "chunk": "04_-10",
+      "built": true
+    },
+    {
+      "name": "Moor St Kiosk",
+      "building": "yes",
+      "x": 77.76,
+      "z": 21.012,
+      "height": 8.0,
+      "chunk": "04_-2",
+      "built": true
+    },
+    {
+      "name": "Carrs Lane Church Centre",
+      "building": "church",
+      "x": 50.975,
+      "z": 49.05,
+      "height": 13.0,
+      "chunk": "04_-3",
+      "built": true
+    },
+    {
+      "name": "St Michael's",
+      "building": "church",
+      "x": 70.933,
+      "z": 8.532,
+      "height": 8.0,
+      "chunk": "04_-3",
+      "built": true
+    },
+    {
+      "name": "Travelodge Birmingham Central Moor Street",
+      "building": "yes",
+      "x": 13.564,
+      "z": 25.182,
+      "height": 26.0,
+      "chunk": "04_-3",
+      "built": true
+    },
+    {
+      "name": "O2 Business Centre Moor Street",
+      "building": "yes",
+      "x": 68.321,
+      "z": 70.444,
+      "height": 8.0,
+      "chunk": "04_-4",
+      "built": true
+    },
+    {
+      "name": "Albert Street",
+      "building": "yes",
+      "x": 64.394,
+      "z": 78.484,
+      "height": 8.0,
+      "chunk": "04_-5",
+      "built": true
+    },
+    {
+      "name": "Londonderry House",
+      "building": "yes",
+      "x": 63.266,
+      "z": 36.567,
+      "height": 8.0,
+      "chunk": "04_-6",
+      "built": true
+    },
+    {
+      "name": "Londonderry House",
+      "building": "yes",
+      "x": 65.544,
+      "z": 32.248,
+      "height": 55.0,
+      "chunk": "04_-6",
+      "built": true
+    },
+    {
+      "name": "Maple House",
+      "building": "yes",
+      "x": 12.074,
+      "z": 45.897,
+      "height": 16.0,
+      "chunk": "04_-6",
+      "built": true
+    },
+    {
+      "name": "Citadel",
+      "building": "office",
+      "x": 49.841,
+      "z": 43.75,
+      "height": 14.0,
+      "chunk": "04_-7",
+      "built": true
+    },
+    {
+      "name": "Methodist Central Hall",
+      "building": "yes",
+      "x": 69.39,
+      "z": 9.246,
+      "height": 14.0,
+      "chunk": "04_-7",
+      "built": true
+    },
+    {
+      "name": "Birmingham Magistrates Court",
+      "building": "government",
+      "x": 6.248,
+      "z": 72.002,
+      "height": 14.0,
+      "chunk": "04_-8",
+      "built": true
+    },
+    {
+      "name": "West Midlands Police Museum",
+      "building": "museum",
+      "x": 24.341,
+      "z": 29.192,
+      "height": 9.6,
+      "chunk": "04_-8",
+      "built": true
+    },
+    {
+      "name": "Bull Ring Tavern",
+      "building": "retail",
+      "x": 74.608,
+      "z": 77.152,
+      "height": 18.0,
+      "chunk": "04_00",
+      "built": true
+    },
+    {
+      "name": "Nando's",
+      "building": null,
+      "x": 5.445,
+      "z": 18.804,
+      "height": 0.0,
+      "chunk": "04_00",
+      "built": false
+    },
+    {
+      "name": "Pizza Hut",
+      "building": null,
+      "x": 24.704,
+      "z": 9.446,
+      "height": 0.0,
+      "chunk": "04_00",
+      "built": false
+    },
+    {
+      "name": "St Martins",
+      "building": "heritage",
+      "x": 41.753,
+      "z": 61.198,
+      "height": 8.0,
+      "chunk": "04_00",
+      "built": true
+    },
+    {
+      "name": "Tea Lounge @ St. Martin's",
+      "building": "yes",
+      "x": 23.476,
+      "z": 78.006,
+      "height": 11.0,
+      "chunk": "04_00",
+      "built": true
+    },
+    {
+      "name": "The Ring Open Market",
+      "building": "roof",
+      "x": 41.866,
+      "z": 36.472,
+      "height": 8.0,
+      "chunk": "04_01",
+      "built": true
+    },
+    {
+      "name": "The Jubilee Centre",
+      "building": "yes",
+      "x": 6.887,
+      "z": 11.239,
+      "height": 12.8,
+      "chunk": "04_06",
+      "built": true
+    },
+    {
+      "name": "Eden",
+      "building": "yes",
+      "x": 16.085,
+      "z": 19.266,
+      "height": 8.0,
+      "chunk": "04_07",
+      "built": true
+    },
+    {
+      "name": "Sun Yip Ltd Chinese Supermarket",
+      "building": "yes",
+      "x": 1.464,
+      "z": 74.017,
+      "height": 3.2,
+      "chunk": "04_07",
+      "built": true
+    },
+    {
+      "name": "Zair Works Business Centre",
+      "building": "yes",
+      "x": 25.47,
+      "z": 65.657,
+      "height": 9.6,
+      "chunk": "04_07",
+      "built": true
+    },
+    {
+      "name": "Dragon Star Enterprises",
+      "building": "industrial",
+      "x": 71.738,
+      "z": 0.775,
+      "height": 6.4,
+      "chunk": "04_08",
+      "built": true
+    },
+    {
+      "name": "Five Star Cars",
+      "building": "industrial",
+      "x": 63.954,
+      "z": 20.564,
+      "height": 6.4,
+      "chunk": "04_08",
+      "built": true
+    },
+    {
+      "name": "Task Undertakings",
+      "building": "yes",
+      "x": 19.824,
+      "z": 62.501,
+      "height": 8.0,
+      "chunk": "04_08",
+      "built": true
+    },
+    {
+      "name": "The Lamp Tavern",
+      "building": "pub",
+      "x": 78.492,
+      "z": 21.178,
+      "height": 8.0,
+      "chunk": "04_08",
+      "built": true
+    },
+    {
+      "name": "Vineyard Network Church",
+      "building": "yes",
+      "x": 79.575,
+      "z": 67.437,
+      "height": 8.0,
+      "chunk": "04_08",
+      "built": true
+    },
+    {
+      "name": "BBS Food Service",
+      "building": "yes",
+      "x": 74.969,
+      "z": 6.195,
+      "height": 8.0,
+      "chunk": "04_09",
+      "built": true
+    },
+    {
+      "name": "Birmingham Moor Street",
+      "building": "train_station",
+      "x": 31.325,
+      "z": 55.293,
+      "height": 10.0,
+      "chunk": "05_-2",
+      "built": true
+    },
+    {
+      "name": "Dale House",
+      "building": "yes",
+      "x": 2.889,
+      "z": 50.755,
+      "height": 34.0,
+      "chunk": "05_-5",
+      "built": true
+    },
+    {
+      "name": "The Silver Yard",
+      "building": "residential",
+      "x": 68.581,
+      "z": 6.172,
+      "height": 111.0,
+      "chunk": "05_-5",
+      "built": true
+    },
+    {
+      "name": "Exchange Square",
+      "building": "residential",
+      "x": 51.692,
+      "z": 28.668,
+      "height": 86.4,
+      "chunk": "05_-6",
+      "built": true
+    },
+    {
+      "name": "Exchange Square",
+      "building": "residential",
+      "x": 79.463,
+      "z": 59.069,
+      "height": 32.0,
+      "chunk": "05_-6",
+      "built": true
+    },
+    {
+      "name": "McLaren Building",
+      "building": "office",
+      "x": 10.337,
+      "z": 59.464,
+      "height": 69.0,
+      "chunk": "05_-6",
+      "built": true
+    },
+    {
+      "name": "Premier Inn Birmingham City Centre (Exchange Square)",
+      "building": "hotel",
+      "x": 32.636,
+      "z": 76.728,
+      "height": 8.0,
+      "chunk": "05_-6",
+      "built": true
+    },
+    {
+      "name": "Queen Elizabeth II Law Courts",
+      "building": "public",
+      "x": 16.14,
+      "z": 63.899,
+      "height": 8.0,
+      "chunk": "05_-7",
+      "built": true
+    },
+    {
+      "name": "Mary Sturge Residences",
+      "building": "residential",
+      "x": 66.397,
+      "z": 67.212,
+      "height": 57.6,
+      "chunk": "05_-9",
+      "built": true
+    },
+    {
+      "name": "1 Beorma Place",
+      "building": "commercial",
+      "x": 29.481,
+      "z": 36.152,
+      "height": 113.0,
+      "chunk": "05_00",
+      "built": true
+    },
+    {
+      "name": "Dresscode",
+      "building": "yes",
+      "x": 0.136,
+      "z": 2.947,
+      "height": 18.0,
+      "chunk": "05_01",
+      "built": true
+    },
+    {
+      "name": "Fancy Silk Store",
+      "building": "yes",
+      "x": 5.901,
+      "z": 7.461,
+      "height": 18.0,
+      "chunk": "05_01",
+      "built": true
+    },
+    {
+      "name": "Ice Factory & Cold Store",
+      "building": "industrial",
+      "x": 61.654,
+      "z": 6.157,
+      "height": 9.6,
+      "chunk": "05_01",
+      "built": true
+    },
+    {
+      "name": "Khan Palace",
+      "building": "yes",
+      "x": 11.958,
+      "z": 12.395,
+      "height": 18.0,
+      "chunk": "05_01",
+      "built": true
+    },
+    {
+      "name": "Picton Jones & Co",
+      "building": "yes",
+      "x": 31.106,
+      "z": 29.603,
+      "height": 18.0,
+      "chunk": "05_01",
+      "built": true
+    },
+    {
+      "name": "Depot Climbing",
+      "building": "yes",
+      "x": 30.673,
+      "z": 59.053,
+      "height": 6.4,
+      "chunk": "05_06",
+      "built": true
+    },
+    {
+      "name": "Express Polythene",
+      "building": "yes",
+      "x": 49.498,
+      "z": 73.497,
+      "height": 6.4,
+      "chunk": "05_06",
+      "built": true
+    },
+    {
+      "name": "AGI Media",
+      "building": "yes",
+      "x": 69.497,
+      "z": 62.385,
+      "height": 8.0,
+      "chunk": "05_07",
+      "built": true
+    },
+    {
+      "name": "AGI Media",
+      "building": "yes",
+      "x": 17.868,
+      "z": 44.056,
+      "height": 6.4,
+      "chunk": "05_07",
+      "built": true
+    },
+    {
+      "name": "Amey",
+      "building": "yes",
+      "x": 26.611,
+      "z": 20.126,
+      "height": 8.0,
+      "chunk": "05_07",
+      "built": true
+    },
+    {
+      "name": "New Dawn",
+      "building": "yes",
+      "x": 2.396,
+      "z": 30.142,
+      "height": 6.4,
+      "chunk": "05_07",
+      "built": true
+    },
+    {
+      "name": "Escape",
+      "building": "industrial",
+      "x": 2.641,
+      "z": 10.938,
+      "height": 8.0,
+      "chunk": "05_08",
+      "built": true
+    },
+    {
+      "name": "International Stock",
+      "building": "yes",
+      "x": 47.627,
+      "z": 20.945,
+      "height": 8.0,
+      "chunk": "05_08",
+      "built": true
+    },
+    {
+      "name": "MK Fleet Services Ltd",
+      "building": "yes",
+      "x": 29.364,
+      "z": 74.103,
+      "height": 8.0,
+      "chunk": "05_08",
+      "built": true
+    },
+    {
+      "name": "Power Hand Car Wash",
+      "building": "yes",
+      "x": 17.121,
+      "z": 67.483,
+      "height": 8.0,
+      "chunk": "05_08",
+      "built": true
+    },
+    {
+      "name": "Office Landscapes",
+      "building": "yes",
+      "x": 73.582,
+      "z": 2.928,
+      "height": 8.0,
+      "chunk": "05_09",
+      "built": true
+    },
+    {
+      "name": "The Town Crier",
+      "building": "retail",
+      "x": 61.177,
+      "z": 0.497,
+      "height": 8.0,
+      "chunk": "05_09",
+      "built": true
+    },
+    {
+      "name": "Tube",
+      "building": "yes",
+      "x": 20.219,
+      "z": 4.782,
+      "height": 8.0,
+      "chunk": "05_09",
+      "built": true
+    },
+    {
+      "name": "Moor Street Car Park",
+      "building": "yes",
+      "x": 6.821,
+      "z": 68.652,
+      "height": 23.0,
+      "chunk": "06_-1",
+      "built": true
+    },
+    {
+      "name": "Harriet Martineau Residences",
+      "building": "residential",
+      "x": 69.027,
+      "z": 67.532,
+      "height": 16.0,
+      "chunk": "06_-10",
+      "built": true
+    },
+    {
+      "name": "Fred Baker Ltd",
+      "building": "yes",
+      "x": 22.389,
+      "z": 34.407,
+      "height": 8.0,
+      "chunk": "06_-2",
+      "built": true
+    },
+    {
+      "name": "Moor Street Station",
+      "building": null,
+      "x": 6.587,
+      "z": 78.206,
+      "height": 0.0,
+      "chunk": "06_-2",
+      "built": false
+    },
+    {
+      "name": "Park St Tattoo",
+      "building": "retail",
+      "x": 19.25,
+      "z": 44.864,
+      "height": 9.6,
+      "chunk": "06_-2",
+      "built": true
+    },
+    {
+      "name": "The Karczma",
+      "building": "yes",
+      "x": 65.1,
+      "z": 24.404,
+      "height": 8.0,
+      "chunk": "06_-2",
+      "built": true
+    },
+    {
+      "name": "Clayton Hotel",
+      "building": "yes",
+      "x": 36.151,
+      "z": 78.134,
+      "height": 12.8,
+      "chunk": "06_-5",
+      "built": true
+    },
+    {
+      "name": "Masshouse",
+      "building": "apartments",
+      "x": 64.172,
+      "z": 46.667,
+      "height": 50.0,
+      "chunk": "06_-5",
+      "built": true
+    },
+    {
+      "name": "Exchange Square",
+      "building": "residential",
+      "x": 9.606,
+      "z": 36.089,
+      "height": 44.8,
+      "chunk": "06_-6",
+      "built": true
+    },
+    {
+      "name": "Lakeside Residences",
+      "building": "residential",
+      "x": 29.135,
+      "z": 61.022,
+      "height": 8.0,
+      "chunk": "06_-8",
+      "built": true
+    },
+    {
+      "name": "Mary Sturge Residences",
+      "building": "residential",
+      "x": 11.255,
+      "z": 32.958,
+      "height": 28.8,
+      "chunk": "06_-9",
+      "built": true
+    },
+    {
+      "name": "A. E. Williams",
+      "building": "yes",
+      "x": 18.38,
+      "z": 17.362,
+      "height": 8.0,
+      "chunk": "06_00",
+      "built": true
+    },
+    {
+      "name": "Casper Stores",
+      "building": "yes",
+      "x": 23.22,
+      "z": 78.484,
+      "height": 8.0,
+      "chunk": "06_00",
+      "built": true
+    },
+    {
+      "name": "Meriden Paper",
+      "building": "industrial",
+      "x": 63.603,
+      "z": 71.469,
+      "height": 8.0,
+      "chunk": "06_00",
+      "built": true
+    },
+    {
+      "name": "Vintage Clothing",
+      "building": "yes",
+      "x": 25.139,
+      "z": 67.995,
+      "height": 8.0,
+      "chunk": "06_00",
+      "built": true
+    },
+    {
+      "name": "Aparthotels Adagio",
+      "building": "yes",
+      "x": 11.541,
+      "z": 26.755,
+      "height": 25.6,
+      "chunk": "06_01",
+      "built": true
+    },
+    {
+      "name": "Digbeth Police Station",
+      "building": "yes",
+      "x": 44.114,
+      "z": 32.419,
+      "height": 8.0,
+      "chunk": "06_01",
+      "built": true
+    },
+    {
+      "name": "Fancy Fabrics",
+      "building": "retail",
+      "x": 70.693,
+      "z": 48.206,
+      "height": 8.0,
+      "chunk": "06_01",
+      "built": true
+    },
+    {
+      "name": "Manzil's",
+      "building": "yes",
+      "x": 60.536,
+      "z": 42.267,
+      "height": 8.0,
+      "chunk": "06_01",
+      "built": true
+    },
+    {
+      "name": "Scholars School",
+      "building": "office",
+      "x": 9.533,
+      "z": 75.626,
+      "height": 27.0,
+      "chunk": "06_01",
+      "built": true
+    },
+    {
+      "name": "Fusion",
+      "building": "yes",
+      "x": 67.14,
+      "z": 19.416,
+      "height": 10.0,
+      "chunk": "06_02",
+      "built": true
+    },
+    {
+      "name": "South & City College Birmingham",
+      "building": "yes",
+      "x": 46.017,
+      "z": 48.353,
+      "height": 14.0,
+      "chunk": "06_02",
+      "built": true
+    },
+    {
+      "name": "Strictly MOT",
+      "building": "yes",
+      "x": 73.608,
+      "z": 51.53,
+      "height": 3.2,
+      "chunk": "06_02",
+      "built": true
+    },
+    {
+      "name": "Sutton Flowers",
+      "building": "yes",
+      "x": 58.277,
+      "z": 67.984,
+      "height": 6.0,
+      "chunk": "06_02",
+      "built": true
+    },
+    {
+      "name": "Jameson Seating",
+      "building": "works",
+      "x": 72.089,
+      "z": 19.27,
+      "height": 9.6,
+      "chunk": "06_04",
+      "built": true
+    },
+    {
+      "name": "Barry's Fabrics",
+      "building": "yes",
+      "x": 52.436,
+      "z": 71.594,
+      "height": 3.2,
+      "chunk": "06_05",
+      "built": true
+    },
+    {
+      "name": "A1 Autoservices Plus",
+      "building": "yes",
+      "x": 45.3,
+      "z": 4.032,
+      "height": 3.2,
+      "chunk": "06_06",
+      "built": true
+    },
+    {
+      "name": "Genie",
+      "building": "yes",
+      "x": 4.735,
+      "z": 75.386,
+      "height": 8.0,
+      "chunk": "06_06",
+      "built": true
+    },
+    {
+      "name": "Islamic Relief Worldwide",
+      "building": "yes",
+      "x": 39.758,
+      "z": 58.293,
+      "height": 8.0,
+      "chunk": "06_06",
+      "built": true
+    },
+    {
+      "name": "Stockton",
+      "building": "yes",
+      "x": 12.321,
+      "z": 58.43,
+      "height": 9.6,
+      "chunk": "06_06",
+      "built": true
+    },
+    {
+      "name": "Muthers Studio",
+      "building": "yes",
+      "x": 19.063,
+      "z": 26.066,
+      "height": 8.0,
+      "chunk": "06_07",
+      "built": true
+    },
+    {
+      "name": "Thermofrost Cryo",
+      "building": "yes",
+      "x": 41.841,
+      "z": 69.34,
+      "height": 8.0,
+      "chunk": "06_07",
+      "built": true
+    },
+    {
+      "name": "Carford Gears And Transmissions",
+      "building": "yes",
+      "x": 11.492,
+      "z": 52.226,
+      "height": 8.0,
+      "chunk": "06_08",
+      "built": true
+    },
+    {
+      "name": "Direct Source 3",
+      "building": "yes",
+      "x": 26.923,
+      "z": 18.991,
+      "height": 8.0,
+      "chunk": "06_08",
+      "built": true
+    },
+    {
+      "name": "Printcut",
+      "building": "yes",
+      "x": 69.421,
+      "z": 66.21,
+      "height": 8.0,
+      "chunk": "06_08",
+      "built": true
+    },
+    {
+      "name": "Provan-Hatch Packaging Ltd",
+      "building": "yes",
+      "x": 52.886,
+      "z": 57.099,
+      "height": 8.0,
+      "chunk": "06_08",
+      "built": true
+    },
+    {
+      "name": "Sherrington Waste Management",
+      "building": "no",
+      "x": 71.677,
+      "z": 40.475,
+      "height": 0.0,
+      "chunk": "06_08",
+      "built": false
+    },
+    {
+      "name": "Aston University",
+      "building": null,
+      "x": 45.818,
+      "z": 22.292,
+      "height": 0.0,
+      "chunk": "07_-10",
+      "built": false
+    }
+  ]
+}

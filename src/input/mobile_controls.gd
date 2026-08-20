@@ -56,11 +56,17 @@ func _clear_all() -> void:
 func _report_layout() -> void:
 	if OS.get_name() != "Web":
 		return
-	var parts: PackedStringArray = []
+	var rects: PackedStringArray = []
 	for child in get_children():
 		if child is Control:
 			var rect := (child as Control).get_global_rect()
-			parts.append("%s:%d,%d,%d,%d" % [
+			rects.append("%s:%d,%d,%d,%d" % [
 				child.name, int(rect.position.x), int(rect.position.y),
 				int(rect.size.x), int(rect.size.y)])
-	JavaScriptBridge.eval("window.__markInBrum.controls = '%s';" % ",".join(parts))
+	# Rects are in Godot canvas space; the shell scales them to CSS px using
+	# the live canvas element, so browser-side tests can touch real pixels.
+	JavaScriptBridge.eval(
+		"window.__markInBrum.controls = JSON.stringify({rects: '%s', cssScale: ["
+		+ "document.getElementById('canvas').clientWidth / document.getElementById('canvas').width,"
+		+ "document.getElementById('canvas').clientHeight / document.getElementById('canvas').height]});"
+		% ",".join(rects))

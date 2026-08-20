@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NPCReactionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/npc/npc_reaction_data.gd" id="1_reactions"]
+
+[resource]
+script = ExtResource("1_reactions")
+startle_seconds = 0.65
+complain_seconds = 2.6
+flee_seconds = 8.0
+call_security_seconds = 3.2
+recover_seconds = 3.5
+complaint_chance = 0.55
+call_security_chance = 0.25
+attention_value = 12.0

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NPCArchetype" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/npc/npc_archetype.gd" id="1_arch"]
+[ext_resource type="Resource" path="res://data/npc/reaction_data_jumpy.tres" id="2_reactions"]
+
+[resource]
+script = ExtResource("1_arch")
+display_name = "Shopper"
+palette = Color(0.55, 0.42, 0.48, 1)
+walk_speed = 1.55
+reaction_data = ExtResource("2_reactions")
+voice_variant = 1

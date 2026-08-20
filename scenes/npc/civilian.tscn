@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/npc/npc_brain.gd" id="1_brain"]
+[ext_resource type="Resource" path="res://data/npc/reaction_data_default.tres" id="2_reactions"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_npc"]
+radius = 0.32
+height = 1.7
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_npc"]
+radius = 0.32
+height = 1.7
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npc"]
+albedo_color = Color(0.55, 0.55, 0.6, 1)
+roughness = 0.85
+
+[node name="Civilian" type="CharacterBody3D" groups=["npc"]]
+collision_layer = 4
+collision_mask = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_npc")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_npc")
+surface_material_override/0 = SubResource("StandardMaterial3D_npc")
+
+[node name="Brain" type="Node" parent="."]
+script = ExtResource("1_brain")
+reaction_data = ExtResource("2_reactions")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.6
+target_desired_distance = 0.8
