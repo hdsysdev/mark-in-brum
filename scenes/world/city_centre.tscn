@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://src/world/chunk_streamer.gd" id="1_streamer"]
+[ext_resource type="Script" path="res://src/world/flat_nav_region.gd" id="2_nav"]
+[ext_resource type="Script" path="res://src/world/spawn_director.gd" id="3_spawn"]
+[ext_resource type="Script" path="res://src/world/world_bounds.gd" id="4_bounds"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
+size = Vector3(900, 1, 900)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ground"]
+material = null
+size = Vector3(900, 1, 900)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ground"]
+albedo_color = Color(0.2, 0.21, 0.23, 1)
+roughness = 1.0
+
+[sub_resource type="Environment" id="Environment_world"]
+background_mode = 1
+background_color = Color(0.55, 0.6, 0.66, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.65, 0.68, 0.72, 1)
+ambient_light_energy = 0.8
+fog_enabled = true
+fog_light_color = Color(0.55, 0.6, 0.66, 1)
+fog_density = 0.004
+
+[node name="CityCentre" type="Node3D"]
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="Ground" type="StaticBody3D" parent="Environment"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]
+position = Vector3(0, -0.5, 0)
+shape = SubResource("BoxShape3D_ground")
+
+[node name="Mesh" type="MeshInstance3D" parent="Environment/Ground"]
+position = Vector3(0, -0.5, 0)
+mesh = SubResource("BoxMesh_ground")
+surface_material_override/0 = SubResource("StandardMaterial3D_ground")
+
+[node name="Sun" type="DirectionalLight3D" parent="Environment"]
+rotation_degrees = Vector3(-48, -32, 0)
+light_color = Color(1, 0.96, 0.9, 1)
+light_energy = 0.9
+shadow_enabled = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_world")
+
+[node name="ChunkStreamer" type="Node3D" parent="."]
+script = ExtResource("1_streamer")
+
+[node name="Navigation" type="NavigationRegion3D" parent="."]
+script = ExtResource("2_nav")
+size = Vector2(1700, 1700)
+
+[node name="SpawnDirector" type="Node3D" parent="."]
+script = ExtResource("3_spawn")
+spawn_points = Array[Vector3]([Vector3(0, 0, 6), Vector3(-5, 0, 3), Vector3(5, 0, 3), Vector3(-7, 0, -2), Vector3(7, 0, -2), Vector3(-4, 0, -6), Vector3(4, 0, -6), Vector3(0, 0, -8), Vector3(-9, 0, 4), Vector3(9, 0, 4), Vector3(8, 0, 7), Vector3(-8, 0, 7), Vector3(2, 0, -10)])
+
+[node name="WorldBounds" type="Node3D" parent="."]
+script = ExtResource("4_bounds")

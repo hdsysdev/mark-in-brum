@@ -1,98 +1,52 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=14 format=3]
 
-[ext_resource type="PackedScene" path="res://scenes/player/mark.tscn" id="1_mark"]
-[ext_resource type="Script" path="res://src/input/input_router.gd" id="2_router"]
-[ext_resource type="PackedScene" path="res://scenes/ui/mobile_controls.tscn" id="3_controls"]
-[ext_resource type="Script" path="res://src/interaction/urine_effects_root.gd" id="4_effects"]
-[ext_resource type="Script" path="res://src/core/game_root.gd" id="5_root"]
-[ext_resource type="Script" path="res://src/gameplay/attention_system.gd" id="6_attention"]
-[ext_resource type="Resource" path="res://data/gameplay/attention_tiers.tres" id="7_tiers"]
-[ext_resource type="Script" path="res://src/gameplay/capture_sequence.gd" id="8_capture"]
-[ext_resource type="Script" path="res://src/world/flat_nav_region.gd" id="9_nav"]
-[ext_resource type="Script" path="res://src/world/spawn_director.gd" id="10_spawn"]
-[ext_resource type="Script" path="res://src/npc/crowd_budgeter.gd" id="11_crowd"]
-[ext_resource type="PackedScene" path="res://scenes/npc/security_guard.tscn" id="12_guard"]
-[ext_resource type="Script" path="res://src/gameplay/errand_director.gd" id="13_errand"]
-[ext_resource type="Resource" path="res://data/errands/first_day.tres" id="14_chain"]
-[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="15_hud"]
-[ext_resource type="PackedScene" path="res://scenes/ui/content_notice.tscn" id="16_notice"]
-[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="17_pause"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
-size = Vector3(400, 1, 400)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ground"]
-material = null
-size = Vector3(400, 1, 400)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ground"]
-albedo_color = Color(0.21, 0.22, 0.24, 1)
-roughness = 1.0
-
-[sub_resource type="Environment" id="Environment_world"]
-background_mode = 1
-background_color = Color(0.55, 0.6, 0.66, 1)
-ambient_light_source = 3
-ambient_light_color = Color(0.65, 0.68, 0.72, 1)
-ambient_light_energy = 0.8
-fog_enabled = true
-fog_light_color = Color(0.55, 0.6, 0.66, 1)
-fog_density = 0.004
+[ext_resource type="PackedScene" path="res://scenes/world/city_centre.tscn" id="1_city"]
+[ext_resource type="PackedScene" path="res://scenes/player/mark.tscn" id="2_mark"]
+[ext_resource type="Script" path="res://src/input/input_router.gd" id="3_router"]
+[ext_resource type="PackedScene" path="res://scenes/ui/mobile_controls.tscn" id="4_controls"]
+[ext_resource type="Script" path="res://src/interaction/urine_effects_root.gd" id="5_effects"]
+[ext_resource type="Script" path="res://src/core/game_root.gd" id="6_root"]
+[ext_resource type="Script" path="res://src/gameplay/attention_system.gd" id="7_attention"]
+[ext_resource type="Resource" path="res://data/gameplay/attention_tiers.tres" id="8_tiers"]
+[ext_resource type="Script" path="res://src/gameplay/capture_sequence.gd" id="9_capture"]
+[ext_resource type="Script" path="res://src/npc/crowd_budgeter.gd" id="10_crowd"]
+[ext_resource type="PackedScene" path="res://scenes/npc/security_guard.tscn" id="11_guard"]
+[ext_resource type="Script" path="res://src/gameplay/errand_director.gd" id="12_errand"]
+[ext_resource type="Resource" path="res://data/errands/first_day.tres" id="13_chain"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="14_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/content_notice.tscn" id="15_notice"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="16_pause"]
 
 [node name="GameRoot" type="Node"]
-script = ExtResource("5_root")
+script = ExtResource("6_root")
 
-[node name="WorldRoot" type="Node3D" parent="."]
+[node name="WorldRoot" parent="." instance=ExtResource("1_city")]
 
-[node name="Environment" type="Node3D" parent="WorldRoot"]
+[node name="ChunkStreamer" parent="WorldRoot" index="1"]
+target_path = NodePath("../Actors/Mark")
 
-[node name="Ground" type="StaticBody3D" parent="WorldRoot/Environment"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldRoot/Environment/Ground"]
-position = Vector3(0, -0.5, 0)
-shape = SubResource("BoxShape3D_ground")
-
-[node name="Mesh" type="MeshInstance3D" parent="WorldRoot/Environment/Ground"]
-position = Vector3(0, -0.5, 0)
-mesh = SubResource("BoxMesh_ground")
-surface_material_override/0 = SubResource("StandardMaterial3D_ground")
-
-[node name="Sun" type="DirectionalLight3D" parent="WorldRoot/Environment"]
-rotation_degrees = Vector3(-48, -32, 0)
-light_color = Color(1, 0.96, 0.9, 1)
-light_energy = 0.9
-shadow_enabled = false
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="WorldRoot/Environment"]
-environment = SubResource("Environment_world")
-
-[node name="Navigation" type="NavigationRegion3D" parent="WorldRoot"]
-script = ExtResource("9_nav")
-size = Vector2(200, 200)
-
-[node name="SpawnDirector" type="Node3D" parent="WorldRoot"]
-script = ExtResource("10_spawn")
-spawn_points = PackedVector3Array(0, 0, 6, -5, 0, 3, 5, 0, 3, -7, 0, -2, 7, 0, -2, -4, 0, -6, 4, 0, -6, 0, 0, -8, -9, 0, 4, 9, 0, 4, 8, 0, 7, -8, 0, 7, 2, 0, -10)
+[node name="WorldBounds" parent="WorldRoot" index="3"]
+target_path = NodePath("../Actors/Mark")
 
 [node name="Actors" type="Node3D" parent="."]
 
-[node name="Mark" parent="Actors" instance=ExtResource("1_mark")]
+[node name="Mark" parent="Actors" instance=ExtResource("2_mark")]
 position = Vector3(0, 1.2, 0)
 
 [node name="Civilians" type="Node3D" parent="Actors"]
-script = ExtResource("11_crowd")
+script = ExtResource("10_crowd")
 spawn_count = 12
 spawn_director_path = NodePath("../../WorldRoot/SpawnDirector")
 
 [node name="Security" type="Node3D" parent="Actors"]
 
-[node name="Guard1" parent="Actors/Security" instance=ExtResource("12_guard")]
+[node name="Guard1" parent="Actors/Security" instance=ExtResource("11_guard")]
 position = Vector3(6, 0.9, 6)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
 patrol_points = PackedVector3Array(0, 0, 0, 6, 0, -4, -6, 0, -4, -6, 0, 6)
 
-[node name="Guard2" parent="Actors/Security" instance=ExtResource("12_guard")]
+[node name="Guard2" parent="Actors/Security" instance=ExtResource("11_guard")]
 position = Vector3(-6, 0.9, -6)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
@@ -101,36 +55,36 @@ patrol_points = PackedVector3Array(0, 0, 0, -6, 0, 6, 6, 0, 6, 6, 0, -6)
 [node name="Effects" type="Node3D" parent="."]
 
 [node name="UrineEffectsRoot" type="Node3D" parent="Effects"]
-script = ExtResource("4_effects")
+script = ExtResource("5_effects")
 urine_controller_path = NodePath("../Actors/Mark/UrineController")
 
 [node name="Gameplay" type="Node" parent="."]
 
 [node name="InputRouter" type="Node" parent="Gameplay" groups=["input_router"]]
-script = ExtResource("2_router")
+script = ExtResource("3_router")
 
 [node name="AttentionSystem" type="Node" parent="Gameplay"]
-script = ExtResource("6_attention")
-tiers = ExtResource("7_tiers")
+script = ExtResource("7_attention")
+tiers = ExtResource("8_tiers")
 mark_path = NodePath("../../Actors/Mark")
 
 [node name="CaptureSequence" type="Node" parent="Gameplay"]
-script = ExtResource("8_capture")
+script = ExtResource("9_capture")
 mark_path = NodePath("../../Actors/Mark")
 attention_system_path = NodePath("../AttentionSystem")
 
 [node name="ErrandDirector" type="Node" parent="Gameplay"]
-script = ExtResource("13_errand")
-chain = ExtResource("14_chain")
+script = ExtResource("12_errand")
+chain = ExtResource("13_chain")
 mark_path = NodePath("../../Actors/Mark")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="MobileControls" parent="UI" instance=ExtResource("3_controls")]
+[node name="MobileControls" parent="UI" instance=ExtResource("4_controls")]
 show_on_desktop = true
 
-[node name="HUD" parent="UI" instance=ExtResource("15_hud")]
+[node name="HUD" parent="UI" instance=ExtResource("14_hud")]
 
-[node name="PauseMenu" parent="UI" instance=ExtResource("17_pause")]
+[node name="PauseMenu" parent="UI" instance=ExtResource("16_pause")]
 
-[node name="ContentNotice" parent="UI" instance=ExtResource("16_notice")]
+[node name="ContentNotice" parent="UI" instance=ExtResource("15_notice")]
