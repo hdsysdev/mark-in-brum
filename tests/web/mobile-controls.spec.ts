@@ -20,6 +20,17 @@ async function bootGame(page: Page): Promise<void> {
   await page.waitForFunction(() => (window as any).__markInBrum?.ready === true, null, {
     timeout: 90_000,
   });
+  // First launch shows the mature-content notice; dismiss it if present.
+  const notice = await page.evaluate(() => (window as any).__markInBrum?.notice);
+  if (notice?.visible) {
+    const scaleX = notice.cssScale[0];
+    const scaleY = notice.cssScale[1];
+    const cx = (notice.accept[0] + notice.accept[2] / 2) * scaleX;
+    const cy = (notice.accept[1] + notice.accept[3] / 2) * scaleY;
+    await page.mouse.click(cx, cy);
+    await page.waitForFunction(
+      () => (window as any).__markInBrum?.notice?.visible === false, null, { timeout: 15_000 });
+  }
   // Wait for the controls layout report.
   await page.waitForFunction(() => {
     const bridge = (window as any).__markInBrum;
