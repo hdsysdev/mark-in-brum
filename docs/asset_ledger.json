@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "license_priority": ["CC0", "CC-BY", "MIT"],
+    "source_required": true,
+    "archive_hash_required": true,
+    "runtime_cdn_forbidden": true,
+    "record_download_date": true
+  },
+  "assets": []
+}

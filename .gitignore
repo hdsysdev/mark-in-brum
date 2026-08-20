@@ -8,8 +8,12 @@
 .DS_Store
 Thumbs.db
 
-# Art source is never imported into the game
+# Art source is never imported into the game. The pinned OSM extract and
+# query ARE committed (reproducible blockout); archives, photos and
+# Blender sources stay local-only.
 art_source/**
+!art_source/osm/
+!art_source/osm/**
 
 # Builds, QA evidence, local tooling caches
 build/
@@ -24,3 +28,5 @@ __pycache__/
 # Local notes
 *.swp
 *~
+tests/web/test-results/
+tests/web/playwright-report/
