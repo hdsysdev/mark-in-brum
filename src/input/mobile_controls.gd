@@ -65,8 +65,8 @@ func _report_layout() -> void:
 				int(rect.size.x), int(rect.size.y)])
 	# Rects are in Godot canvas space; the shell scales them to CSS px using
 	# the live canvas element, so browser-side tests can touch real pixels.
-	JavaScriptBridge.eval(
-		"window.__markInBrum.controls = JSON.stringify({rects: '%s', cssScale: ["
-		+ "document.getElementById('canvas').clientWidth / document.getElementById('canvas').width,"
+	var rects_string: String = ",".join(rects)
+	var js := "window.__markInBrum.controls = JSON.stringify({rects: '" + rects_string + "', cssScale: [" \
+		+ "document.getElementById('canvas').clientWidth / document.getElementById('canvas').width," \
 		+ "document.getElementById('canvas').clientHeight / document.getElementById('canvas').height]});"
-		% ",".join(rects))
+	JavaScriptBridge.eval(js)

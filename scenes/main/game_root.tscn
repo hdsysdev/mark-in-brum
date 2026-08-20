@@ -12,6 +12,11 @@
 [ext_resource type="Script" path="res://src/world/spawn_director.gd" id="10_spawn"]
 [ext_resource type="Script" path="res://src/npc/crowd_budgeter.gd" id="11_crowd"]
 [ext_resource type="PackedScene" path="res://scenes/npc/security_guard.tscn" id="12_guard"]
+[ext_resource type="Script" path="res://src/gameplay/errand_director.gd" id="13_errand"]
+[ext_resource type="Resource" path="res://data/errands/first_day.tres" id="14_chain"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="15_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/content_notice.tscn" id="16_notice"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="17_pause"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
 size = Vector3(400, 1, 400)
@@ -114,7 +119,18 @@ script = ExtResource("8_capture")
 mark_path = NodePath("../../Actors/Mark")
 attention_system_path = NodePath("../AttentionSystem")
 
+[node name="ErrandDirector" type="Node" parent="Gameplay"]
+script = ExtResource("13_errand")
+chain = ExtResource("14_chain")
+mark_path = NodePath("../../Actors/Mark")
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="MobileControls" parent="UI" instance=ExtResource("3_controls")]
 show_on_desktop = true
+
+[node name="HUD" parent="UI" instance=ExtResource("15_hud")]
+
+[node name="PauseMenu" parent="UI" instance=ExtResource("17_pause")]
+
+[node name="ContentNotice" parent="UI" instance=ExtResource("16_notice")]

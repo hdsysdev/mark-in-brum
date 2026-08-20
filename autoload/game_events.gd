@@ -7,6 +7,7 @@ signal session_started
 signal content_notice_accepted
 signal errand_started(errand_id: String)
 signal errand_step_completed(errand_id: String, step_id: String)
+signal objective_changed(objective_text: String)
 signal errand_completed(errand_id: String)
 signal free_roam_unlocked
 signal target_sprayed(target: Node, hit: Dictionary)

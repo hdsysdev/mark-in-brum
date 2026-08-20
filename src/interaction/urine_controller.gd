@@ -34,6 +34,7 @@ var _last_aim: Vector3 = Vector3.FORWARD
 
 
 func _ready() -> void:
+	reduced_grossness = bool(SaveManager.get_setting("grossness/reduced", false))
 	_router = get_node_or_null(input_router_path)
 	if _router == null:
 		var group := get_tree().get_nodes_in_group("input_router")

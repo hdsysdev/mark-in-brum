@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://src/ui/content_notice.gd" id="1_notice"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.06, 0.07, 0.1, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.35, 0.3, 0.2, 0.8)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+content_margin_left = 24.0
+content_margin_top = 20.0
+content_margin_right = 24.0
+content_margin_bottom = 20.0
+
+[node name="ContentNotice" type="CanvasLayer"]
+layer = 30
+script = ExtResource("1_notice")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -220.0
+offset_right = 280.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Title" type="Label" parent="Panel"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.95, 0.8, 0.45, 1)
+theme_override_font_sizes/font_size = 26
+text = "Mark in Brum"
+horizontal_alignment = 1
+
+[node name="Body" type="Label" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 52.0
+offset_bottom = -96.0
+theme_override_colors/font_color = Color(0.9, 0.9, 0.92, 1)
+theme_override_font_sizes/font_size = 15
+text = "ADULT HUMOUR\n\nMark in Brum is a darkly comic sandbox about a rude man with poor impulse control loose in Birmingham city centre. It features toilet humour, cartoon bodily fluids (non-explicit, fully clothed), rude pedestrians, and slapstick civic chaos.\n\nNo real people, businesses, or brands are depicted. All characters are adults.\n\nA 'Reduced Grossness' option is available in the pause menu."
+autowrap_mode = 2
+
+[node name="DeclinedLabel" type="Label" parent="Panel"]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 250.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.9, 0.6, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "That's fine — the game will wait here. This build has no other content."
+horizontal_alignment = 1
+
+[node name="AcceptButton" type="Button" parent="Panel"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -420.0
+offset_top = -64.0
+offset_right = -228.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+text = "I'm an adult — let's go"
+
+[node name="DeclineButton" type="Button" parent="Panel"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -64.0
+offset_right = -16.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+text = "Not for me"
