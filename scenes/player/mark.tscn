@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/player/mark_controller.gd" id="1_controller"]
+[ext_resource type="Resource" path="res://data/player/mark_movement.tres" id="2_movement"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mark"]
+radius = 0.35
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_placeholder"]
+radius = 0.35
+height = 1.8
+
+[node name="Mark" type="CharacterBody3D" groups=["mark"]]
+collision_layer = 1
+collision_mask = 1
+script = ExtResource("1_controller")
+movement = ExtResource("2_movement")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_mark")
+
+[node name="PlaceholderMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_placeholder")
