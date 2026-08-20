@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player/mark.tscn" id="1_mark"]
+[ext_resource type="Script" path="res://src/input/input_router.gd" id="2_router"]
+[ext_resource type="PackedScene" path="res://scenes/ui/mobile_controls.tscn" id="3_controls"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
+size = Vector3(400, 1, 400)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ground"]
+material = null
+size = Vector3(400, 1, 400)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ground"]
+albedo_color = Color(0.21, 0.22, 0.24, 1)
+roughness = 1.0
+
+[sub_resource type="Environment" id="Environment_world"]
+background_mode = 1
+background_color = Color(0.55, 0.6, 0.66, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.65, 0.68, 0.72, 1)
+ambient_light_energy = 0.8
+fog_enabled = true
+fog_light_color = Color(0.55, 0.6, 0.66, 1)
+fog_density = 0.004
+
+[node name="GameRoot" type="Node"]
+
+[node name="WorldRoot" type="Node3D" parent="."]
+
+[node name="Environment" type="Node3D" parent="WorldRoot"]
+
+[node name="Ground" type="StaticBody3D" parent="WorldRoot/Environment"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldRoot/Environment/Ground"]
+position = Vector3(0, -0.5, 0)
+shape = SubResource("BoxShape3D_ground")
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldRoot/Environment/Ground"]
+position = Vector3(0, -0.5, 0)
+mesh = SubResource("BoxMesh_ground")
+surface_material_override/0 = SubResource("StandardMaterial3D_ground")
+
+[node name="Sun" type="DirectionalLight3D" parent="WorldRoot/Environment"]
+rotation_degrees = Vector3(-48, -32, 0)
+light_color = Color(1, 0.96, 0.9, 1)
+light_energy = 0.9
+shadow_enabled = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="WorldRoot/Environment"]
+environment = SubResource("Environment_world")
+
+[node name="Actors" type="Node3D" parent="."]
+
+[node name="Mark" parent="Actors" instance=ExtResource("1_mark")]
+position = Vector3(0, 1.2, 0)
+
+[node name="Gameplay" type="Node" parent="."]
+
+[node name="InputRouter" type="Node" parent="Gameplay" groups=["input_router"]]
+script = ExtResource("2_router")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MobileControls" parent="UI" instance=ExtResource("3_controls")]
+show_on_desktop = true

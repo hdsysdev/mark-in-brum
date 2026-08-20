@@ -20,12 +20,21 @@ var touch_pause_pressed: bool = false
 
 var _accumulated_look: Vector2 = Vector2.ZERO
 var _last_frame: InputFrame = InputFrame.new()
+var _bridge_timer: float = 0.0
 
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	# Build exactly one frame per physics tick so every consumer
 	# (controller, camera, UI) reads consistent, fresh input state.
 	build_frame()
+	if OS.get_name() == "Web":
+		_bridge_timer -= delta
+		if _bridge_timer <= 0.0:
+			_bridge_timer = 0.25
+			JavaScriptBridge.eval(
+				"window.__markInBrum.actionHeld = %s; window.__markInBrum.sprintHeld = %s;" % [
+					"true" if _last_frame.action_held else "false",
+					"true" if _last_frame.sprint_held else "false"])
 
 
 func _unhandled_input(event: InputEvent) -> void:

@@ -10,6 +10,7 @@ extends CharacterBody3D
 
 var _router: InputRouter
 var _moving: bool = false
+var _bridge_timer: float = 0.0
 
 
 func _ready() -> void:
@@ -51,6 +52,18 @@ func _physics_process(delta: float) -> void:
 
 func is_moving() -> bool:
 	return _moving
+
+
+func _process(delta: float) -> void:
+	if OS.get_name() != "Web":
+		return
+	_bridge_timer -= delta
+	if _bridge_timer > 0.0:
+		return
+	_bridge_timer = 0.25
+	JavaScriptBridge.eval(
+		"window.__markInBrum.markX = %.2f; window.__markInBrum.markZ = %.2f; window.__markInBrum.markSpeed = %.2f;" % [
+			global_position.x, global_position.z, current_horizontal_speed()])
 
 
 func _camera_relative_flat(move: Vector2) -> Vector3:

@@ -15,5 +15,10 @@ func _change_to_game_root() -> void:
 	if not ResourceLoader.exists(GAME_ROOT_PATH):
 		# Task 1 stage: GameRoot does not exist yet. Stay alive and announce only.
 		return
+	# Only swap the scene tree when this bootstrap IS the running main scene.
+	# When instantiated inside a test harness the scene tree belongs to the
+	# harness and must not be replaced.
+	if get_tree().current_scene != self:
+		return
 	get_tree().change_scene_to_file(GAME_ROOT_PATH)
 	GameEvents.session_started.emit()

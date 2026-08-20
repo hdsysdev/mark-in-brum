@@ -1,0 +1,96 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://src/input/mobile_controls.gd" id="1_root"]
+[ext_resource type="Script" path="res://src/input/touch_look_zone.gd" id="2_look"]
+[ext_resource type="Script" path="res://src/input/touch_joystick.gd" id="3_joy"]
+[ext_resource type="Script" path="res://src/input/touch_action_button.gd" id="4_button"]
+
+[node name="MobileControls" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_root")
+
+[node name="LookZone" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_look")
+
+[node name="Joystick" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = -188.0
+offset_right = 188.0
+offset_bottom = -28.0
+grow_vertical = 0
+script = ExtResource("3_joy")
+
+[node name="ActionButton" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -104.0
+offset_right = -28.0
+offset_bottom = -28.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("4_button")
+mode = 0
+button_action = 0
+
+[node name="SprintButton" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -184.0
+offset_top = -104.0
+offset_right = -128.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("4_button")
+mode = 1
+button_action = 1
+
+[node name="RecenterButton" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -124.0
+offset_top = -160.0
+offset_right = -68.0
+offset_bottom = -104.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("4_button")
+mode = 2
+button_action = 2
+
+[node name="PauseButton" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 64.0
+grow_horizontal = 0
+script = ExtResource("4_button")
+mode = 2
+button_action = 3
