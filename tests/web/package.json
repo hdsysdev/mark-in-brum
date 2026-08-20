@@ -1,0 +1,11 @@
+{
+  "name": "mark-in-brum-qa",
+  "private": true,
+  "description": "Browser QA for the Mark in Brum web export",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

@@ -1,0 +1,26 @@
+# Godot 4+ / general
+.godot/
+*.tmp
+*.import
+!export_presets.cfg
+
+# Editor / OS cruft
+.DS_Store
+Thumbs.db
+
+# Art source is never imported into the game
+art_source/**
+
+# Builds, QA evidence, local tooling caches
+build/
+dist/
+artifacts/
+node_modules/
+tools/.venv/
+__pycache__/
+*.pyc
+.venv/
+
+# Local notes
+*.swp
+*~

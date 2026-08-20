@@ -1,0 +1,12 @@
+/* Host-page styles for the Mark in Brum web build.
+   The canvas is positioned by the custom shell; this file documents
+   standalone styling used by tools/qa/verify_web_build.py audits. */
+
+:root {
+	color-scheme: dark;
+}
+
+html, body {
+	background: #0d0f14;
+	overscroll-behavior: none;
+}
