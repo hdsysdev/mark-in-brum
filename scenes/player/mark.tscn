@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://src/player/mark_controller.gd" id="1_controller"]
 [ext_resource type="Resource" path="res://data/player/mark_movement.tres" id="2_movement"]
 [ext_resource type="PackedScene" path="res://scenes/player/third_person_camera_rig.tscn" id="3_rig"]
+[ext_resource type="Script" path="res://src/interaction/urine_controller.gd" id="4_urine"]
+[ext_resource type="PackedScene" path="res://scenes/effects/urine_stream.tscn" id="5_stream"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mark"]
 radius = 0.35
@@ -13,8 +15,8 @@ radius = 0.35
 height = 1.8
 
 [node name="Mark" type="CharacterBody3D" groups=["mark"]]
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_controller")
 movement = ExtResource("2_movement")
 
@@ -26,3 +28,10 @@ mesh = SubResource("CapsuleMesh_placeholder")
 
 [node name="ThirdPersonCameraRig" parent="." instance=ExtResource("3_rig")]
 fade_target_path = NodePath("../PlaceholderMesh")
+
+[node name="UrineController" type="Node3D" parent="."]
+position = Vector3(0, 0.72, 0.08)
+script = ExtResource("4_urine")
+
+[node name="UrineStream" parent="UrineController" instance=ExtResource("5_stream")]
+controller_path = NodePath("..")

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" path="res://scenes/player/mark.tscn" id="1_mark"]
 [ext_resource type="Script" path="res://src/input/input_router.gd" id="2_router"]
 [ext_resource type="PackedScene" path="res://scenes/ui/mobile_controls.tscn" id="3_controls"]
+[ext_resource type="Script" path="res://src/interaction/urine_effects_root.gd" id="4_effects"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
 size = Vector3(400, 1, 400)
@@ -55,6 +56,12 @@ environment = SubResource("Environment_world")
 
 [node name="Mark" parent="Actors" instance=ExtResource("1_mark")]
 position = Vector3(0, 1.2, 0)
+
+[node name="Effects" type="Node3D" parent="."]
+
+[node name="UrineEffectsRoot" type="Node3D" parent="Effects"]
+script = ExtResource("4_effects")
+urine_controller_path = NodePath("../Actors/Mark/UrineController")
 
 [node name="Gameplay" type="Node" parent="."]
 
