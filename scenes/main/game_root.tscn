@@ -1,9 +1,17 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/player/mark.tscn" id="1_mark"]
 [ext_resource type="Script" path="res://src/input/input_router.gd" id="2_router"]
 [ext_resource type="PackedScene" path="res://scenes/ui/mobile_controls.tscn" id="3_controls"]
 [ext_resource type="Script" path="res://src/interaction/urine_effects_root.gd" id="4_effects"]
+[ext_resource type="Script" path="res://src/core/game_root.gd" id="5_root"]
+[ext_resource type="Script" path="res://src/gameplay/attention_system.gd" id="6_attention"]
+[ext_resource type="Resource" path="res://data/gameplay/attention_tiers.tres" id="7_tiers"]
+[ext_resource type="Script" path="res://src/gameplay/capture_sequence.gd" id="8_capture"]
+[ext_resource type="Script" path="res://src/world/flat_nav_region.gd" id="9_nav"]
+[ext_resource type="Script" path="res://src/world/spawn_director.gd" id="10_spawn"]
+[ext_resource type="Script" path="res://src/npc/crowd_budgeter.gd" id="11_crowd"]
+[ext_resource type="PackedScene" path="res://scenes/npc/security_guard.tscn" id="12_guard"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
 size = Vector3(400, 1, 400)
@@ -27,6 +35,7 @@ fog_light_color = Color(0.55, 0.6, 0.66, 1)
 fog_density = 0.004
 
 [node name="GameRoot" type="Node"]
+script = ExtResource("5_root")
 
 [node name="WorldRoot" type="Node3D" parent="."]
 
@@ -52,10 +61,37 @@ shadow_enabled = false
 [node name="WorldEnvironment" type="WorldEnvironment" parent="WorldRoot/Environment"]
 environment = SubResource("Environment_world")
 
+[node name="Navigation" type="NavigationRegion3D" parent="WorldRoot"]
+script = ExtResource("9_nav")
+size = Vector2(200, 200)
+
+[node name="SpawnDirector" type="Node3D" parent="WorldRoot"]
+script = ExtResource("10_spawn")
+spawn_points = PackedVector3Array(0, 0, 6, -5, 0, 3, 5, 0, 3, -7, 0, -2, 7, 0, -2, -4, 0, -6, 4, 0, -6, 0, 0, -8, -9, 0, 4, 9, 0, 4, 8, 0, 7, -8, 0, 7, 2, 0, -10)
+
 [node name="Actors" type="Node3D" parent="."]
 
 [node name="Mark" parent="Actors" instance=ExtResource("1_mark")]
 position = Vector3(0, 1.2, 0)
+
+[node name="Civilians" type="Node3D" parent="Actors"]
+script = ExtResource("11_crowd")
+spawn_count = 12
+spawn_director_path = NodePath("../../WorldRoot/SpawnDirector")
+
+[node name="Security" type="Node3D" parent="Actors"]
+
+[node name="Guard1" parent="Actors/Security" instance=ExtResource("12_guard")]
+position = Vector3(6, 0.9, 6)
+mark_path = NodePath("../../Mark")
+attention_system_path = NodePath("../../Gameplay/AttentionSystem")
+patrol_points = PackedVector3Array(0, 0, 0, 6, 0, -4, -6, 0, -4, -6, 0, 6)
+
+[node name="Guard2" parent="Actors/Security" instance=ExtResource("12_guard")]
+position = Vector3(-6, 0.9, -6)
+mark_path = NodePath("../../Mark")
+attention_system_path = NodePath("../../Gameplay/AttentionSystem")
+patrol_points = PackedVector3Array(0, 0, 0, -6, 0, 6, 6, 0, 6, 6, 0, -6)
 
 [node name="Effects" type="Node3D" parent="."]
 
@@ -67,6 +103,16 @@ urine_controller_path = NodePath("../Actors/Mark/UrineController")
 
 [node name="InputRouter" type="Node" parent="Gameplay" groups=["input_router"]]
 script = ExtResource("2_router")
+
+[node name="AttentionSystem" type="Node" parent="Gameplay"]
+script = ExtResource("6_attention")
+tiers = ExtResource("7_tiers")
+mark_path = NodePath("../../Actors/Mark")
+
+[node name="CaptureSequence" type="Node" parent="Gameplay"]
+script = ExtResource("8_capture")
+mark_path = NodePath("../../Actors/Mark")
+attention_system_path = NodePath("../AttentionSystem")
 
 [node name="UI" type="CanvasLayer" parent="."]
 

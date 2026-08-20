@@ -36,7 +36,7 @@ func test_spraying_a_civilian_triggers_a_reaction() -> void:
 	await wait_physics_frames(30, "settle")
 
 	var civilian := (load(CIVILIAN_SCENE) as PackedScene).instantiate()
-	civilian.position = Vector3(0.0, 0.4, 1.0)
+	civilian.position = Vector3(0.0, 0.9, 1.0)
 	add_child_autofree(civilian)
 	var brain: NPCBrain = civilian.get_node("Brain")
 	brain.next_reaction_override = NPCBrain.Reaction.COMPLAIN
@@ -78,7 +78,7 @@ func test_civilian_reaction_is_not_repeated_by_one_stream() -> void:
 	await wait_physics_frames(30, "settle")
 
 	var civilian := (load(CIVILIAN_SCENE) as PackedScene).instantiate()
-	civilian.position = Vector3(0.0, 0.4, 1.0)
+	civilian.position = Vector3(0.0, 0.9, 1.0)
 	add_child_autofree(civilian)
 	var brain: NPCBrain = civilian.get_node("Brain")
 	brain.next_reaction_override = NPCBrain.Reaction.FLEE

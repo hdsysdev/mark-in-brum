@@ -41,9 +41,10 @@ func _spawn_civilian(index: int) -> void:
 	var civilian := CIVILIAN_SCENE.instantiate()
 	add_child(civilian)
 	if _spawn_director != null:
-		civilian.global_position = _spawn_director.point_for(index)
+		# NPC capsule half-height is 0.875; spawn resting on the ground.
+		civilian.global_position = _spawn_director.point_for(index) + Vector3(0.0, 0.9, 0.0)
 	else:
-		civilian.global_position = Vector3(float(index) * 1.5 - 6.0, 0.4, 4.0)
+		civilian.global_position = Vector3(float(index) * 1.5 - 6.0, 0.9, 4.0)
 	var brain: NPCBrain = civilian.get_node("Brain")
 	brain.rng_seed = _seed_counter + index
 	if archetype_paths.size() > 0:

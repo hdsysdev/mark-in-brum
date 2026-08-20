@@ -1,23 +1,19 @@
 class_name FlatNavRegion
 extends NavigationRegion3D
 ## Flat rectangular navigation region. For the open city floor and for
-## headless tests. NavigationMesh polygons are supplied directly, so no
-## editor bake is required.
+## headless tests. Built via create_from_mesh (canonical valid polygon
+## data) so no editor bake is required.
 
 @export var size: Vector2 = Vector2(200.0, 200.0)
 @export var cell_size: float = 0.5
+@export var agent_radius: float = 0.45
 
 
 func _ready() -> void:
 	var nav_mesh := NavigationMesh.new()
 	nav_mesh.cell_size = cell_size
-	var half := size * 0.5
-	var vertices := PackedVector3Array([
-		Vector3(-half.x, 0.0, -half.y),
-		Vector3(half.x, 0.0, -half.y),
-		Vector3(half.x, 0.0, half.y),
-		Vector3(-half.x, 0.0, half.y),
-	])
-	nav_mesh.vertices = vertices
-	nav_mesh.add_polygon(PackedInt32Array([0, 1, 2, 3]))
+	nav_mesh.agent_radius = agent_radius
+	var plane := PlaneMesh.new()
+	plane.size = size
+	nav_mesh.create_from_mesh(plane)
 	navigation_mesh = nav_mesh

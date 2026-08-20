@@ -31,7 +31,7 @@ var _reaction: int = Reaction.COMPLAIN
 
 func _ready() -> void:
 	_rng.seed = rng_seed
-	_agent = get_node_or_null("../NavigationAgent3D") as NavigationAgent3D
+	_agent = get_node_or_null("../Feet/NavigationAgent3D") as NavigationAgent3D
 	_body = get_parent() as CharacterBody3D
 	var group := get_tree().get_nodes_in_group("mark")
 	_mark = group[0] as Node3D if not group.is_empty() else null
@@ -40,7 +40,6 @@ func _ready() -> void:
 		reaction_data = NPCReactionData.new()
 	GameEvents.target_sprayed.connect(_on_global_spray)
 	_set_state(NPCIdleState.new(self))
-
 
 func _exit_tree() -> void:
 	if GameEvents.target_sprayed.is_connected(_on_global_spray):

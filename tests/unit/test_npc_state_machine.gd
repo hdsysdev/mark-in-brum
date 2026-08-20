@@ -8,7 +8,7 @@ const CIVILIAN_SCENE: String = "res://scenes/npc/civilian.tscn"
 
 func _spawn_civilian() -> NPCBrain:
 	var civilian := (load(CIVILIAN_SCENE) as PackedScene).instantiate()
-	civilian.position = Vector3(0.0, 0.4, 0.0)
+	civilian.position = Vector3(0.0, 0.9, 0.0)
 	add_child_autofree(civilian)
 	var brain: NPCBrain = civilian.get_node("Brain")
 	brain.waypoints = [Vector3(0.0, 0.0, 4.0)]
@@ -37,7 +37,7 @@ func test_wander_arrives_and_returns_to_idle() -> void:
 	brain._set_state(NPCWanderState.new(brain))
 	_step(brain, 0.2)
 	# Force arrival by teleporting onto the waypoint.
-	(brain._body as CharacterBody3D).position = Vector3(0.0, 0.4, 3.2)
+	(brain._body as CharacterBody3D).position = Vector3(0.0, 0.9, 3.2)
 	_step(brain, 0.2)
 	assert_eq(brain.state_name(), "idle", "arrival within arrival_distance must idle")
 

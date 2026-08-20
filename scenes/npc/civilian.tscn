@@ -30,6 +30,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npc")
 script = ExtResource("1_brain")
 reaction_data = ExtResource("2_reactions")
 
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+[node name="Feet" type="Node3D" parent="."]
+position = Vector3(0, -0.85, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Feet"]
 path_desired_distance = 0.6
 target_desired_distance = 0.8
