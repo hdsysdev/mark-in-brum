@@ -22,6 +22,12 @@ var _accumulated_look: Vector2 = Vector2.ZERO
 var _last_frame: InputFrame = InputFrame.new()
 
 
+func _physics_process(_delta: float) -> void:
+	# Build exactly one frame per physics tick so every consumer
+	# (controller, camera, UI) reads consistent, fresh input state.
+	build_frame()
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		_accumulated_look += event.relative
@@ -39,9 +45,10 @@ func build_frame() -> InputFrame:
 		combined = Vector2.ZERO
 	frame.move = combined
 
-	# Look: accumulated mouse + touch deltas are consumed here.
+	# Look: mouse + touch deltas. build_frame() leaves the accumulation
+	# intact so the camera can consume it once per rendered frame via
+	# consume_look_delta(); tests may inspect it through the frame too.
 	var look := _accumulated_look
-	_accumulated_look = Vector2.ZERO
 	look.y *= -1.0 if look_invert_y else 1.0
 	frame.look_delta = look * look_sensitivity
 
@@ -59,6 +66,13 @@ func build_frame() -> InputFrame:
 
 func last_frame() -> InputFrame:
 	return _last_frame
+
+
+func consume_look_delta() -> Vector2:
+	var look := _accumulated_look
+	_accumulated_look = Vector2.ZERO
+	look.y *= -1.0 if look_invert_y else 1.0
+	return look * look_sensitivity
 
 
 func add_look_delta(delta: Vector2) -> void:

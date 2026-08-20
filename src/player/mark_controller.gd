@@ -28,7 +28,7 @@ func current_horizontal_speed() -> float:
 
 
 func _physics_process(delta: float) -> void:
-	var frame: InputFrame = _router.build_frame() if _router != null else InputFrame.new()
+	var frame: InputFrame = _router.last_frame() if _router != null else InputFrame.new()
 
 	var target_speed: float = movement.sprint_speed if frame.sprint_held else movement.walk_speed
 	var target_velocity := _camera_relative_flat(frame.move) * target_speed

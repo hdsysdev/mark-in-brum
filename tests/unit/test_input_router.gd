@@ -41,10 +41,12 @@ func test_keyboard_and_joystick_merge_and_clamp_to_unit_circle() -> void:
 
 func test_look_deltas_accumulate_and_are_consumed() -> void:
 	router.add_look_delta(Vector2(5.0, 3.0))
-	var first := router.build_frame()
-	assert_eq(first.look_delta, Vector2(5.0, 3.0))
+	var frame := router.build_frame()
+	assert_eq(frame.look_delta, Vector2(5.0, 3.0))
+	var consumed := router.consume_look_delta()
+	assert_eq(consumed, Vector2(5.0, 3.0))
 	var second := router.build_frame()
-	assert_eq(second.look_delta, Vector2.ZERO, "look delta must be consumed per frame")
+	assert_eq(second.look_delta, Vector2.ZERO, "look delta must be consumed once")
 
 
 func test_action_and_sprint_from_touch_and_keyboard() -> void:
