@@ -7,7 +7,7 @@ import { test, expect, Page } from '@playwright/test';
  */
 
 async function bootGame(page: Page): Promise<void> {
-  await page.goto('/');
+  await page.goto('');
   await page.waitForFunction(() => (window as any).__markInBrum?.ready === true, null, {
     timeout: 90_000,
   });
