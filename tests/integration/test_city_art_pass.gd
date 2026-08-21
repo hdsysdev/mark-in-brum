@@ -33,12 +33,58 @@ func test_landmark_anchors_match_condensed_route() -> void:
 	add_child_autofree(city)
 	await wait_process_frames(2, "let landmark art assemble")
 	var art := city.get_node("LandmarkArt")
-	assert_eq(art.get_node("GrandCentralNewStreet").position, Vector3(28.0, 0.0, -105.0))
-	assert_eq(art.get_node("VictoriaSquareTownHall").position, Vector3(-250.0, 0.0, -150.0))
-	assert_eq(art.get_node("CouncilHouseChamberlainSquare").position, Vector3(-204.0, 0.0, -230.0))
-	assert_eq(art.get_node("BullringFacade").position, Vector3(420.0, 0.0, 80.0))
-	assert_eq(art.get_node("StMartinInTheBullRing").position, Vector3(362.0, 0.0, 61.0))
-	assert_eq(art.get_node("Rotunda").position, Vector3(230.0, 0.0, -65.0))
+	assert_eq(art.get_node("GrandCentralNewStreet").position, Vector3(0.0, 0.0, -100.0))
+	assert_eq(art.get_node("VictoriaSquareTownHall").position, Vector3(-85.0, 0.0, -55.0))
+	assert_eq(art.get_node("CouncilHouseChamberlainSquare").position, Vector3(-70.0, 0.0, 20.0))
+	assert_eq(art.get_node("BullringFacade").position, Vector3(95.0, 0.0, 10.0))
+	assert_eq(art.get_node("StMartinInTheBullRing").position, Vector3(35.0, 0.0, 20.0))
+	assert_eq(art.get_node("Rotunda").position, Vector3(75.0, 0.0, -80.0))
+
+
+func test_landmarks_form_a_dense_walkable_city_core() -> void:
+	var city := (load(CITY_SCENE) as PackedScene).instantiate()
+	add_child_autofree(city)
+	await wait_process_frames(2, "let compact landmark art assemble")
+	var art := city.get_node("LandmarkArt")
+	var positions: Array[Vector3] = []
+	for landmark_name in LANDMARKS:
+		positions.append((art.get_node(landmark_name) as Node3D).position)
+	var min_x := INF
+	var max_x := -INF
+	var min_z := INF
+	var max_z := -INF
+	for position in positions:
+		min_x = minf(min_x, position.x)
+		max_x = maxf(max_x, position.x)
+		min_z = minf(min_z, position.z)
+		max_z = maxf(max_z, position.z)
+	assert_lte(max_x - min_x, 180.0, "landmark core must fit within 180 metres east-west")
+	assert_lte(max_z - min_z, 120.0, "landmark core must fit within 120 metres north-south")
+	for index in range(positions.size()):
+		var nearest := INF
+		for other_index in range(positions.size()):
+			if index == other_index:
+				continue
+			nearest = minf(nearest, positions[index].distance_to(positions[other_index]))
+		assert_lte(nearest, 90.0, "%s must have another landmark in the same street view" % LANDMARKS[index])
+
+
+func test_birmingham_photosphere_replaces_flat_sky() -> void:
+	var city := (load(CITY_SCENE) as PackedScene).instantiate()
+	var world_environment := city.get_node("Environment/WorldEnvironment") as WorldEnvironment
+	var environment := world_environment.environment
+	assert_eq(environment.background_mode, Environment.BG_SKY)
+	assert_not_null(environment.sky, "world must expose the Birmingham panorama sky")
+	var panorama_material := environment.sky.sky_material as PanoramaSkyMaterial
+	assert_not_null(panorama_material, "sky must use a panorama material")
+	assert_eq(
+		panorama_material.panorama.resource_path,
+		"res://assets/textures/city/birmingham_new_street_bullring_photosphere_4k.jpg",
+	)
+	var photosphere := city.get_node_or_null("Environment/BirminghamPhotosphere") as MeshInstance3D
+	assert_not_null(photosphere, "Compatibility/WebGL fallback must render the photosphere geometry")
+	assert_not_null(photosphere.mesh, "photosphere geometry must have a sphere mesh")
+	city.free()
 
 
 func test_licensed_assets_and_collision_proxies_are_integrated() -> void:

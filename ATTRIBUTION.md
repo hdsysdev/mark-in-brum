@@ -25,6 +25,18 @@ Full per-file records (source URLs, hashes, download dates, modifications)
 live in `docs/asset_ledger.json`. License texts are mirrored in
 `assets/licenses/`.
 
+## Birmingham photosphere
+
+The city backdrop uses the **Outside Main Entrance – Bullring** panorama from the
+West Midlands Railway Birmingham New Street virtual tour produced by The Virtual
+Tour Company:
+
+https://virtualtourcompany.co.uk/birmingham/index.html
+
+The six 1024 px krpano cubefaces were converted locally into the runtime
+4096×2048 equirectangular texture. The result is used only for this private game
+prototype.
+
 ## Engine and tooling
 
 - Godot Engine — MIT — https://godotengine.org/license

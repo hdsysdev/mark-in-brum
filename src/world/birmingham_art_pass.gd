@@ -11,12 +11,12 @@ extends Node3D
 ## SurfaceTool meshes. Licensed local Kenney dressing and Poly Haven surface
 ## maps are preloaded below; all provenance is recorded in the asset ledger.
 
-const GRAND_CENTRAL_POSITION: Vector3 = Vector3(28.0, 0.0, -105.0)
-const VICTORIA_SQUARE_POSITION: Vector3 = Vector3(-250.0, 0.0, -150.0)
-const COUNCIL_HOUSE_POSITION: Vector3 = Vector3(-204.0, 0.0, -230.0)
-const BULLRING_POSITION: Vector3 = Vector3(420.0, 0.0, 80.0)
-const ST_MARTIN_POSITION: Vector3 = Vector3(362.0, 0.0, 61.0)
-const ROTUNDA_POSITION: Vector3 = Vector3(230.0, 0.0, -65.0)
+const GRAND_CENTRAL_POSITION: Vector3 = Vector3(0.0, 0.0, -100.0)
+const VICTORIA_SQUARE_POSITION: Vector3 = Vector3(-85.0, 0.0, -55.0)
+const COUNCIL_HOUSE_POSITION: Vector3 = Vector3(-70.0, 0.0, 20.0)
+const BULLRING_POSITION: Vector3 = Vector3(95.0, 0.0, 10.0)
+const ST_MARTIN_POSITION: Vector3 = Vector3(35.0, 0.0, 20.0)
+const ROTUNDA_POSITION: Vector3 = Vector3(75.0, 0.0, -80.0)
 
 const PAVING_DIFFUSE: Texture2D = preload("res://assets/textures/city/polyhaven/precast_stone_paving_diffuse_1k.jpg")
 const PAVING_ROUGHNESS: Texture2D = preload("res://assets/textures/city/polyhaven/precast_stone_paving_roughness_1k.jpg")
@@ -299,26 +299,26 @@ func _build_street_language() -> void:
 	var bollard_transforms: Array[Transform3D] = []
 	for index in range(10):
 		var x := -10.0 + float(index) * 8.5
-		bollard_transforms.append(Transform3D(Basis.IDENTITY, Vector3(28.0 + x, 0.48, -123.0)))
+		bollard_transforms.append(Transform3D(Basis.IDENTITY, Vector3(x, 0.48, -123.0)))
 	for index in range(8):
 		var x := -28.0 + float(index) * 8.0
-		bollard_transforms.append(Transform3D(Basis.IDENTITY, Vector3(420.0 + x, 0.48, 38.0)))
+		bollard_transforms.append(Transform3D(Basis.IDENTITY, Vector3(95.0 + x, 0.48, -35.0)))
 	LandmarkPrimitives.multimesh(root, "PedestrianBollards", bollard_mesh, bollard_transforms, bollard_material)
 
 	var dash_mesh := BoxMesh.new()
 	dash_mesh.size = Vector3(0.22, 0.04, 3.6)
 	var dash_transforms: Array[Transform3D] = []
 	for index in range(9):
-		dash_transforms.append(Transform3D(Basis.IDENTITY, Vector3(28.0 + float(index - 4) * 7.0, 0.06, -116.0)))
+		dash_transforms.append(Transform3D(Basis.IDENTITY, Vector3(float(index - 4) * 7.0, 0.06, -125.0)))
 	LandmarkPrimitives.multimesh(root, "WhiteLaneDashes", dash_mesh, dash_transforms, marking_material)
 
 	var zebra_mesh := BoxMesh.new()
 	zebra_mesh.size = Vector3(2.0, 0.045, 0.36)
 	var zebra_transforms: Array[Transform3D] = []
 	for index in range(9):
-		zebra_transforms.append(Transform3D(Basis.IDENTITY, Vector3(420.0 + float(index - 4) * 4.0, 0.07, 41.0)))
+		zebra_transforms.append(Transform3D(Basis.IDENTITY, Vector3(95.0 + float(index - 4) * 4.0, 0.07, -36.0)))
 	LandmarkPrimitives.multimesh(root, "ZebraCrossing", zebra_mesh, zebra_transforms, marking_material)
-	LandmarkPrimitives.box(root, "YellowNoParkingLine", Vector3(0.16, 0.05, 58.0), Vector3(468.0, 0.08, 80.0), yellow_material)
+	LandmarkPrimitives.box(root, "YellowNoParkingLine", Vector3(0.16, 0.05, 58.0), Vector3(158.0, 0.08, 10.0), yellow_material)
 
 
 func _build_licensed_asset_dressing() -> void:
@@ -330,44 +330,44 @@ func _build_licensed_asset_dressing() -> void:
 	add_child(root)
 
 	# Commercial façades fill the gaps between Birmingham-specific silhouettes.
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[0], "NewStreetRetailWest", Vector3(-62.0, 0.0, -105.0), PI * 0.5, 14.0, 520.0, Vector3(13.0, 18.0, 13.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[1], "NewStreetRetailEast", Vector3(115.0, 0.0, -105.0), -PI * 0.5, 15.0, 520.0, Vector3(15.0, 19.0, 14.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[2], "NewStreetSideStreetWest", Vector3(-45.0, 0.0, -35.0), PI, 14.0, 420.0, Vector3(13.0, 13.0, 16.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[3], "NewStreetSideStreetEast", Vector3(105.0, 0.0, -30.0), 0.0, 14.0, 420.0, Vector3(12.0, 18.0, 13.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "VictoriaRetailWest", Vector3(-330.0, 0.0, -150.0), PI * 0.5, 16.0, 480.0, Vector3(26.0, 14.0, 16.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[5], "VictoriaRetailEast", Vector3(-170.0, 0.0, -145.0), -PI * 0.5, 15.0, 480.0, Vector3(13.0, 25.0, 16.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "ChamberlainRetailNorth", Vector3(-124.0, 0.0, -230.0), PI * 0.5, 18.0, 480.0, Vector3(30.0, 16.0, 18.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[5], "ChamberlainRetailSouth", Vector3(-292.0, 0.0, -230.0), -PI * 0.5, 16.0, 480.0, Vector3(14.0, 27.0, 17.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[6], "RotundaContextWest", Vector3(168.0, 0.0, -65.0), PI * 0.5, 20.0, 360.0, Vector3(20.0, 22.0, 10.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[7], "RotundaContextEast", Vector3(300.0, 0.0, -65.0), -PI * 0.5, 20.0, 360.0, Vector3(20.0, 23.0, 10.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[0], "BullringRetailWest", Vector3(335.0, 0.0, 92.0), PI * 0.5, 18.0, 460.0, Vector3(16.0, 23.0, 17.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[1], "BullringRetailEast", Vector3(505.0, 0.0, 92.0), -PI * 0.5, 18.0, 460.0, Vector3(18.0, 23.0, 17.0))
-	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "BullringRetailNorth", Vector3(450.0, 0.0, 175.0), PI, 16.0, 420.0, Vector3(26.0, 14.0, 16.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[0], "NewStreetRetailWest", Vector3(-52.0, 0.0, -100.0), PI * 0.5, 14.0, 520.0, Vector3(13.0, 18.0, 13.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[1], "NewStreetRetailEast", Vector3(52.0, 0.0, -100.0), -PI * 0.5, 15.0, 520.0, Vector3(15.0, 19.0, 14.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[2], "NewStreetSideStreetWest", Vector3(-30.0, 0.0, -25.0), PI, 14.0, 420.0, Vector3(13.0, 13.0, 16.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[3], "NewStreetSideStreetEast", Vector3(30.0, 0.0, -35.0), 0.0, 14.0, 420.0, Vector3(12.0, 18.0, 13.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "VictoriaRetailWest", Vector3(-145.0, 0.0, -55.0), PI * 0.5, 16.0, 480.0, Vector3(26.0, 14.0, 16.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[5], "VictoriaRetailEast", Vector3(-25.0, 0.0, -55.0), -PI * 0.5, 15.0, 480.0, Vector3(13.0, 25.0, 16.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "ChamberlainRetailNorth", Vector3(-20.0, 0.0, 20.0), PI * 0.5, 18.0, 480.0, Vector3(30.0, 16.0, 18.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[5], "ChamberlainRetailSouth", Vector3(-125.0, 0.0, 20.0), -PI * 0.5, 16.0, 480.0, Vector3(14.0, 27.0, 17.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[6], "RotundaContextWest", Vector3(40.0, 0.0, -80.0), PI * 0.5, 20.0, 360.0, Vector3(20.0, 22.0, 10.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[7], "RotundaContextEast", Vector3(118.0, 0.0, -80.0), -PI * 0.5, 20.0, 360.0, Vector3(20.0, 23.0, 10.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[0], "BullringRetailWest", Vector3(-10.0, 0.0, 70.0), PI * 0.5, 18.0, 460.0, Vector3(16.0, 23.0, 17.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[1], "BullringRetailEast", Vector3(165.0, 0.0, 10.0), -PI * 0.5, 18.0, 460.0, Vector3(18.0, 23.0, 17.0))
+	_spawn_licensed_asset(root, KENNEY_BUILDINGS[4], "BullringRetailNorth", Vector3(105.0, 0.0, 90.0), PI, 16.0, 420.0, Vector3(26.0, 14.0, 16.0))
 
-	_spawn_licensed_asset(root, KENNEY_AWNING, "BullringMarketAwning", Vector3(394.0, 0.0, 42.0), 0.0, 12.0, 180.0)
+	_spawn_licensed_asset(root, KENNEY_AWNING, "BullringMarketAwning", Vector3(65.0, 0.0, -25.0), 0.0, 12.0, 180.0)
 	for index in range(4):
-		_spawn_licensed_asset(root, KENNEY_PARASOL, "MarketParasol" + str(index), Vector3(365.0 + float(index) * 12.0, 0.0, 26.0), 0.0, 8.0, 160.0)
+		_spawn_licensed_asset(root, KENNEY_PARASOL, "MarketParasol" + str(index), Vector3(20.0 + float(index) * 12.0, 0.0, -20.0), 0.0, 8.0, 160.0)
 
 	var lamp_positions: Array[Vector3] = [
-		Vector3(0.0, 0.0, -126.0), Vector3(28.0, 0.0, -126.0), Vector3(56.0, 0.0, -126.0),
-		Vector3(-285.0, 0.0, -176.0), Vector3(-218.0, 0.0, -176.0), Vector3(-234.0, 0.0, -206.0),
-		Vector3(374.0, 0.0, 38.0), Vector3(438.0, 0.0, 38.0), Vector3(460.0, 0.0, 104.0),
-		Vector3(210.0, 0.0, -42.0), Vector3(250.0, 0.0, -42.0),
+		Vector3(-25.0, 0.0, -123.0), Vector3(0.0, 0.0, -123.0), Vector3(25.0, 0.0, -123.0),
+		Vector3(-115.0, 0.0, -80.0), Vector3(-55.0, 0.0, -80.0), Vector3(-70.0, 0.0, -10.0),
+		Vector3(50.0, 0.0, -35.0), Vector3(100.0, 0.0, -35.0), Vector3(145.0, 0.0, 15.0),
+		Vector3(60.0, 0.0, -60.0), Vector3(90.0, 0.0, -60.0),
 	]
 	for index in range(lamp_positions.size()):
 		_spawn_licensed_asset(root, KENNEY_LIGHT, "StreetLight" + str(index), lamp_positions[index], 0.0, 8.0, 240.0)
 
-	_spawn_licensed_asset(root, KENNEY_DUMPSTER, "BullringServiceDumpster", Vector3(476.0, 0.0, 112.0), PI * 0.5, 5.0, 150.0)
-	_spawn_licensed_asset(root, KENNEY_STREET_SIGN, "NewStreetRoadSign", Vector3(72.0, 0.0, -124.0), 0.0, 5.0, 180.0)
-	_spawn_licensed_asset(root, KENNEY_WARNING_SIGN, "VictoriaRoadworksSign", Vector3(-293.0, 0.0, -184.0), 0.0, 5.0, 180.0)
-	_spawn_licensed_asset(root, KENNEY_TRAFFIC_LIGHT, "BullringTrafficLight", Vector3(456.0, 0.0, 40.0), 0.0, 8.0, 220.0)
-	_spawn_licensed_asset(root, KENNEY_BARRIER, "VictoriaRoadworksBarrier", Vector3(-286.0, 0.0, -184.0), PI * 0.5, 6.0, 150.0)
+	_spawn_licensed_asset(root, KENNEY_DUMPSTER, "BullringServiceDumpster", Vector3(140.0, 0.0, 35.0), PI * 0.5, 5.0, 150.0)
+	_spawn_licensed_asset(root, KENNEY_STREET_SIGN, "NewStreetRoadSign", Vector3(45.0, 0.0, -125.0), 0.0, 5.0, 180.0)
+	_spawn_licensed_asset(root, KENNEY_WARNING_SIGN, "VictoriaRoadworksSign", Vector3(-125.0, 0.0, -85.0), 0.0, 5.0, 180.0)
+	_spawn_licensed_asset(root, KENNEY_TRAFFIC_LIGHT, "BullringTrafficLight", Vector3(135.0, 0.0, -35.0), 0.0, 8.0, 220.0)
+	_spawn_licensed_asset(root, KENNEY_BARRIER, "VictoriaRoadworksBarrier", Vector3(-118.0, 0.0, -85.0), PI * 0.5, 6.0, 150.0)
 	for index in range(4):
-		_spawn_licensed_asset(root, KENNEY_CONE, "RoadworksCone" + str(index), Vector3(-280.0 + float(index) * 2.0, 0.0, -184.0), 0.0, 8.0, 120.0)
+		_spawn_licensed_asset(root, KENNEY_CONE, "RoadworksCone" + str(index), Vector3(-112.0 + float(index) * 2.0, 0.0, -85.0), 0.0, 8.0, 120.0)
 
 	var vehicle_positions: Array[Vector3] = [
-		Vector3(72.0, 0.0, -138.0), Vector3(-306.0, 0.0, -190.0), Vector3(-150.0, 0.0, -270.0),
-		Vector3(476.0, 0.0, 24.0), Vector3(260.0, 0.0, -24.0),
+		Vector3(45.0, 0.0, -138.0), Vector3(-125.0, 0.0, -95.0), Vector3(-100.0, 0.0, 65.0),
+		Vector3(150.0, 0.0, -30.0), Vector3(105.0, 0.0, -55.0),
 	]
 	var vehicle_rotations: Array[float] = [PI * 0.5, 0.0, PI * 0.5, PI * 0.5, -PI * 0.5]
 	for index in range(KENNEY_VEHICLES.size()):

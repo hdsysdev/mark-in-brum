@@ -14,7 +14,6 @@
 [ext_resource type="Script" path="res://src/gameplay/errand_director.gd" id="12_errand"]
 [ext_resource type="Resource" path="res://data/errands/first_day.tres" id="13_chain"]
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="14_hud"]
-[ext_resource type="PackedScene" path="res://scenes/ui/content_notice.tscn" id="15_notice"]
 [ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="16_pause"]
 
 [node name="GameRoot" type="Node"]
@@ -31,7 +30,7 @@ target_path = NodePath("../Actors/Mark")
 [node name="Actors" type="Node3D" parent="."]
 
 [node name="Mark" parent="Actors" instance=ExtResource("2_mark")]
-position = Vector3(28, 1.2, -155)
+position = Vector3(0, 1.2, -135)
 rotation = Vector3(0, 3.14159, 0)
 
 [node name="Civilians" type="Node3D" parent="Actors"]
@@ -42,13 +41,13 @@ spawn_director_path = NodePath("../../WorldRoot/SpawnDirector")
 [node name="Security" type="Node3D" parent="Actors"]
 
 [node name="Guard1" parent="Actors/Security" instance=ExtResource("11_guard")]
-position = Vector3(44, 0.9, -148)
+position = Vector3(-18, 0.9, -128)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
 patrol_points = PackedVector3Array(0, 0, 0, 6, 0, -4, -6, 0, -4, -6, 0, 6)
 
 [node name="Guard2" parent="Actors/Security" instance=ExtResource("11_guard")]
-position = Vector3(12, 0.9, -166)
+position = Vector3(18, 0.9, -128)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
 patrol_points = PackedVector3Array(0, 0, 0, -6, 0, 6, 6, 0, 6, 6, 0, -6)
@@ -87,5 +86,3 @@ show_on_desktop = true
 [node name="HUD" parent="UI" instance=ExtResource("14_hud")]
 
 [node name="PauseMenu" parent="UI" instance=ExtResource("16_pause")]
-
-[node name="ContentNotice" parent="UI" instance=ExtResource("15_notice")]

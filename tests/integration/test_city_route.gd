@@ -48,11 +48,11 @@ func test_navigation_connects_spawn_to_bullring_and_victoria_square() -> void:
 	var map := nav.get_world_3d().navigation_map
 	# Spawn (New Street) -> Bullring/St Martin's direction (east).
 	var to_bullring := NavigationServer3D.map_get_path(
-		map, Vector3(0.0, 0.1, 0.0), Vector3(420.0, 0.1, 80.0), true)
+		map, Vector3(0.0, 0.1, -135.0), Vector3(95.0, 0.1, 10.0), true)
 	assert_gt(to_bullring.size(), 0, "spawn and Bullring must be connected")
 	# Spawn -> Victoria Square direction (west).
 	var to_victoria := NavigationServer3D.map_get_path(
-		map, Vector3(0.0, 0.1, 0.0), Vector3(-250.0, 0.1, -150.0), true)
+		map, Vector3(0.0, 0.1, -135.0), Vector3(-85.0, 0.1, -55.0), true)
 	assert_gt(to_victoria.size(), 0, "spawn and Victoria Square must be connected")
 
 

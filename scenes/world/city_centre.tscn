@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3]
+[gd_scene load_steps=17 format=3]
 
 [ext_resource type="Script" path="res://src/world/chunk_streamer.gd" id="1_streamer"]
 [ext_resource type="Script" path="res://src/world/flat_nav_region.gd" id="2_nav"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://src/world/birmingham_art_pass.gd" id="5_art"]
 [ext_resource type="Texture2D" path="res://assets/textures/city/polyhaven/asphalt_02_diffuse_1k.jpg" id="6_asphalt_diffuse"]
 [ext_resource type="Texture2D" path="res://assets/textures/city/polyhaven/asphalt_02_roughness_1k.jpg" id="7_asphalt_roughness"]
+[ext_resource type="Texture2D" path="res://assets/textures/city/birmingham_new_street_bullring_photosphere_4k.jpg" id="8_photosphere"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
 size = Vector3(900, 1, 900)
@@ -22,21 +23,52 @@ roughness = 0.82
 roughness_texture = ExtResource("7_asphalt_roughness")
 uv1_scale = Vector3(90, 90, 90)
 
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_birmingham"]
+panorama = ExtResource("8_photosphere")
+filter = true
+energy_multiplier = 0.72
+
+[sub_resource type="Sky" id="Sky_birmingham"]
+sky_material = SubResource("PanoramaSkyMaterial_birmingham")
+process_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_photosphere"]
+shading_mode = 0
+albedo_texture = ExtResource("8_photosphere")
+cull_mode = 1
+uv1_scale = Vector3(-1, 1, 1)
+uv1_offset = Vector3(1, 0, 0)
+
+[sub_resource type="SphereMesh" id="SphereMesh_photosphere"]
+material = SubResource("StandardMaterial3D_photosphere")
+radius = 340.0
+height = 680.0
+radial_segments = 64
+rings = 32
+
 [sub_resource type="Environment" id="Environment_world"]
-background_mode = 1
-background_color = Color(0.42, 0.49, 0.56, 1)
+background_mode = 2
+sky = SubResource("Sky_birmingham")
+background_energy_multiplier = 0.72
 ambient_light_source = 3
 ambient_light_color = Color(0.72, 0.78, 0.84, 1)
 ambient_light_energy = 0.95
 fog_enabled = true
 fog_light_color = Color(0.42, 0.49, 0.56, 1)
-fog_density = 0.0018
+fog_density = 0.001
 
 [node name="CityCentre" type="Node3D"]
 
 [node name="Environment" type="Node3D" parent="."]
 
 [node name="Ground" type="StaticBody3D" parent="Environment"]
+
+[node name="BirminghamPhotosphere" type="MeshInstance3D" parent="Environment"]
+position = Vector3(0, 0, -40)
+rotation_degrees = Vector3(0, 90, 0)
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("SphereMesh_photosphere")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]
 position = Vector3(0, -0.5, 0)
@@ -67,7 +99,7 @@ agent_radius = 0.45
 
 [node name="SpawnDirector" type="Node3D" parent="."]
 script = ExtResource("3_spawn")
-spawn_points = Array[Vector3]([Vector3(18, 0, -148), Vector3(26, 0, -140), Vector3(36, 0, -146), Vector3(42, 0, -158), Vector3(12, 0, -160), Vector3(52, 0, -138), Vector3(8, 0, -174), Vector3(34, 0, -170), Vector3(58, 0, -162), Vector3(20, 0, -132), Vector3(46, 0, -178), Vector3(2, 0, -144), Vector3(62, 0, -150)])
+spawn_points = Array[Vector3]([Vector3(-24, 0, -132), Vector3(-12, 0, -124), Vector3(0, 0, -130), Vector3(12, 0, -124), Vector3(24, 0, -132), Vector3(-28, 0, -112), Vector3(-12, 0, -110), Vector3(4, 0, -114), Vector3(18, 0, -108), Vector3(30, 0, -112), Vector3(-20, 0, -88), Vector3(16, 0, -88), Vector3(35, 0, -82)])
 
 [node name="WorldBounds" type="Node3D" parent="."]
 script = ExtResource("4_bounds")
