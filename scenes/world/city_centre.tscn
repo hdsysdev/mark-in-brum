@@ -1,9 +1,12 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=12 format=3]
 
 [ext_resource type="Script" path="res://src/world/chunk_streamer.gd" id="1_streamer"]
 [ext_resource type="Script" path="res://src/world/flat_nav_region.gd" id="2_nav"]
 [ext_resource type="Script" path="res://src/world/spawn_director.gd" id="3_spawn"]
 [ext_resource type="Script" path="res://src/world/world_bounds.gd" id="4_bounds"]
+[ext_resource type="Script" path="res://src/world/birmingham_art_pass.gd" id="5_art"]
+[ext_resource type="Texture2D" path="res://assets/textures/city/polyhaven/asphalt_02_diffuse_1k.jpg" id="6_asphalt_diffuse"]
+[ext_resource type="Texture2D" path="res://assets/textures/city/polyhaven/asphalt_02_roughness_1k.jpg" id="7_asphalt_roughness"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ground"]
 size = Vector3(900, 1, 900)
@@ -13,18 +16,21 @@ material = null
 size = Vector3(900, 1, 900)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ground"]
-albedo_color = Color(0.2, 0.21, 0.23, 1)
-roughness = 1.0
+albedo_color = Color(0.58, 0.64, 0.68, 1)
+albedo_texture = ExtResource("6_asphalt_diffuse")
+roughness = 0.82
+roughness_texture = ExtResource("7_asphalt_roughness")
+uv1_scale = Vector3(90, 90, 90)
 
 [sub_resource type="Environment" id="Environment_world"]
 background_mode = 1
-background_color = Color(0.55, 0.6, 0.66, 1)
+background_color = Color(0.42, 0.49, 0.56, 1)
 ambient_light_source = 3
-ambient_light_color = Color(0.65, 0.68, 0.72, 1)
-ambient_light_energy = 0.8
+ambient_light_color = Color(0.72, 0.78, 0.84, 1)
+ambient_light_energy = 0.95
 fog_enabled = true
-fog_light_color = Color(0.55, 0.6, 0.66, 1)
-fog_density = 0.004
+fog_light_color = Color(0.42, 0.49, 0.56, 1)
+fog_density = 0.0018
 
 [node name="CityCentre" type="Node3D"]
 
@@ -43,8 +49,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ground")
 
 [node name="Sun" type="DirectionalLight3D" parent="Environment"]
 rotation_degrees = Vector3(-48, -32, 0)
-light_color = Color(1, 0.96, 0.9, 1)
-light_energy = 0.9
+light_color = Color(0.82, 0.88, 0.94, 1)
+light_energy = 0.8
 shadow_enabled = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
@@ -65,3 +71,6 @@ spawn_points = Array[Vector3]([Vector3(0, 0, 6), Vector3(-5, 0, 3), Vector3(5, 0
 
 [node name="WorldBounds" type="Node3D" parent="."]
 script = ExtResource("4_bounds")
+
+[node name="LandmarkArt" type="Node3D" parent="."]
+script = ExtResource("5_art")

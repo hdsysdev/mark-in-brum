@@ -54,7 +54,10 @@
       "modifications": [
         "ZIP contains License.txt: (Creative Commons Zero, CC0)."
       ],
-      "runtime_outputs": [],
+      "runtime_outputs": [
+        "assets/models/world/kenney/roads/",
+        "assets/licenses/kenney_city_kit_roads_CC0.txt"
+      ],
       "status": "integrated"
     },
     {
@@ -69,7 +72,10 @@
       "modifications": [
         "ZIP contains License.txt: (Creative Commons Zero, CC0)."
       ],
-      "runtime_outputs": [],
+      "runtime_outputs": [
+        "assets/models/world/kenney/commercial/",
+        "assets/licenses/kenney_city_kit_commercial_CC0.txt"
+      ],
       "status": "integrated"
     },
     {
@@ -84,7 +90,10 @@
       "modifications": [
         "ZIP contains License.txt: (Creative Commons Zero, CC0)."
       ],
-      "runtime_outputs": [],
+      "runtime_outputs": [
+        "assets/models/world/kenney/vehicles/",
+        "assets/licenses/kenney_car_kit_CC0.txt"
+      ],
       "status": "integrated"
     },
     {
@@ -99,7 +108,9 @@
       "modifications": [
         "1k jpg maps (diffuse, nor_gl, nor_dx, rough, ao, arm, disp, etc.) per texture, combined into one zip with <asset>/<file> structure. Requested IDs brick_02, concrete_lite_02, paving_stones_08 no longer exist in the Poly Haven catalog (api.polyhaven.com/files/<id> returns 'No asset with id'; old CDN paths also 404). Substituted nearest equivalents: brick_02 -> brick_wall_02, concrete_lite_02 -> concrete_floor_02, paving_stones_08 -> precast_stone_paving. All Poly Haven textures are CC0."
       ],
-      "runtime_outputs": [],
+      "runtime_outputs": [
+        "assets/textures/city/polyhaven/"
+      ],
       "status": "integrated"
     }
   ]
