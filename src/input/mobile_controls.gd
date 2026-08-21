@@ -73,10 +73,13 @@ func _report_layout() -> void:
 			entries.append("\"%s\":[%d,%d,%d,%d]" % [
 				child.name, int(rect.position.x), int(rect.position.y),
 				int(rect.size.x), int(rect.size.y)])
-	# Rects are in Godot canvas space; the shell scales them to CSS px using
-	# the live canvas element, so browser-side tests can touch real pixels.
+	# Rects are in Godot VIEWPORT space; scale to CSS px via the viewport
+	# size (adaptive canvas mode renders the viewport scaled up to the
+	# canvas buffer, so canvas.width would be wrong).
+	var viewport_size: Vector2 = get_viewport().get_visible_rect().size
 	var js := "window.__markInBrum.controls = JSON.stringify({rects: {" + ",".join(entries) \
 		+ "}, cssScale: [" \
-		+ "document.getElementById('canvas').clientWidth / document.getElementById('canvas').width," \
-		+ "document.getElementById('canvas').clientHeight / document.getElementById('canvas').height]});"
+		+ "document.getElementById('canvas').clientWidth / %f," % viewport_size.x \
+		+ "document.getElementById('canvas').clientHeight / %f], viewport: [%f, %f]});" % [
+		viewport_size.y, viewport_size.x, viewport_size.y]
 	JavaScriptBridge.eval(js)

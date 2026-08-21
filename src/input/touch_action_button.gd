@@ -15,6 +15,7 @@ enum ButtonAction { ACTION, SPRINT, RECENTER, PAUSE }
 var _router: InputRouter
 var _pressed: bool = false
 var _toggle_on: bool = false
+var _press_source: String = ""
 
 
 func _ready() -> void:
@@ -34,15 +35,21 @@ func is_active() -> bool:
 
 
 func _gui_input(event: InputEvent) -> void:
+	# On web, a touch tap also arrives as an emulated mouse click; accept
+	# only one source per press so TOGGLE buttons don't double-flip.
 	if event is InputEventScreenTouch:
 		if event.pressed:
+			_press_source = "touch"
 			_begin()
-		else:
+		elif _press_source == "touch":
+			_press_source = ""
 			_end()
 	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if event.pressed:
+		if event.pressed and _press_source == "":
+			_press_source = "mouse"
 			_begin()
-		else:
+		elif not event.pressed and _press_source == "mouse":
+			_press_source = ""
 			_end()
 
 

@@ -46,7 +46,7 @@ func _gui_input(event: InputEvent) -> void:
 			_update_knob(_center)
 	elif event is InputEventScreenDrag and event.index == _touch_index:
 		_update_knob(event.position)
-	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and _touch_index == -1:
 		_mouse_dragging = event.pressed
 		if _mouse_dragging:
 			_update_knob(event.position)
