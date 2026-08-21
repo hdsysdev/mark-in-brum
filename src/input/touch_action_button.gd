@@ -16,6 +16,7 @@ var _router: InputRouter
 var _pressed: bool = false
 var _toggle_on: bool = false
 var _press_source: String = ""
+var _last_begin_ms: int = -1000
 
 
 func _ready() -> void:
@@ -54,6 +55,12 @@ func _gui_input(event: InputEvent) -> void:
 
 
 func _begin() -> void:
+	# Debounce: web touch taps arrive as touch + emulated mouse; only the
+	# first press within the window counts, whichever order they come in.
+	var now := Time.get_ticks_msec()
+	if now - _last_begin_ms < 150:
+		return
+	_last_begin_ms = now
 	match mode:
 		Mode.HOLD:
 			_pressed = true
