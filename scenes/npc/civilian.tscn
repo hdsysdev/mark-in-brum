@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://src/npc/npc_brain.gd" id="1_brain"]
 [ext_resource type="Resource" path="res://data/npc/reaction_data_default.tres" id="2_reactions"]
+[ext_resource type="Script" path="res://src/characters/character_visual.gd" id="3_visual"]
+[ext_resource type="PackedScene" path="res://assets/models/characters/quaternius/Casual_2.gltf" id="4_civilian_model"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_npc"]
 radius = 0.32
@@ -23,8 +25,17 @@ collision_mask = 1
 shape = SubResource("CapsuleShape3D_npc")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_npc")
 surface_material_override/0 = SubResource("StandardMaterial3D_npc")
+
+[node name="CharacterVisual" type="Node3D" parent="."]
+position = Vector3(0, -0.85, 0)
+rotation = Vector3(0, 3.14159, 0)
+scale = Vector3(0.92, 0.92, 0.92)
+script = ExtResource("3_visual")
+
+[node name="Casual2" parent="CharacterVisual" instance=ExtResource("4_civilian_model")]
 
 [node name="Brain" type="Node" parent="."]
 script = ExtResource("1_brain")

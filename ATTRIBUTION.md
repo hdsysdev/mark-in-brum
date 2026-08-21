@@ -34,5 +34,5 @@ live in `docs/asset_ledger.json`. License texts are mirrored in
 
 ## Original content
 
-Mark's likeness is derived from a user-supplied photo used with permission.
-All other character, world, audio, and UI content is original.
+Mark currently uses the CC0 Quaternius base character listed above. A user-supplied likeness may replace its head/face in a later art pass; the current build does not claim to reproduce that likeness.
+All Birmingham landmark proxy geometry, fictional signage, gameplay code, and UI are original.

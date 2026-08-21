@@ -31,7 +31,8 @@ target_path = NodePath("../Actors/Mark")
 [node name="Actors" type="Node3D" parent="."]
 
 [node name="Mark" parent="Actors" instance=ExtResource("2_mark")]
-position = Vector3(0, 1.2, 0)
+position = Vector3(28, 1.2, -155)
+rotation = Vector3(0, 3.14159, 0)
 
 [node name="Civilians" type="Node3D" parent="Actors"]
 script = ExtResource("10_crowd")
@@ -41,13 +42,13 @@ spawn_director_path = NodePath("../../WorldRoot/SpawnDirector")
 [node name="Security" type="Node3D" parent="Actors"]
 
 [node name="Guard1" parent="Actors/Security" instance=ExtResource("11_guard")]
-position = Vector3(6, 0.9, 6)
+position = Vector3(44, 0.9, -148)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
 patrol_points = PackedVector3Array(0, 0, 0, 6, 0, -4, -6, 0, -4, -6, 0, 6)
 
 [node name="Guard2" parent="Actors/Security" instance=ExtResource("11_guard")]
-position = Vector3(-6, 0.9, -6)
+position = Vector3(12, 0.9, -166)
 mark_path = NodePath("../../Mark")
 attention_system_path = NodePath("../../Gameplay/AttentionSystem")
 patrol_points = PackedVector3Array(0, 0, 0, -6, 0, 6, 6, 0, 6, 6, 0, -6)

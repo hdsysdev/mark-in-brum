@@ -65,7 +65,7 @@ offset_top = 250.0
 offset_bottom = 284.0
 theme_override_colors/font_color = Color(0.9, 0.6, 0.5, 1)
 theme_override_font_sizes/font_size = 13
-text = "That's fine — the game will wait here. This build has no other content."
+text = "That's fine — the game will stay paused until you accept."
 horizontal_alignment = 1
 
 [node name="AcceptButton" type="Button" parent="Panel"]

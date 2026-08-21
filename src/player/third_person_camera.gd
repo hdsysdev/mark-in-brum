@@ -11,12 +11,13 @@ const PITCH_SCALE: float = 0.72  # vertical look slightly slower than horizontal
 
 @export var sensitivity_scale: float = 0.0024  # radians per look pixel
 @export var shoulder_offset: Vector3 = Vector3(0.55, 0.12, 0.0)
+@export var shoulder_offset_mobile: Vector3 = Vector3(0.32, 0.22, 0.0)
 @export var spring_length_desktop: float = 3.4
-@export var spring_length_mobile: float = 4.4
+@export var spring_length_mobile: float = 6.2
 @export var default_pitch_desktop: float = -0.10
-@export var default_pitch_mobile: float = -0.24
+@export var default_pitch_mobile: float = -0.12
 @export var fov_desktop: float = 60.0
-@export var fov_mobile: float = 68.0
+@export var fov_mobile: float = 72.0
 @export var recenter_speed: float = 8.0
 @export var fade_near_distance: float = 1.1
 @export var fade_alpha: float = 0.35
@@ -91,17 +92,26 @@ func is_portrait_profile() -> bool:
 	return _portrait
 
 
+static func should_use_portrait_profile(viewport_size: Vector2) -> bool:
+	# Web builds cannot rely on native mobile detection: Android browsers and
+	# Playwright emulation may both report a desktop-like platform. The rendered
+	# canvas aspect is the authoritative presentation signal.
+	return viewport_size.y > viewport_size.x * 1.1
+
+
 func _apply_profile() -> void:
 	var viewport := get_viewport()
 	if viewport == null:
 		return
-	var aspect: float = viewport.get_visible_rect().size.aspect()
-	_portrait = PlatformService.is_mobile and aspect < 1.0
+	var viewport_size := viewport.get_visible_rect().size
+	_portrait = should_use_portrait_profile(viewport_size)
 	if _portrait:
+		spring_arm.position = shoulder_offset_mobile
 		spring_arm.spring_length = spring_length_mobile
 		_default_pitch = default_pitch_mobile
 		camera.fov = fov_mobile
 	else:
+		spring_arm.position = shoulder_offset
 		spring_arm.spring_length = spring_length_desktop
 		_default_pitch = default_pitch_desktop
 		camera.fov = fov_desktop

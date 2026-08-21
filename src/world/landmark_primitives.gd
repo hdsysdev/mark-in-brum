@@ -205,7 +205,7 @@ static func label(
 	label_3d.name = node_name
 	label_3d.text = text_value
 	label_3d.font_size = 64
-	label_3d.pixel_size = pixel_size * 1.45
+	label_3d.pixel_size = pixel_size
 	label_3d.outline_size = 12
 	label_3d.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 	label_3d.modulate = color

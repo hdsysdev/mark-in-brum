@@ -22,9 +22,13 @@
       "archive_sha256": "4b8458d6b711924e410d7d325fadf3830a1f089789edbb7e35ca107449ca2629",
       "downloaded_on": "2026-08-21",
       "modifications": [
-        "Downloaded from the Google Drive folder linked by the pack page https://quaternius.com/packs/ultimatemodularcharacters.html (page title: 'Ultimate Modular Men Pack'); the legacy /packs/ultimatemodularmen.html URL now 404s. Pack-internal License.txt confirms CC0 1.0."
+        "Downloaded from the Google Drive folder linked by the pack page https://quaternius.com/packs/ultimatemodularcharacters.html (page title: 'Ultimate Modular Men Pack'); the legacy /packs/ultimatemodularmen.html URL now 404s. Pack-internal License.txt confirms CC0 1.0.",
+        "Selected self-contained glTF characters integrated as Mark, civilians, and security guards; gameplay collision remains capsule-based."
       ],
-      "runtime_outputs": [],
+      "runtime_outputs": [
+        "assets/models/characters/quaternius/",
+        "assets/licenses/quaternius_ultimate_modular_men_CC0.txt"
+      ],
       "status": "integrated"
     },
     {

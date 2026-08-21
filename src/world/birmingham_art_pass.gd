@@ -144,8 +144,8 @@ func _build_grand_central_new_street() -> void:
 		LandmarkPrimitives.box(root, "GlassMullion" + str(index), Vector3(0.42, 10.0, 0.35), Vector3(x, 7.3, 1.55), steel)
 		LandmarkPrimitives.cylinder(root, "CanopySupport" + str(index), 0.28, 13.5, Vector3(x, 6.8, -8.0), steel, -1.0, 8)
 		LandmarkPrimitives.box(root, "WarmPanel" + str(index), Vector3(4.8, 0.42, 0.16), Vector3(x, 6.2, 1.68), warm_light)
-	LandmarkPrimitives.label(root, "GrandCentralSign", "GRAND CENTRAL\nNEW STREET", Vector3(0.0, 16.8, -10.2), Color(0.92, 0.95, 0.94), 0.022)
-	LandmarkPrimitives.label(root, "StationWayfinding", "PLATFORM WALK", Vector3(0.0, 3.0, -12.0), Color(0.72, 0.82, 0.84), 0.014)
+	LandmarkPrimitives.label(root, "GrandCentralSign", "GRAND CENTRAL\nNEW STREET", Vector3(0.0, 16.8, -10.2), Color(0.92, 0.95, 0.94), 0.014)
+	LandmarkPrimitives.label(root, "StationWayfinding", "PLATFORM WALK", Vector3(0.0, 3.0, -12.0), Color(0.72, 0.82, 0.84), 0.010)
 	_add_box_collision(root, "GrandCentralCollision", Vector3(76.0, 13.0, 6.0), Vector3(0.0, 6.5, 4.5))
 
 

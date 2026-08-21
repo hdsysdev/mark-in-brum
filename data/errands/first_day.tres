@@ -8,7 +8,7 @@ script = ExtResource("2_step")
 id = "get_bearings"
 objective_text = "Get Your Bearings: reach the New Street marker."
 kind = "proximity"
-trigger_position = Vector3(0, 0, -6)
+trigger_position = Vector3(28, 0, -138)
 trigger_radius = 2.5
 
 [sub_resource type="Resource" id="Resource_step2"]
@@ -16,7 +16,7 @@ script = ExtResource("2_step")
 id = "toilet_closed"
 objective_text = "Public Convenience Closed: find the blocked toilet near the route."
 kind = "proximity"
-trigger_position = Vector3(4, 0, 3)
+trigger_position = Vector3(52, 0, -132)
 trigger_radius = 2.5
 
 [sub_resource type="Resource" id="Resource_step3"]
@@ -32,7 +32,7 @@ script = ExtResource("2_step")
 id = "leg_it"
 objective_text = "Leg It: evade security and reach Victoria Square."
 kind = "proximity"
-trigger_position = Vector3(-7, 0, -2)
+trigger_position = Vector3(-250, 0, -120)
 trigger_radius = 3.0
 
 [resource]

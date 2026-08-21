@@ -7,6 +7,11 @@ extends Node3D
 signal civilian_spawned(npc: Node)
 
 const CIVILIAN_SCENE := preload("res://scenes/npc/civilian.tscn")
+const NPC_VISUAL_SCENES: Array[PackedScene] = [
+	preload("res://assets/models/characters/quaternius/Casual_2.gltf"),
+	preload("res://assets/models/characters/quaternius/Worker.gltf"),
+	preload("res://assets/models/characters/quaternius/Suit.gltf"),
+]
 
 @export var spawn_count: int = 12
 @export var max_nearby_simulated: int = 12
@@ -39,6 +44,7 @@ func civilian_count() -> int:
 
 func _spawn_civilian(index: int) -> void:
 	var civilian := CIVILIAN_SCENE.instantiate()
+	_apply_visual_variant(civilian, index)
 	add_child(civilian)
 	if _spawn_director != null:
 		# NPC capsule half-height is 0.875; spawn resting on the ground.
@@ -66,6 +72,17 @@ func _spawn_civilian(index: int) -> void:
 	brain.simulation_range = simulation_range
 	_civilians.append(civilian)
 	civilian_spawned.emit(civilian)
+
+
+func _apply_visual_variant(civilian: Node, index: int) -> void:
+	var wrapper := civilian.get_node_or_null("CharacterVisual") as Node3D
+	if wrapper == null or NPC_VISUAL_SCENES.is_empty():
+		return
+	for child in wrapper.get_children():
+		child.free()
+	var model := NPC_VISUAL_SCENES[index % NPC_VISUAL_SCENES.size()].instantiate() as Node3D
+	model.name = "Model"
+	wrapper.add_child(model)
 
 
 func _physics_process(delta: float) -> void:
