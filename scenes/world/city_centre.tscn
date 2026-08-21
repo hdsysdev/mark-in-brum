@@ -56,6 +56,8 @@ script = ExtResource("1_streamer")
 [node name="Navigation" type="NavigationRegion3D" parent="."]
 script = ExtResource("2_nav")
 size = Vector2(1700, 1700)
+cell_size = 8.0
+agent_radius = 0.45
 
 [node name="SpawnDirector" type="Node3D" parent="."]
 script = ExtResource("3_spawn")

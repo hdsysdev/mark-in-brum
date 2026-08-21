@@ -21,6 +21,7 @@ var touch_pause_pressed: bool = false
 var _accumulated_look: Vector2 = Vector2.ZERO
 var _last_frame: InputFrame = InputFrame.new()
 var _bridge_timer: float = 0.0
+var _input_event_count: int = 0
 
 
 func _physics_process(delta: float) -> void:
@@ -32,12 +33,14 @@ func _physics_process(delta: float) -> void:
 		if _bridge_timer <= 0.0:
 			_bridge_timer = 0.25
 			JavaScriptBridge.eval(
-				"window.__markInBrum.actionHeld = %s; window.__markInBrum.sprintHeld = %s;" % [
+				"window.__markInBrum.actionHeld = %s; window.__markInBrum.sprintHeld = %s; window.__markInBrum.inputEvents = %d;" % [
 					"true" if _last_frame.action_held else "false",
-					"true" if _last_frame.sprint_held else "false"])
+					"true" if _last_frame.sprint_held else "false",
+					_input_event_count])
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	_input_event_count += 1
 	if event is InputEventMouseMotion:
 		_accumulated_look += event.relative
 

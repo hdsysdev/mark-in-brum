@@ -13,6 +13,7 @@ var _router: InputRouter
 var _touch_index: int = -1
 var _knob_offset: Vector2 = Vector2.ZERO
 var _center: Vector2 = Vector2.ZERO
+var _mouse_dragging: bool = false
 
 
 func _ready() -> void:
@@ -45,6 +46,14 @@ func _gui_input(event: InputEvent) -> void:
 			_update_knob(_center)
 	elif event is InputEventScreenDrag and event.index == _touch_index:
 		_update_knob(event.position)
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		_mouse_dragging = event.pressed
+		if _mouse_dragging:
+			_update_knob(event.position)
+		else:
+			_update_knob(_center)
+	elif event is InputEventMouseMotion and _mouse_dragging:
+		_update_knob(event.position)
 
 
 func _update_knob(pos: Vector2) -> void:
@@ -54,6 +63,9 @@ func _update_knob(pos: Vector2) -> void:
 	_knob_offset = delta
 	if _router != null:
 		_router.joystick_vector = current_vector()
+	if OS.get_name() == "Web":
+		JavaScriptBridge.eval("window.__markInBrum.joyVector = [%.3f, %.3f];" % [
+			current_vector().x, current_vector().y])
 	queue_redraw()
 
 

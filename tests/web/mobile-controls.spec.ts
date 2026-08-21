@@ -20,14 +20,12 @@ async function bootGame(page: Page): Promise<void> {
   await page.waitForFunction(() => (window as any).__markInBrum?.ready === true, null, {
     timeout: 90_000,
   });
-  // First launch shows the mature-content notice; dismiss it if present.
-  const notice = await page.evaluate(() => (window as any).__markInBrum?.notice);
-  if (notice?.visible) {
-    const scaleX = notice.cssScale[0];
-    const scaleY = notice.cssScale[1];
-    const cx = (notice.accept[0] + notice.accept[2] / 2) * scaleX;
-    const cy = (notice.accept[1] + notice.accept[3] / 2) * scaleY;
-    await page.mouse.click(cx, cy);
+  // First launch shows the mature-content notice; dismiss it with Enter
+  // (the accept button holds focus; keyboard activation is the reliable
+  // path across mouse/touch emulation contexts).
+  const noticeVisible = await page.evaluate(() => (window as any).__markInBrum?.notice?.visible);
+  if (noticeVisible) {
+    await page.keyboard.press('Enter');
     await page.waitForFunction(
       () => (window as any).__markInBrum?.notice?.visible === false, null, { timeout: 15_000 });
   }
@@ -40,13 +38,13 @@ async function bootGame(page: Page): Promise<void> {
 
 function parseControls(page: Page): Promise<Record<string, { x: number; y: number; w: number; h: number }>> {
   return page.evaluate(() => {
-    const raw = JSON.parse((window as any).__markInBrum.controls);
+    const rawValue = (window as any).__markInBrum.controls;
+    const raw = JSON.parse(rawValue);
     const scaleX = raw.cssScale[0];
     const scaleY = raw.cssScale[1];
     const out: Record<string, { x: number; y: number; w: number; h: number }> = {};
-    for (const part of raw.rects.split(',')) {
-      const [name, dims] = part.split(':');
-      const [x, y, w, h] = dims.split(',').map(Number);
+    for (const [name, dims] of Object.entries(raw.rects)) {
+      const [x, y, w, h] = dims as number[];
       out[name] = { x: x * scaleX, y: y * scaleY, w: w * scaleX, h: h * scaleY };
     }
     return out;

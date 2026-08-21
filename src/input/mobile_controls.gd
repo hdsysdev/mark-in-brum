@@ -6,6 +6,7 @@ extends CanvasLayer
 @export var show_on_desktop: bool = false
 
 var _router: InputRouter
+var _report_timer: float = 0.0
 
 
 func _ready() -> void:
@@ -13,6 +14,15 @@ func _ready() -> void:
 	_visible_check()
 	get_viewport().size_changed.connect(_on_viewport_changed)
 	_report_layout.call_deferred()
+
+
+func _process(delta: float) -> void:
+	if OS.get_name() != "Web":
+		return
+	_report_timer -= delta
+	if _report_timer <= 0.0:
+		_report_timer = 0.5
+		_report_layout()
 
 
 func _notification(what: int) -> void:
@@ -56,17 +66,17 @@ func _clear_all() -> void:
 func _report_layout() -> void:
 	if OS.get_name() != "Web":
 		return
-	var rects: PackedStringArray = []
+	var entries: PackedStringArray = []
 	for child in get_children():
 		if child is Control:
 			var rect := (child as Control).get_global_rect()
-			rects.append("%s:%d,%d,%d,%d" % [
+			entries.append("\"%s\":[%d,%d,%d,%d]" % [
 				child.name, int(rect.position.x), int(rect.position.y),
 				int(rect.size.x), int(rect.size.y)])
 	# Rects are in Godot canvas space; the shell scales them to CSS px using
 	# the live canvas element, so browser-side tests can touch real pixels.
-	var rects_string: String = ",".join(rects)
-	var js := "window.__markInBrum.controls = JSON.stringify({rects: '" + rects_string + "', cssScale: [" \
+	var js := "window.__markInBrum.controls = JSON.stringify({rects: {" + ",".join(entries) \
+		+ "}, cssScale: [" \
 		+ "document.getElementById('canvas').clientWidth / document.getElementById('canvas').width," \
 		+ "document.getElementById('canvas').clientHeight / document.getElementById('canvas').height]});"
 	JavaScriptBridge.eval(js)

@@ -6,6 +6,7 @@ extends Control
 var _router: InputRouter
 var _touch_index: int = -1
 var _last_pos: Vector2 = Vector2.ZERO
+var _mouse_dragging: bool = false
 
 
 func _ready() -> void:
@@ -28,7 +29,17 @@ func _gui_input(event: InputEvent) -> void:
 		elif not event.pressed and event.index == _touch_index:
 			_touch_index = -1
 	elif event is InputEventScreenDrag and event.index == _touch_index:
-		var delta: Vector2 = event.position - _last_pos
-		_last_pos = event.position
-		if _router != null:
-			_router.add_look_delta(delta)
+		_apply_drag(event.position)
+	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		_mouse_dragging = event.pressed
+		if _mouse_dragging:
+			_last_pos = event.position
+	elif event is InputEventMouseMotion and _mouse_dragging:
+		_apply_drag(event.position)
+
+
+func _apply_drag(position: Vector2) -> void:
+	var delta: Vector2 = position - _last_pos
+	_last_pos = position
+	if _router != null:
+		_router.add_look_delta(delta)
